@@ -1,0 +1,12 @@
+/* .navbar{
+    display: flex;
+    
+} */
+/* .navbar ul{
+    overflow: auto;
+} */
+.navbar ul li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+}

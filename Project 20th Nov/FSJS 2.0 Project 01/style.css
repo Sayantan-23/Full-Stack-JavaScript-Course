@@ -1,0 +1,141 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar-container {
+    margin: 60px 0px 0px 55px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 17px;
+    color: #c3c3c3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-container>div>img {
+    margin-top: 9px;
+    margin-left: 60px;
+    height: 42px;
+    width: 125px;
+}
+
+.grow-list {
+    margin-right: 425px;
+    margin-left: 45px;
+    padding-left: 0px;
+}
+
+.list {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 16px;
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    gap: 40px;
+    cursor: pointer;
+}
+
+/* .list li:nth-child(1) {
+    color: #161616;
+} */
+
+.list-item:hover {
+    color: #161616;
+}
+
+
+/*Contact us button*/
+.button-group {
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.nav-button {
+    background-color: #5955B3;
+    border: none;
+    color: #efeef7;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.nav-button::after {
+    content: '';
+    transform: scale(0);
+}
+.nav-button:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.button-group .nav-button {
+    height: 60px;
+    width: 150px;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+/* MAIN SECTION */
+
+
+/*Heading Text*/
+.banner-container {
+    display: flex;
+}
+
+.heading-text {
+    font-size:65px;
+    color: #3c2f60;
+    margin: 0px 0px 0px 0px;
+    line-height: 78px;
+    font-weight: 600;
+}
+
+.heading-text span {
+    color: #5955b3;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container div:nth-child(1) {
+    margin:155px 0px 0px 130px;
+}
+
+
+/* Description Text*/
+.description {
+    font-weight: 500;
+    font-size: 17px;
+    color: #9f9f9f;
+    width: 400px;
+    margin: 35px 0px 0px 0px;
+}
+
+/* Button */
+.btn {
+    margin-top: 80px;
+    height: 82px;
+    width: 265px;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* Image */
+.banner-container div:last-child {
+    margin-top: 50px;
+}
+.banner-container div img {
+    width: 916px;
+}

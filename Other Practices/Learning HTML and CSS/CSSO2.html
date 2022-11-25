@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            margin: auto;
+            width: 900px;
+            border: 2px solid rgb(52, 169, 152);
+        }
+        
+        .myclass{
+            background-color: antiquewhite;
+            color: rgb(26, 53, 100);
+            border: 2px solid darkolivegreen;
+            margin:10px;
+            padding: 12px 6px;
+        }
+        #FirstPara{
+            float: left;
+            width: 47%;
+        }
+        #SecondPara{
+            float: left;
+            width: 48%;
+        }
+        #ThirdPara{
+            float: left;
+            width:auto;
+            clear: both;
+        }
+        #my{
+            text-align:center;
+        }
+        .btn{
+            background-color: coral;
+            width: auto;
+            padding: 5px;
+            border: none;
+            font-size: 13px;
+            border-radius: 4px;
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: rgb(149, 108, 116);
+            color: beige;
+            border: 2px solid black;
+        }
+        a:visited{
+            background-color: crimson;
+            color: rgb(224, 218, 128);
+        }
+        button:hover{
+            background-color: rgb(149, 108, 116);
+            color: beige;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="FirstPara" class="myclass">
+            <h3 id="my">This is First paragraph</h3>
+            <p class="mypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quis
+                similique repellat quos voluptate eius deserunt dolore. Voluptas similique, modi aperiam ea possimus
+                molestiae dolorem quisquam sunt perspiciatis, ut numquam facilis placeat odio fuga consequatur. Amet
+                aliquid dolor quibusdam provident!</p>
+        </div>
+        <div id="SecondPara" class="myclass">
+            <h3>This is Second paragraph</h3>
+            <p class="mypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quis similique repellat
+                quos voluptate eius deserunt dolore. Voluptas similique, modi aperiam ea possimus molestiae dolorem
+                quisquam sunt perspiciatis, ut numquam facilis placeat odio fuga consequatur. Amet aliquid dolor
+                quibusdam provident!</p>
+        </div>
+        <div id="ThirdPara" class="myclass">
+            <h3>This is Third paragraph</h3>
+            <p class="mypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quis similique repellat
+                quos voluptate eius deserunt dolore. Voluptas similique, modi aperiam ea possimus molestiae dolorem
+                quisquam sunt perspiciatis, ut numquam facilis placeat odio fuga consequatur. Amet aliquid dolor
+                quibusdam provident!</p>
+                <a class="btn" href="https://google.com">Read More</a>
+                <button class="btn">About Us</button>
+        </div>
+    </div>
+</body>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+.container {
+    width: 900px;
+    height: 250px;
+    border: 2px solid black;
+    background-color: #CAD5E2;
+    padding: 10px;
+}
+
+.container div {
+    background-color:#FF6666;
+    border : 2px solid black;
+    height: 40px;
+    width: 90px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#four {
+    flex-grow: 3;
+    align-self: center;
+}
+
+#one-1{
+    order: 1;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="one-1">First box</div>
+    <div>Second box</div>
+    <div>Third box</div>
+    <div id="four">Fourth box</div>
+    <div>Fifth box</div>
+    <div>Sixth box</div>
+    <div>Seventh box</div>
+    <div>Eighth box</div>
+    <div>Ninth box</div>
+    <div>Tenth box</div>
+</div>
+</body>
+</html>

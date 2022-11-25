@@ -1,0 +1,136 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */ 
+
+.navbar {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    height: 90px;
+}
+/* line */
+.navbar div:nth-child(2) {
+    background-color: #fff;
+    height: 50px;
+    width: 1px;
+    margin: 20px 0px 0px 0px;
+}
+/*logo*/
+.navbar div:nth-child(1){
+    margin: 25px 10px 0px 80px;
+}
+nav div img {
+    margin: 4px 12px 0px 0px;
+    width: 100px;
+}
+/* Navbar list */
+.list {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    color: #ffffff;
+    margin: 32px 285px 0px 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.list-item {
+    cursor: pointer;
+}
+.list-item::after {
+    position: relative;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    margin-left: 2px;
+    opacity: 0;
+}
+.list-item:hover::after {
+    opacity: 1;
+    left: 10px;
+    transform: rotate(135deg);
+    transition: transform .2s ease-in-out;
+}
+
+
+
+
+/*Navbar Button*/
+.button-small {
+    margin: 25px 98px 0px 0px;
+    height: 43px;
+    width: 162px;
+    border-radius: 7px;
+    background-color: #ba0cc5;
+    color: #fbf1fc;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.button-small:hover {
+    transform: scale(1.07);
+    transition: transform .2s ease-in-out;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/bg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 250px;
+}
+
+.hero-heading {
+    font-size: 82px;
+    color: #ffffff;
+    width: 900px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 100px;
+    /* margin-top: 30px; */
+    font-family: Montserrat;
+}
+
+.hero-description {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.button-large {
+    height: 77px;
+    width: 392px;
+    border-radius: 7px;
+    background-color: #ba0cc5;
+    color: #fbf1fc;
+    font-size: 32px;
+    font-weight: 500;
+    border: none;
+    margin-top: 57px;
+    cursor: pointer;
+}
+
+.button-large:hover {
+    transform: scale(1.05);
+    transition: transform .2s ease-in-out;
+}

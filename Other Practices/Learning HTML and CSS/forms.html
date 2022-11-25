@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is forms</h2>
+    <form action="backend.django">
+        <label for="Name">Name</label>
+        <div>
+            <input type="Name" name="myName" id="Name">
+        </div>
+        <br>
+        <label for="Skill">Skills</label>
+        <div>
+            <input type="Skill" name="mySkill" id="Skill">
+        </div>
+        <br>
+        <label for="Email">email</label>
+        <div>
+            <input type="email" name="myEmail" id="Email">
+        </div>
+        <br>
+        <label for="Date">Date</label>
+        <div>
+            <input type="date" name="Date" id="Date">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="Bonus">
+        </div>
+        <br>
+        <div>
+            <label for="Eligiblity">Are you eligible? </label>
+            <input type="checkbox" name="eligiblity" id="Eligiblity" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car: </label>
+            <select name="Car" id="car">
+                <option value="maruti">Maruti</option>
+                <option value="swf" selected>Swift</option>
+                <option value="nano">Nano</option>
+                <option value="indi">Indica</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write About Yourself: <br> <textarea cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        } */
+        .navbar{
+            background-color: rgb(8, 27, 57);
+            border-radius: 15px;
+            position: sticky;
+            top:1px;
+            z-index: 5;
+            font-family: sans-serif;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(80, 225, 205);
+        }
+        .navbar li a:hover{
+            color: rgb(202, 202, 231);
+        }
+        .search{
+            float: right;
+            color: white;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 8px;
+            margin:6px 125px;
+            padding: 5px 5px;
+        }
+        .top{
+            /* margin: auto; */
+            /* border: 2px solid black; */
+            /* width: 15%; */
+        }
+        body::before{
+            background: url("/3.jfif.jpg");
+            position:absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top:0;
+            left: 0;
+            opacity: .3;
+        }
+        
+        img{
+            margin: auto;
+            display: block;
+            height: 90px;            
+        }
+        h3{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow:2px 2px #b597d9;
+        }
+        .container{
+            display: flex;
+            padding: 10px;
+            border:2px solid black;
+            /* margin: auto; */
+            /* background-color: rgb(206, 234, 195); */
+            /* display: inline-block; */
+            /* width: 100%; */
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* position: relative; */
+            /* height: 150vh; */
+            /* flex-wrap: wrap; */
+            /* flex-direction: row; */
+            /* flex-flow: row wrap; */
+            justify-content:space-evenly;
+            align-items: stretch;
+        }
+        .class{
+            border: 2px solid black;
+            margin: 15px;
+            /* display: inline-block; */
+            width: 250px;
+            height: 200px;
+            /* box-sizing: border-box; */
+            box-shadow: 10px 10px 5px 2px rgb(9 24 8 / 50%);
+            box-shadow: inset 7px 5px 10px 3px rgb(48 108 83), 10px 10px 10px 3px rgb(7 39 7);
+        }
+        #first{
+            /* position:sticky;
+            top:1px;  */
+            /* order: 1; */
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+            flex: 2 2 50px;/*flex-Grow flex-Shrink flex-Basis*/
+        }
+        #second{
+            /* position:sticky;
+            top:1px; */
+            flex-shrink: 3;
+        }
+        #third{
+            position:sticky;
+            top:45px;
+            /* align-self: center; */
+        }
+        @media(max-width:376px){
+            #first, #second{
+                height: 600px;
+            }
+        }
+        @media(max-width:420px){
+            #third{
+                height: 500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://png.pngtree.com/png-clipart/20190615/ourlarge/pngtree-blue-red-fault-neon-round-border-png-image_1497805.jpg" alt="">
+        <h3>Welcome To My Channel</h3>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="class"id="first">
+            <h3 class="heading">First</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi cum asperiores eos voluptatem enim qui fugit autem omnis aliquid suscipit. Iusto illum voluptate atque? Quibusdam consectetur dolores omnis debitis eius, neque deleniti natus hic!</p>
+        </div>
+        <div class="class" id="second">
+            <h3 class="heading">Second</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi cum asperiores eos voluptatem enim qui fugit autem omnis aliquid suscipit. Iusto illum voluptate atque? Quibusdam consectetur dolores omnis debitis eius, neque deleniti natus hic!</p>
+        </div>
+        <div class="class" id="third">
+            <h3 class="heading">Third</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi cum asperiores eos voluptatem enim qui fugit autem omnis aliquid suscipit. Iusto illum voluptate atque? Quibusdam consectetur dolores omnis debitis eius, neque deleniti natus hic!</p>
+        </div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident eos eligendi consequuntur ad rerum quasi aut, ipsa totam temporibus quisquam qui, omnis ullam tempore architecto. Nostrum ad autem nobis adipisci!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur labore obcaecati sapiente similique tempore quis quo eligendi asperiores, culpa earum.
+    </div>
+</body>
+</html>

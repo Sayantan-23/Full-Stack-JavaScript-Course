@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .container{
+            height: 150vh;
+            overflow:visible;
+            
+        }
+        .boxes{
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+        
+        #first{
+            background-color: rgb(194, 107, 107);
+            /* visibility: hidden; */
+        }
+        #second{
+            background-color: aquamarine;
+        }
+        #third{
+            background-color: rgb(70, 204, 108);
+            position: sticky;
+            top:20vh;
+            z-index:15;
+        }
+        #fourth{
+            background-color: rgb(73, 92, 158);
+            position: relative;
+            z-index: 19;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes" id="first"><p>This is 1st box</p>
+        </div>
+        <div class="boxes" id="second"><p>This is 2nd box</p>
+        </div>
+        <div class="boxes" id="third"><p>This is 3rd box</p>
+        </div>
+        <div class="boxes" id="fourth"><p>This is 4th box</p>
+        </div>
+    </div>
+</body>
+</html>

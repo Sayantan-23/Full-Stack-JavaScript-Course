@@ -1,0 +1,220 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Orbitron;
+}
+
+
+/* NAVBAR */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0px 0px 0px;
+    /* gap: 60px; */
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 105px;
+}
+
+.list-item {
+    position: relative;
+}
+
+.list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    /* right: 40%; */
+    background-color: black;
+    transform-origin: bottom center;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.list-item:hover::after {
+    width: 70%;
+    left: 17%;
+}
+.list-item:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+}
+
+
+/*Logo*/
+.navbar-container div img {
+    width: 125px;
+    margin-left: 35px;
+}
+
+/*Search*/
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-left: 70px;
+    margin-right: 50px
+}
+
+.search-icon svg {
+    margin-top: 5px;
+    width: 28px;
+}
+.search-icon svg:hover {
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+}
+
+.nav-button {
+    height: 43px;
+    width: 173px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid black;
+    font-size: 23px;
+    font-family: Poppins;
+
+}
+.nav-button:hover {
+    transform: scale(1.05);
+    transition: transform .2s ease-in-out;
+}
+
+
+/*HERO SECTION */
+
+.hero-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px 0px 600px;
+}
+
+.hero-heading {
+    font-size: 57px;
+    margin-left: 50px;
+    margin-top: 32px;
+}
+
+.hero-description {
+    margin: 47px 80px 0px 120px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #575757;
+}
+
+/* Buttons */
+.hero-container-right>div>button {
+    margin-top: 94px;
+}
+
+.button-email {
+    margin-right: 7px;
+    height: 35px;
+    width: 218px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 21px;
+    border: 3px solid #4c4c4c;
+    color: #5b5b5b;
+    cursor: pointer;
+}
+.button-email:hover {
+    background-color: #0b0c0e;
+    color: #fff;
+}
+
+
+.button-join {
+    margin-left: 7px;
+    height: 33px;
+    width: 130px;
+    border-radius: 7px;
+    background-color: #0b0c0e;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button-join:hover {
+    background-color: #fff;
+    color: #5b5b5b;
+    border: 3px solid #4c4c4c;
+}
+/* /Buttons*/
+
+
+
+.contact-heading {
+    margin-top: 104px;
+    margin-left: 44px;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    color: #515151;
+}
+
+.icons {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons span img {
+    width: 35px;
+}
+
+/*Globe*/
+.globe img {
+    position: absolute;
+    top: 150px;
+    left: calc(100vw/2);
+    width: 60px;
+}
+
+/*Person Image*/
+.hero-container>div>img {
+    position: absolute;
+    top: 195px;
+    left: 113px;
+    width: 435px;
+}
+
+/* Square Pattern */
+.square img {
+    position: absolute;
+    top: 445px;
+    left: 265px;
+    width: 350px;
+}
+
+/*Star*/
+.hero-container>span:nth-child(2) img {
+    position: absolute;
+    top: 190px;
+    right: 132px;
+    width: 60px;
+}
+
+.hero-container>span:nth-of-type(3) img {
+    position: relative;
+    top: 606px;
+    left: 680px;
+    width: 40px;
+}

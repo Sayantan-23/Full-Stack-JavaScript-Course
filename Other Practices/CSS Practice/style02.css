@@ -1,0 +1,9 @@
+h3 ~ li {
+    background-color: #1c1d1e;
+    color: #ffffff;
+}
+
+h3 + p {
+    background-color: #E5D68A;
+    color: #a40707;
+}
