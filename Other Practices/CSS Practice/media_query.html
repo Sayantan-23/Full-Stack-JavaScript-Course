@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 900px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: #CAD5E2;
+            padding: 10px;
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+        }
+        
+        .container div {
+            background-color:#FF6666;
+            border : 2px solid black;
+            height: 40px;
+            width: 90px;
+            text-align: center;
+        }
+        
+        
+        @media only screen and (min-width: 400px) and (max-width: 900px) {
+            .container {
+                background-color: #5DA3FA;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>First </div>
+        <div>Second </div>
+        <div>Third </div>
+        <div>Fourth </div>
+        <div>Fifth </div>
+        <div>Sixth </div>
+    </div>
+</body>
+</html>

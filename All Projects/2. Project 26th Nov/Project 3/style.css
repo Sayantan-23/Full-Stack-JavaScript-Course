@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2b2923;
+}
+.body {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    color: #f1f0ee;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 9vw 0px 9vw;
+}
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-list {
+    display: flex;
+    list-style: none;
+    color: #a7a59f;
+    gap:30px;
+    margin: 0px 20px 0px 0px;
+}
+
+/* Logo */
+.logo img {
+    width: 130px;
+}
+
+/* Button */
+.nav-items button {
+    color: #9d8d36;
+    border: 1px solid #8b7e33;
+    border-radius: 7px;
+    height: 45px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* Hero Section */
+.main-section {
+    margin-top: 30px;
+    margin-left: calc(100vw/12);
+    margin-right: calc(100vw/12);
+}
+
+.main-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-upper h1 {
+    width: 50%;
+    color: #f1f0ee;
+    font-size: 60px;
+    /* margin-left: 25px;
+    margin-right: 80px; */
+    margin-left: 1vw;
+    margin-right: 6vw;
+    line-height: 80px;
+}
+
+.main-upper p {
+    width: 50%;
+    color: #f1f0ee;
+    /* margin-right: 55px;
+    margin-left: 40px; */
+    margin-right: 3vw;
+    margin-left: 1vw;
+    /* padding: 80px; */
+    padding: 6vw;
+}
+
+/* main image */
+.main-lower img {
+    width: 75vw;
+}
+
+.main-lower {
+    display: flex;
+    justify-content: center;
+}
