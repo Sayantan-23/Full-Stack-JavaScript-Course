@@ -1,10 +1,8 @@
-## Project 01
+### **[project 1](./Project%201/README.md)**
+![output](https://user-images.githubusercontent.com/110087385/208141567-91f65e18-b0f3-4c4f-8713-7c1d5dc37e48.png)
 
-*[Click here to go to project 01](./Project%201/README.md)*
-![](./Project%201/images/Project%20Output.png)
+### **[project 2](./Project%202/README.md)**
+![output](https://user-images.githubusercontent.com/110087385/208141653-621035e2-40d8-4aae-a3a4-c64cdd441ea2.png)
 
-*[Click here ot go to project 02](./Project%202/README.md)*
-![](./Project%202/output.png)
-
-*[Click here to go to project 03](./Project%203/README.md)*
-![](./Project%203/Output.png)
+### **[project 3](./Project%203/README.md)**
+![Output](https://user-images.githubusercontent.com/110087385/208141673-046f354c-ed44-4d6d-a88c-babc1e3b8784.png)
