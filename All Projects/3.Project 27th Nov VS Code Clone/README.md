@@ -1,5 +1,10 @@
 # *<u style="color:#0066b8;">VS Code</u>* Clone Project Using *<u style="color:#36B7F0;">Tailwind CSS</u>* 
 
+>This project is only for educational purpose.
+
+### Project Link - [https://singular-duckanoo-feab3a.netlify.app/](https://singular-duckanoo-feab3a.netlify.app/)
+<hr>
+
 ![1](https://user-images.githubusercontent.com/110087385/208140377-39c7731b-67bb-438f-ace4-7546b06b7eb4.png)
 ![2](https://user-images.githubusercontent.com/110087385/208140542-53a12ce5-1ab3-4f27-8f5b-9a82e6d559e6.png)
 ![3](https://user-images.githubusercontent.com/110087385/208140605-50dc4fe2-2208-4028-b660-a9460883b942.png)

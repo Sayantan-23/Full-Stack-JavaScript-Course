@@ -1,21 +1,3 @@
-### Hi!! This is my repository for Full Stack JavaScript Bootcamp 2.0 By Hitesh Sir and Anurag Sir...
-
-
-# List of All the Projects, Assignments and Articles
-# Articles
-[Click Here to get the list of all articles](./All%20Articles/README.md)
-
-<hr>
-
-# Practices
-## Practice Files
-[Click Here to go to the Practices folder](./Other%20Practices/)
-
-## Homework 5th & 6th Nov
-[Click here](./5th%20%26%206th%20Nov%20homework/)
-
-<hr>
-
 # Projects *(Order - Newest First)*
 <hr>
 
