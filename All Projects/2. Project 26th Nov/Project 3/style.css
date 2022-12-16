@@ -6,8 +6,9 @@
     background-color: #2b2923;
 }
 .body {
-    margin-left: 2%;
-    margin-right: 2%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Navbar */
@@ -16,7 +17,7 @@
     color: #f1f0ee;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 9vw 0px 9vw;
+    margin: 20px 130px 0px 130px;
 }
 .nav-items {
     display: flex;
@@ -30,6 +31,10 @@
     color: #a7a59f;
     gap:30px;
     margin: 0px 20px 0px 0px;
+}
+.list-item:hover {
+    color: #ffffff;
+    cursor: pointer;
 }
 
 /* Logo */
@@ -47,47 +52,51 @@
     font-weight: 600;
     font-size: 14px;
 }
+.nav-items button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .15s ease-in-out;
+}
 
 
 /* Hero Section */
 .main-section {
     margin-top: 30px;
-    margin-left: calc(100vw/12);
-    margin-right: calc(100vw/12);
+    margin-left: 130px;
+    margin-right: 130px;
 }
 
 .main-upper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .main-upper h1 {
     width: 50%;
     color: #f1f0ee;
     font-size: 60px;
-    /* margin-left: 25px;
-    margin-right: 80px; */
-    margin-left: 1vw;
-    margin-right: 6vw;
+    margin-right: 60px;
     line-height: 80px;
 }
 
 .main-upper p {
     width: 50%;
     color: #f1f0ee;
-    /* margin-right: 55px;
-    margin-left: 40px; */
-    margin-right: 3vw;
-    margin-left: 1vw;
-    /* padding: 80px; */
-    padding: 6vw;
+    /* margin-right: 55px; */
+    margin-left: 40px;
+    /* margin-right: 3vw;
+    margin-left: 1vw; */
+    padding-left: 180px;
+    padding-right: 25px;
 }
 
 /* main image */
 .main-lower img {
     width: 75vw;
+    max-width: 1200px;
 }
 
 .main-lower {

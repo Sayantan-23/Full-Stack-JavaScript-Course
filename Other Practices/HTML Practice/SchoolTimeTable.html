@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shcool Time Table</title>
+</head>
+<body>
+    <table cellspacing="2" cellpadding="4" border="0" bgcolor="black" align="center">
+        <thead bgcolor="white">
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Class 1</th>
+                <th scope="col">Class 2</th>
+                <th scope="col">Class 3</th>
+                <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col">Class 4</th>
+                <th scope="col">Class 5</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="white">
+            <tr>
+                <td>mon</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td rowspan="65534"></td>
+                <td>REACT</td>
+                <td>REACT NATIVE</td>
+                
+            </tr>
+            <tr>
+                <td>tue</td>
+                <td>DATABASE</td>
+                <td>ANDROID</td>
+                <td>MACHINE LEARNING</td>
+                <td>PYTHON</td>
+                <td>JAVA</td>
+            </tr>
+            <tr>
+                <td>wed</td>
+                <td>DSA</td>
+                <td>REACT</td>
+                <td>ANGULAR</td>
+                <td colspan="2">ANDROID PRACTICAL</td>
+            </tr>
+            <tr>
+                <td>thu</td>
+                <td colspan="2">JavaScript PRACTICAL</td>
+                <td>TAILWIND</td>
+                <td>How to finish DSA in 1 month</td>
+                <td>how to get a job in google 1 day</td>
+            </tr>
+       
+         
+        </tbody>
+    </table>
+
+
+<p>
+    rowspan attribute is not working with th inside thead element. Even if without the thead element if the tbody element is present and rowspan attribute is mentioned in a th outside tbody it will not work. If it is mentioned inside a tbody in a td element or without any thead or tbody then it will work.
+</p>
+
+
+    <!-- 2ND TABLE -->
+
+    <table cellspacing="2" cellpadding="4" border="0" bgcolor="black" align="center">
+            <tr bgcolor="white">
+                <th scope="col">Day</th>
+                <th scope="col">Class 1</th>
+                <th scope="col">Class 2</th>
+                <th scope="col">Class 3</th>
+                <th rowspan="5" scope="col">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col">Class 4</th>
+                <th scope="col">Class 5</th>
+            </tr>
+            <tr bgcolor="white">
+                <td>mon</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>REACT</td>
+                <td>REACT NATIVE</td>
+                
+            </tr>
+            <tr bgcolor="white">
+                <td>tue</td>
+                <td>DATABASE</td>
+                <td>ANDROID</td>
+                <td>MACHINE LEARNING</td>
+                <td>PYTHON</td>
+                <td>JAVA</td>
+            </tr>
+            <tr bgcolor="white">
+                <td>wed</td>
+                <td>DSA</td>
+                <td>REACT</td>
+                <td>ANGULAR</td>
+                <td colspan="2">ANDROID PRACTICAL</td>
+            </tr>
+            <tr bgcolor="white">
+                <td>thu</td>
+                <td colspan="2">JavaScript PRACTICAL</td>
+                <td>TAILWIND</td>
+                <td>How to finish DSA in 1 month</td>
+                <td>how to get a job in google 1 day</td>
+            </tr>
+       
+    </table>
+</body>
+</html>

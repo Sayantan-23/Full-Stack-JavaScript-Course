@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list Elements</title>
+</head>
+<body>
+
+    <!-- ** EMMET -->
+    <!-- ** li*4 -->
+    <li>first list</li>
+    <li>second list</li>
+    <li>third list</li>
+    <li>fourth list</li>
+
+
+    <!-- ** EMMET -->
+    <!-- ** (ul>li*4)+ol>li*4 -->
+    <ul>
+        <li>unordered list element 1</li>
+        <li>unordered list element 2</li>
+        <li>unordered list element 3</li>
+        <li>unordered list element 4</li>
+    </ul>
+    <ol type="i">
+        <li value="2">ordered list element 1</li>
+        <li value="4"> ordered list element 2</li>
+        <li value="3">ordered list element 3</li>
+        <li value="5">ordered list element 4</li>
+    </ol>
+
+    <ol reversed type="A">
+        <li>testing 1</li>
+        <li>testing 2</li>
+        <li>testing 3</li>
+        <li>testing 4</li>
+    </ol>
+
+    <ol start="3">
+        <li>testing 1</li>
+        <li>testing 2</li>
+        <li>testing 3</li>
+        <li>testing 4</li>
+    </ol>
+
+
+    <!-- ** div.list-element>ul>li*2>ol>li{first list}+li{second list}+LI{third list} -->   <!--  EMMET -->
+    <div class="list-element">
+        <ul>
+            <li>
+                <ol type="a">
+                    <li>first list</li>
+                    <li>second list</li>
+                    <li>third list</li>
+                </ol>
+            </li>
+            <li>
+                <ol type="I" reversed>
+                    <li>first list</li>
+                    <li>second list</li>
+                    <li>third list</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
