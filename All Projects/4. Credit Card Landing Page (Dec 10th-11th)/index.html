@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b57e52aa03.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#151515] font-[Roboto] mx-4 sm:mx-12 md:mx-14 lg:mx-20 overflow-x-hidden">
+    <!-- Header -->
+    <section>
+        <!-- NAVBAR -->
+        <nav class="flex relative justify-between mt-8 h-16 items-center">
+            <div>
+                <img class="w-32 md:w-36 lg:w-40" src="./Assets/Icons/Logo.svg" alt="logo">
+            </div>
+            <div class="hidden sm:flex text-gray-200">
+                <ul class="flex justify-center gap-4 md:gap-8 lg:gap-16 md:text-lg">
+                    <li class="hover:text-fuchsia-500"><a href="">Home</a></li>
+                    <li class="hover:text-fuchsia-500"><a href="">Features</a></li>
+                    <li class="hover:text-fuchsia-500"><a href="">Pricing</a></li>
+                    <li class="hover:text-fuchsia-500"><a href="">About us</a></li>
+                </ul>
+            </div>
+            <div class="hidden sm:flex text-gray-200">
+                <ul class="flex gap-12 md:gap-16 md:text-lg">
+                    <li class="after:content-[''] after:inline-block after:w-0 after:h-0 after:border-x-[3px] after:border-t-[6px] after:border-solid after:border-x-transparent after:border-t-gray-200 after:ml-3 after:mb-0.5">Eng</li>
+                    <ul class="relative">
+                        <img class="absolute right-12 -z-10 md:right-14 md:w-14" src="./Assets/Icons/btn-pink-bg.svg" alt="">
+                        <li class="z-10" style="">Contact us</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="h-8 w-8 flex flex-col justify-between z-10 sm:hidden">
+                <div class="h-1 mt-[2px] w-full rounded-md bg-[#db3cd6]"></div>
+                <div class="h-1 w-full rounded-md bg-[#db3cd6]"></div>
+                <div class="h-1 mb-[2px] w-full rounded-md bg-[#db3cd6]"></div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header Heading and Image -->
+    <section class="relative">
+        <div class="flex flex-col gap-6 text-white -mt-5 relative">
+            <h1>
+                <p class="whitespace-pre-line text-[6.5vw] lg:leading-[8vw]">
+                    Simplify All Transactions
+                    in <span class="text-[#f637ec] font-medium">One Card</span>
+                </p>
+            </h1>
+            <p class="whitespace-pre-line  text-xs sm:text-base md:text-lg lg:text-2xl text-neutral-400 -mt-4 mb-4 lg:mt-2">
+                Hurry up and join now, with this you can manage your daily
+                finances easily and safely.
+            </p>
+            <ul class="flex gap-10 sm:gap-12 md:gap-14 lg:gap-16 sm:mt-12 lg:mt-20">
+                <img class="absolute -z-10 w-14 sm:w-16 md:w-20 lg:w-24" src="./Assets/Icons/btn-pink-bg.svg">
+                <li class="relative left-6 sm:left-7 md:left-9 lg:left-11 text-lg sm:text-xl sm:mt-[1.5px] md:text-2xl md:mt-[3px] lg:text-3xl lg:mt-1"><a href="/">GET STARTED</a></li>
+                <img class="w-auto sm:w-14 md:w-16 lg:w-20 lg:mt-1" src="./Assets/Icons/RightArrow.svg" alt="">
+            </ul>
+
+            <div class="flex mt-4 sm:mt-6 md:mt-10 lg:mt-20 gap-2 sm:gap-6 md:gap-9 lg:gap-14 items-center">
+                <div class="flex items-center gap-2 md:gap-5 lg:gap-7">
+                    <div class="flex items-center gap-1">
+                        <p class="text-4xl md:text-5xl lg:text-6xl">
+                            42K
+                        </p>
+                        <i class="fa-solid fa-plus fa-lg md:hidden" style="color: #f637ec;"></i>
+                        <i class="fa-solid fa-plus fa-2x hidden md:inline-block" style="color: #f637ec;"></i>
+                    </div>
+                    <p class="whitespace-pre-line md:text-lg lg:text-2xl -mt-7">
+                        Happy
+                        Active User
+                    </p>
+                </div>
+
+                <div><img src="./Assets/Icons/Vector 402.svg" alt=""></div>
+
+                <div>
+                    <div class="flex items-center gap-2 md:gap-5 lg:gap-7">
+                        <div class="flex items-center gap-1">
+                            <p class="text-4xl md:text-5xl lg:text-6xl">
+                                12K
+                            </p>
+                            <i class="fa-solid fa-plus fa-lg md:hidden" style="color: #f637ec;"></i>
+                            <i class="fa-solid fa-plus fa-2x hidden md:inline-block" style="color: #f637ec;"></i>
+                        </div>
+                        <p class="whitespace-pre-line md:text-lg lg:text-2xl -mt-7">
+                            Years
+                            Experience
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+
+        <!-- Background Images -->
+            <div class="">
+                <img class="absolute -top-10 sm:-right-28 lg:-right-14 sm:-top-8 -z-20" src="./Assets/Photos/backCards.png" alt="">
+                <img class="absolute top-10 -right-52 w-[70vw] sm:-right-64 sm:top-8 md:-right-90 lg:-right-[24rem] lg:top-8 -z-10" src="./Assets/Photos/frontCards.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO Section -->
+    <section>
+        <div class="mt-20 sm:mt-32 md:mt-44 lg:mt-52 -mx-4 sm:-mx-12 md:-mx-14 lg:-mx-20 h-60 flex justify-center gap-6 flex-wrap sm:gap-10 md:gap-16 lg:gap-20 items-center bg-[#292929]">
+            <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
+            <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
+            <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
+            <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
+            <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
+        </div>
+    </section>
+
+</body>
+</html>
