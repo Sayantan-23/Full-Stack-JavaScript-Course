@@ -9,11 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b57e52aa03.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-[#151515] font-[Roboto] mx-4 sm:mx-12 md:mx-14 lg:mx-20 overflow-x-hidden">
+<body class="bg-[#151515] font-[Roboto]">
+    <div class="overflow-x-hidden relative">
     <!-- Header -->
     <section>
         <!-- NAVBAR -->
-        <nav class="flex relative justify-between mt-8 h-16 items-center">
+        <nav class="flex relative justify-between mt-8 h-16 items-center mx-4 sm:mx-12 md:mx-14 lg:mx-20">
             <div>
                 <img class="w-32 md:w-36 lg:w-40" src="./Assets/Icons/Logo.svg" alt="logo">
             </div>
@@ -27,10 +28,10 @@
             </div>
             <div class="hidden sm:flex text-gray-200">
                 <ul class="flex gap-12 md:gap-16 md:text-lg">
-                    <li class="after:content-[''] after:inline-block after:w-0 after:h-0 after:border-x-[3px] after:border-t-[6px] after:border-solid after:border-x-transparent after:border-t-gray-200 after:ml-3 after:mb-0.5">Eng</li>
-                    <ul class="relative">
+                    <li class="after:content-[''] after:inline-block after:w-0 after:h-0 after:border-x-[3px] after:border-t-[6px] after:border-solid after:border-x-transparent after:border-t-gray-200 after:ml-3 after:mb-0.5 cursor-pointer">Eng</li>
+                    <ul class="relative hover:scale-105 transition-all">
                         <img class="absolute right-12 -z-10 md:right-14 md:w-14" src="./Assets/Icons/btn-pink-bg.svg" alt="">
-                        <li class="z-10" style="">Contact us</li>
+                        <li class="z-10 cursor-pointer" style="">Contact us</li>
                     </ul>
                 </ul>
             </div>
@@ -43,7 +44,7 @@
     </section>
 
     <!-- Header Heading and Image -->
-    <section class="relative">
+    <section class="relative mx-4 sm:mx-12 md:mx-14 lg:mx-20">
         <div class="flex flex-col gap-6 text-white -mt-5 relative">
             <h1>
                 <p class="whitespace-pre-line text-[6.5vw] lg:leading-[8vw]">
@@ -55,10 +56,11 @@
                 Hurry up and join now, with this you can manage your daily
                 finances easily and safely.
             </p>
-            <ul class="flex gap-10 sm:gap-12 md:gap-14 lg:gap-16 sm:mt-12 lg:mt-20">
-                <img class="absolute -z-10 w-14 sm:w-16 md:w-20 lg:w-24" src="./Assets/Icons/btn-pink-bg.svg">
-                <li class="relative left-6 sm:left-7 md:left-9 lg:left-11 text-lg sm:text-xl sm:mt-[1.5px] md:text-2xl md:mt-[3px] lg:text-3xl lg:mt-1"><a href="/">GET STARTED</a></li>
-                <img class="w-auto sm:w-14 md:w-16 lg:w-20 lg:mt-1" src="./Assets/Icons/RightArrow.svg" alt="">
+            <!-- Get Started Button -->
+            <ul class="flex gap-10 sm:gap-12 md:gap-14 lg:gap-16 sm:mt-12 lg:mt-20 hover:scale-105 transition-all w-fit">
+                <img class="absolute -z-10 w-14 sm:w-16 md:w-20 lg:w-24" src="./Assets/Icons/btn-pink-bg.svg ">
+                <li class="relative left-6 sm:left-7 md:left-9 lg:left-11 text-lg sm:text-xl sm:mt-[1.5px] md:text-2xl md:mt-[3px] lg:text-3xl lg:mt-1 "><a href="/">GET STARTED</a></li>
+                <img class="w-auto sm:w-14 md:w-16 lg:w-20 lg:mt-1 cursor-pointer" src="./Assets/Icons/RightArrow.svg" alt="">
             </ul>
 
             <div class="flex mt-4 sm:mt-6 md:mt-10 lg:mt-20 gap-2 sm:gap-6 md:gap-9 lg:gap-14 items-center">
@@ -98,15 +100,15 @@
 
         <!-- Background Images -->
             <div class="">
-                <img class="absolute -top-10 sm:-right-28 lg:-right-14 sm:-top-8 -z-20" src="./Assets/Photos/backCards.png" alt="">
-                <img class="absolute top-10 -right-52 w-[70vw] sm:-right-64 sm:top-8 md:-right-90 lg:-right-[24rem] lg:top-8 -z-10" src="./Assets/Photos/frontCards.png" alt="">
+                <img class="absolute -top-10 sm:-right-28 lg:-right-14 sm:-top-8 -z-20 overflow-x-hidden" src="./Assets/Photos/backCards.png" alt="">
+                <img class="absolute top-10 -right-52 w-[70vw] sm:-right-64 sm:top-8 md:-right-90 lg:-right-[24rem] lg:top-8 -z-10 overflow-x-hidden" src="./Assets/Photos/frontCards.png" alt="">
             </div>
         </div>
     </section>
 
     <!-- LOGO Section -->
     <section>
-        <div class="mt-20 sm:mt-32 md:mt-44 lg:mt-52 -mx-4 sm:-mx-12 md:-mx-14 lg:-mx-20 h-60 flex justify-center gap-6 flex-wrap sm:gap-10 md:gap-16 lg:gap-20 items-center bg-[#292929]">
+        <div class="mt-20 sm:mt-32 md:mt-44 lg:mt-52 h-60 flex justify-center gap-6 flex-wrap sm:gap-10 md:gap-16 lg:gap-20 items-center bg-[#292929]">
             <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
             <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
             <img class="md:w-44" src="./Assets/Icons/Logo.svg" alt="">
@@ -115,5 +117,190 @@
         </div>
     </section>
 
+    <!-- Mid Section -->
+    <section>
+        <div class="flex flex-col justify-center items-center md:flex-row md:gap-10 lg:justify-between mx-4 sm:mx-12 md:mx-14 lg:mx-20">
+            <div>
+                <p class="whitespace-pre-line text-white text-5xl md:text-4xl lg:text-[5vw] lg:leading-[7vw]">
+                    The best payment 
+                    service for <span class="text-[#f637ec] font-medium ">your 
+                    transactions.</span>
+                </p>
+            </div>
+            <div>
+                <p class="whitespace-pre-line text-neutral-400 text-xl md:text-lg lg:text-2xl">
+                    The following are the services we provide 
+                    to users, with the services we maximize 
+                    it is hoped that users are satisfied with 
+                    what we provide.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center md:flex-row mt-14 md:mt-32 lg:mt-52 gap-10 lg:gap-14 mb-20 lg:mb-40">
+            <div class="w-[65vw] h-[65vw] sm:w-[50vw] sm:h-[50vw] md:w-[30vw] md:h-[30vw] lg:w-[26vw] lg:h-[26vw] bg-[#272727] text-white border-solid border-2 flex flex-col justify-evenly items-center ">
+                <img class="w-auto" src="./Assets/Icons/dollar-circle.svg" alt="">
+                <p class="text-2xl lg:text-[27px] md:text-xl -mt-10">
+                    Free transaction fee
+                </p>
+            </div>
+            <div class="w-[65vw] h-[65vw] sm:w-[50vw] sm:h-[50vw] md:w-[30vw] md:h-[30vw] lg:w-[26vw] lg:h-[26vw] bg-gradient-to-tl from-neutral-500 to-neutral-800 text-white border-solid border-white border-2 flex flex-col justify-evenly items-center md:-mt-36">
+                <img class="w-auto" src="./Assets/Icons/cloud-add.svg" alt="">
+                <p class="md:text-xl lg:text-3xl text-xl sm:2xl whitespace-pre-line text-center -mt-10">
+                    Easy to access 
+                    anytime and anywhere
+                </p>
+            </div>
+            <div class="w-[65vw] h-[65vw] sm:w-[50vw] sm:h-[50vw] md:w-[30vw] md:h-[30vw] lg:w-[26vw] lg:h-[26vw] bg-[#272727] text-white border-solid border-white border-2 flex flex-col justify-evenly items-center ">
+                <img class="w-auto" src="./Assets/Icons/lock.svg" alt="">
+                <p class=" md:text-xl lg:text-3xl text-2xl -mt-10">
+                    Guaranteed safety
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-[#fceffb] flex flex-col justify-center items-center">
+            <div>
+                <p class="whitespace-pre-line text-5xl md:text-6xl lg:text-[5.5vw] lg:leading-[7vw] text-center lg:mt-8">
+                    Unique and interesting
+                    <span class="text-[#f637ec] font-semibold">card choices</span>
+                </p>
+            </div>
+            <div>
+                <p class="whitespace-pre-line text-sm text-center md:text-lg lg:text-[1.5vw] text-neutral-500 lg:leading-[2.2vw] mt-4">
+                    We provide card editing features, where users can edit unique cards 
+                    according to the wishes and preferences of the users themselves.
+                </p>
+            </div>
+            <div>
+                <img class="-mt-12" src="./Assets/Photos/VCards.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Feedback or Review Section -->
+    <section>
+        <!-- Review Heading -->
+        <div>
+            <p class="whitespace-pre-line text-white text-4xl md:text-5xl lg:text-[5.5vw] lg:leading-[7vw] text-center lg:mt-8">
+                Customers are satisfied with 
+                <span class="text-[#f637ec] font-semibold">the features</span> we provide
+            </p>
+        </div>
+        <div>
+            <p class="whitespace-pre-line text-sm text-center md:text-lg lg:text-[1.5vw] text-neutral-400 lg:leading-[2.2vw] mt-4">
+                with the various features that we provide, therefore many 
+                customers like the features that we provide.
+            </p>
+        </div>
+
+        <!-- Reviw Cards Section -->
+        <div class="flex flex-col mt-10 items-center md:mt-16 lg:mt-24 gap-12 lg:gap-20">
+            <div class="flex flex-col gap-16 lg:gap-28 md:flex-row ">
+                <div class="w-[70vw] h-[22rem] sm:w-[50vw] sm:h-80 md:w-[37vw] md:h-80 lg:w-[36vw] lg:h-72 bg-gradient-to-tl from-neutral-500 to-neutral-800 text-white border-solid border-white border-2 flex flex-col justify-between items-start p-6 md:p-10">
+                    <img class="w-auto" src="./Assets/Icons/5stars.svg" alt="">
+                    <p class="text-lg sm:text-xl text-neutral-300 mt-2">
+                        This is the best finance platform I've ever found, lots 
+                        of features that definitely make me more satisfied!
+                    </p>
+                    <p class="md:text-xl lg:text-lg text-xl whitespace-pre-line text-neutral-300 lg:-mt-4">
+                        Melvin Yoga
+                        <span class="text-base text-neutral-400">New York, America</span>
+                    </p>
+                </div>
+                <div class="w-[70vw] h-96 sm:w-[50vw] sm:h-80 md:w-[37vw] md:h-[23rem] lg:w-[36vw] lg:h-80 bg-[#1e1f24] text-white border-solid border-white border-2 flex flex-col justify-between items-start p-6 
+                md:p-10">
+                    <img class="w-auto" src="./Assets/Icons/4stars.svg" alt="">
+                    <p class="text-lg sm:text-xl text-neutral-300 mt-2 lg:mt-6">
+                        Very good and recommended financial platform, the 
+                        features are very satisfying, you all should try this 
+                        platform!
+                    </p>
+                    <p class="md:text-xl lg:text-lg text-xl whitespace-pre-line text-neutral-300">
+                        Gabriel Putra
+                        <span class="text-base text-neutral-400">Jakarta, Indonesia</span>
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-16 lg:gap-28 md:flex-row ">
+                <div class="w-[70vw] h-96 sm:w-[50vw] sm:h-80 md:w-[37vw] md:h-[23rem] lg:w-[36vw] lg:h-80 bg-[#1e1f24] text-white border-solid border-white border-2 flex flex-col justify-between items-start p-6 
+                md:p-10">
+                    <img class="w-auto" src="./Assets/Icons/4stars.svg" alt="">
+                    <p class="text-lg sm:text-xl text-neutral-300 mt-2 lg:mt-6">
+                        This is the first time I have found a financial platform 
+                        as good as this, with various features that really help 
+                        me in managing my finances.
+                    </p>
+                    <p class="md:text-xl lg:text-lg text-xl whitespace-pre-line text-neutral-300">
+                        Farhan Putra
+                        <span class="text-base text-neutral-400">Paris, French</span>
+                    </p>
+                </div>
+                <div class="w-[70vw] h-96 sm:w-[50vw] sm:h-80 md:w-[37vw] md:h-[23rem] lg:w-[36vw] lg:h-80 bg-[#1e1f24] text-white border-solid border-white border-2 flex flex-col justify-between items-start p-6 
+                md:p-10">
+                    <img class="w-auto" src="./Assets/Icons/5stars.svg" alt="">
+                    <p class="text-lg sm:text-xl text-neutral-300 mt-2 lg:mt-6">
+                        The best financial platform I've ever found, here we 
+                        can custom cards according to our wishes, I am ver 
+                        satisfied!
+                    </p>
+                    <p class="md:text-xl lg:text-lg text-xl whitespace-pre-line text-neutral-300">
+                        Alex Georgio
+                        <span class="text-base text-neutral-400">Wangon, Indonesia</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Switch Cards -->
+        <div class="flex justify-center mt-20 lg:mt-28 gap-3 mb-10">
+            <div class="w-[7vw] h-[22px] bg-[#f637ec] rounded-xl drop-shadow-[0_0px_20px_hsl(303,91%,35%)]"></div>
+            <div class="w-[22px] h-[22px] rounded-full bg-[#484347]"></div>
+            <div class="w-[22px] h-[22px] rounded-full bg-[#484347]"></div>
+            <div class="w-[22px] h-[22px] rounded-full bg-[#484347]"></div>
+        </div>
+    </section>
+
+    <!-- Customing Card Section -->
+    <section>
+        <div class="mt-28 md:mt-32 lg:mt-44 flex flex-col items-center gap-2 sm:gap-5 -mb-8 sm:-mb-4 lg:-mb-6">
+            <div class="">
+                <p class="whitespace-pre-line text-white text-xl sm:text-3xl md:text-5xl lg:text-[5.5vw] lg:leading-[7vw] text-center lg:mt-8">
+                    Let's start <span class="text-[#151515] font-medium">customing</span> your 
+                    card now
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <ul class="flex gap-10 sm:gap-12 md:gap-14 lg:gap-16 sm:mt-12 lg:mt-14 hover:scale-105 transition-all">
+                    <img class="absolute -z-10 w-14 sm:w-16 md:w-20 lg:w-24" src="./Assets/Icons/btn-pink-bg.svg">
+                    <li class="relative left-6 sm:left-7 md:left-9 lg:left-11 text-lg sm:text-xl sm:mt-[1.5px] md:text-2xl md:mt-[3px] lg:text-3xl lg:mt-1 text-white"><a href="/">GET STARTED</a></li>
+                    <img class="w-auto sm:w-14 md:w-16 lg:w-20 lg:mt-1 cursor-pointer" src="./Assets/Icons/RightArrow.svg" alt="">
+                </ul>
+            </div>
+        </div>
+        <div class="relative -z-20 mb-52 lg:mb-72">
+            <img class="absolute w-full -bottom-16 md:-bottom-20 lg:-bottom-36" src="./Assets/Photos/Rectangle 6773.png" alt="">
+            <div class="relative">
+                <img class="absolute w-full -bottom-16 md:-bottom-20 lg:-bottom-36" src="./Assets/Photos/Rectangle 6774.png" alt="">
+                <img class="absolute w-[36vw] right-0 -bottom-16 md:-bottom-20 lg:-bottom-36 " src="./Assets/Photos/Diamond-left.png" alt="">
+                <img class="absolute w-[35vw] left-0 -bottom-12 md:-bottom-12 lg:-bottom-24" src="./Assets/Photos/Diamond-right.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="mt-20 flex flex-col items-center justify-center gap-10 mb-20 md:flex-row md:mt-32 lg:mt-56 lg:mb-44 relative mx-4 sm:mx-12 md:mx-14 lg:mx-20">
+            <img class="md:absolute left-0" src="./Assets/Icons/Logo.svg" alt="">
+            <ul class="flex flex-col md:flex-row text-neutral-300 justify-center items-center gap-5 md:ml-10 lg:ml-0 text-lg lg:text-xl md:gap-8 lg:gap-12">
+                <li class="hover:text-fuchsia-500"><a href="/">Branding</a></li>
+                <li class="hover:text-fuchsia-500"><a href="/">Contact Us</a></li>
+                <li class="hover:text-fuchsia-500"><a href="/">Privacy Policy</a></li>
+                <li class="hover:text-fuchsia-500"><a href="/">FAQs</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
 </body>
 </html>
