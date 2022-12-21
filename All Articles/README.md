@@ -9,3 +9,5 @@
 4. *[CSS Position](https://sayantan23.hashnode.dev/css-position)*
 
 5. *[CSS Media Queries](https://sayantan23.hashnode.dev/css-media-queries)*
+
+6. *[Git & GitHub](https://sayantan23.hashnode.dev/git-and-github)*
