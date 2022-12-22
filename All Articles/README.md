@@ -10,4 +10,6 @@
 
 5. *[CSS Media Queries](https://sayantan23.hashnode.dev/css-media-queries)*
 
-6. *[Git & GitHub](https://sayantan23.hashnode.dev/git-and-github)*
+6. *[CSS Box Model](https://sayantan23.hashnode.dev/css-box-model)*
+
+7. *[Git & GitHub](https://sayantan23.hashnode.dev/git-and-github)*
