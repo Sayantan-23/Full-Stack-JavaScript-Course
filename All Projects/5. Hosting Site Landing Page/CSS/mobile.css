@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background: #111010;
+}
+
+#wrapper-container {
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.logo {
+    width: 9rem;
+}
+
+.grow-list {
+    list-style: none;
+    display: none;
+}
+
+.list-item {
+    color: hsl(0, 0%, 70%);
+}
+
+/* Nav Login Button */
+.nav-button {
+    height: 45px !important; 
+    margin-right: -35px;
+}
+
+.mobile-bar {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.bar {
+    background: #0c8bfd;
+    width: 90%;
+    height: 5px;
+    border-radius: 2px;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -20px 15px 0px 15px;
+}
+
+.hero-heading {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+    white-space: pre-line;
+}
+
+.hero-heading span {
+    color: #0c8bfd;
+    font-style: italic;
+}
+
+.hero-description {
+    color: hsl(0, 0%, 70%);
+    white-space: pre-line;
+}
+
+/* Hero Buttons */
+.hero-btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn {
+    height: 50px;
+    width: 120px;
+    background: #0c8bfd;
+    border-radius: 40px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 2px solid #0c8bfd;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.hero-button-black {
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.hero-button-black:hover {
+    background: #0c8bfd;
+    border: 2px solid #0c8bfd;
+}
+
+/* Hero Image */
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+}
+.hero-image {
+    width: 90%;
+}

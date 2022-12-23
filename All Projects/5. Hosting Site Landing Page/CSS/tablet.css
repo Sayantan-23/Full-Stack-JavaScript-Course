@@ -1,0 +1,51 @@
+@media only screen and (min-width: 640px){
+    
+    /* Navbar */
+    .mobile-bar {
+        display: none;
+    }
+
+    .navbar {
+        gap: 4px;
+    }
+
+    .logo {
+        width: 19vw;
+        max-width: 150px;
+    }
+
+    .grow-list {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        font-size: 14px;
+    }
+
+    .list-item:hover {
+        color: #0c8bfd;
+    }
+
+    .nav-button {
+        width: 90px !important;
+        margin-right: 1px;
+    }
+
+
+    /* Hero Section */
+    .hero-heading {
+        font-size: 4rem;
+    }
+
+    .hero-description {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        width: 160px;
+        height: 60px;
+    }
+
+    .hero-button-black {
+        width: 180px;
+    }
+}
