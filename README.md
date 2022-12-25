@@ -19,6 +19,8 @@
 # Projects *(Order - Newest First)*
 <hr>
 
+### [Hosting Site Landing Page](./All%20Projects/5.%20Hosting%20Site%20Landing%20Page/)
+
 ### [Credit Card Landing Page](./All%20Projects/4.%20Credit%20Card%20Landing%20Page/)
 ***Credit Card Landing Page Live Link -**[https://harmonious-chimera-8e5272.netlify.app](https://harmonious-chimera-8e5272.netlify.app)*
 
