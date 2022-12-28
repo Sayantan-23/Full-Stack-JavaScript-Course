@@ -20,6 +20,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
+        max-width: 1680px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
     
     .hero-left {
@@ -30,8 +33,7 @@
 
     .hero-heading {
         font-size: min(5vw, 75px);
-        line-height: min(7vw,90px);
-        
+        line-height: min(7vw, 90px);
     }
 
     .hero-description {
@@ -51,5 +53,73 @@
     .hero-image-container {
         width: 50%;
         margin-top: 60px;
+    }
+
+
+    /* Logo Section */
+    .logo-container {
+        gap: 90px;
+        padding: 50px;
+    }
+
+
+    /* Features Section */
+    .features-container {
+        container-type: inline-size;
+    }
+
+    .features-text {
+        margin-top: 140px;
+    }
+
+    .features-upper-heading h1 {
+        font-size: 3.7rem;
+        font-weight: 600;
+    }
+
+    .features-description {
+        font-size: 1.2rem;
+    }
+
+    /* Features Cards */
+    .features-card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    @container (min-width: 1210px) {
+        .card-two {
+            margin-top: -50px;
+        }
+    }
+
+    .features-lower-heading h1 {
+        font-size: min(3.5vw, 75px);
+        line-height: min(5vw, 90px);
+        font-weight: 600;
+        white-space: pre-line;
+        margin-left: 60px;
+    }
+
+    /* Main Features (White Background) */
+    .features {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .features-bg-white {
+        width: 55%;
+    }
+    .features-bg-black {
+        width: 45%;
+    }
+    .main-features {
+        padding: 50px 30px;
     }
 }
