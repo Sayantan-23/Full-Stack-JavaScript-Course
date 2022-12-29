@@ -1,319 +1,442 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 
 body {
-    background: #111010;
+  background: #111010;
 }
 
 #wrapper-container {
-    position: relative;
-    overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden;
 }
 
+/* COMMON FOR ALL */
+.bg-blue {
+  background-color: #0c8bfd !important;
+  border-color: #0c8bfd !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
 
+.btn {
+  height: 50px;
+  width: 120px;
+  background: #0c8bfd;
+  border-radius: 40px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 2px solid #0c8bfd;
+}
+
+.btn:hover {
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+}
 
 /* NAVBAR */
 .navbar {
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px auto;
-    max-width: 1680px;
-    padding: 0 40px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 1680px;
+  padding: 0 20px;
 }
 
 .logo {
-    width: 9rem;
+  width: 9rem;
 }
 
 .grow-list {
-    list-style: none;
-    display: none;
+  list-style: none;
+  display: none;
 }
 
 .list-item {
-    color: hsl(0, 0%, 70%);
+  color: hsl(0, 0%, 70%);
 }
 
 /* Nav Login Button */
 .nav-button {
-    height: 45px !important; 
-    margin-right: -35px;
+  height: 45px !important;
+  /* margin-right: -25px; */
 }
 
 .mobile-bar {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
 }
 
 .bar {
-    background: #0c8bfd;
-    width: 90%;
-    height: 5px;
-    border-radius: 2px;
+  background: #0c8bfd;
+  width: 90%;
+  height: 5px;
+  border-radius: 2px;
 }
-
 
 /* Hero Section */
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: -20px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -20px 15px 0px 15px;
 }
 
 .hero-heading {
-    color: #ffffff;
-    font-size: 3rem;
-    font-weight: 600;
-    white-space: pre-line;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+  white-space: pre-line;
+  text-align: center;
 }
 
 .hero-heading span {
-    color: #0c8bfd;
-    font-style: italic;
+  color: #0c8bfd;
+  font-style: italic;
 }
 
 .hero-description {
-    color: hsl(0, 0%, 70%);
-    white-space: pre-line;
+  color: hsl(0, 0%, 70%);
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Hero Buttons */
 .hero-btn {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.btn {
-    height: 50px;
-    width: 120px;
-    background: #0c8bfd;
-    border-radius: 40px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 1rem;
-    border: 2px solid #0c8bfd;
-}
-
-.btn:hover {
-    background: transparent;
-    border: 2px solid #ffffff;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .hero-button-black {
-    background: transparent;
-    border: 2px solid #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
 }
 
 .hero-button-black:hover {
-    background: #0c8bfd;
-    border: 2px solid #0c8bfd;
+  background: #0c8bfd;
+  border: 2px solid #0c8bfd;
 }
 
 /* Hero Image */
 .hero-image-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .hero-image {
-    width: 90%;
+  width: 90%;
 }
-
 
 /* Logo Section */
 
 .logo-container {
-    background-color: #1d1c1c;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 30px;
+  background-color: #1d1c1c;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px;
 }
-
 
 /* Features Section */
 .features-section {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .features-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 1680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .features-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .features-upper-heading h1 {
-    font-size: 3rem;
-    line-height: 3.7rem;
-    font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  font-weight: 600;
 }
 
 .features-description {
-    color: hsl(0, 0%, 40%);
-    white-space: pre-line;
-    font-size: 1.1rem;
+  color: hsl(0, 0%, 40%);
+  white-space: pre-line;
+  font-size: 1.1rem;
 }
 
 /* Features Cards */
 .features-card-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-card {
-    border: 2px solid hsl(0, 0%, 40%);
-    border-radius: 30px;
-    height: 370px;
-    width: 370px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  border: 2px solid hsl(0, 0%, 40%);
+  border-radius: 30px;
+  height: 370px;
+  width: 370px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-heading h1 {
-    font-size: 1.7rem;
-    margin-top: 20px;
-    margin-bottom: -10px;
-    font-weight: 600;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-weight: 600;
 }
 
 .card-description {
-    white-space: pre-line;
-    text-align: center;
-    color: hsl(0, 0%, 40%);
-    font-size: 1.2rem;
+  white-space: pre-line;
+  text-align: center;
+  color: hsl(0, 0%, 40%);
+  font-size: 1.2rem;
 }
 
 .card-two {
-    background-color: #111010;
-    filter: drop-shadow(0px 30px 30px hsl(0, 0%, 74%));
-    border-color: #111010;
+  background-color: #111010;
+  filter: drop-shadow(0px 30px 30px hsl(0, 0%, 74%));
+  border-color: #111010;
 }
 .card-two .card-heading {
-    color: #ffffff;
+  color: #ffffff;
 }
 .card-two .card-description {
-    color: hsl(0, 0%, 62%);
+  color: hsl(0, 0%, 62%);
 }
 
 /* Features Lower Section */
 .features-lower-heading {
-    padding: 30px;
+  padding: 30px;
 }
 
 .features-lower-heading h1 {
-    margin-top: 60px;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  margin-top: 60px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .features {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px 150px 20px;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 150px 20px;
+  gap: 50px;
 }
 
 /* Main Features (White Background) */
 .features-bg-white {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .main-features {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #111010;
-    border-radius: 50px;
-    height: 100px;
-    padding: 20px;
-}
-
-.bg-blue {
-    background-color: #0c8bfd;
-    border-color: #0c8bfd;
-}
-.text-white {
-    color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #111010;
+  border-radius: 50px;
+  height: 100px;
+  padding: 20px;
 }
 
 .main-features-heading {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* Other Features */
 .features-bg-black {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #111010;
-    padding: 30px 20px;
-    border-radius: 30px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #111010;
+  padding: 30px 20px;
+  border-radius: 30px;
 }
 
 .other-features {
-    background-color: #292828;
-    border-radius: 50px;
-    color: #d9d9d9;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background-color: #292828;
+  border-radius: 50px;
+  color: #d9d9d9;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .circle-filled {
-    height: 20px;
-    width: 20px;
-    background-color: #d9d9d9;
-    border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
 }
 
 .other-features p {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+/* Prices Section */
+.prices-container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.prices-text {
+  display: flex;
+  color: #ffffff;
+  margin-top: 100px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.arrow-img {
+  margin-top: 20px;
+}
+
+.prices-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Price Card Section */
+.prices-cards {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.price-card {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  width: 85%;
+  max-width: 400px;
+  height: 750px;
+}
+
+.price-card-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.price span {
+  font-size: 2rem;
+  color: hsl(0, 0%, 71%);
+}
+
+.price-card-description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  padding-right: 30px;
+}
+
+.line {
+  height: 2px;
+  background-color: hsl(0, 0%, 82%);
+  margin: 30px auto;
+}
+
+.price-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-offer {
+  display: flex;
+  gap: 10px;
+}
+
+.price-offer p {
+  font-size: 1.4rem;
+}
+
+.price-btn {
+  width: 100%;
+  margin-top: 40px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.price-btn:hover {
+  border-color: #0c8bfd !important;
+  color: #0c8bfd;
+}
+
+/* First Card (Regular Card) */
+.regular .price-features {
+  margin-top: 50px;
+}
+
+/* Second Card (Standard Card) */
+.standard span {
+  color: hsl(208, 100%, 80%);
+}
+
+.standard .line {
+  background-color: hsl(208, 100%, 80%);
+}
+
+.standard .price-btn {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #0c8bfd;
+}
+
+.standard .price-btn:hover {
+  border-color: #ffffff !important;
+  background-color: #0c8bfd !important;
+  color: #ffffff !important;
 }
