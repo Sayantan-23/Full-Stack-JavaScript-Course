@@ -32,6 +32,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   border: 2px solid #0c8bfd;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -137,8 +138,8 @@ body {
 }
 
 .hero-button-black:hover {
-  background: #0c8bfd;
-  border: 2px solid #0c8bfd;
+  background: #0c8bfd !important;
+  border: 2px solid #0c8bfd !important;
 }
 
 /* Hero Image */
@@ -347,6 +348,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 
 .price-card {
@@ -439,4 +441,202 @@ body {
   border-color: #ffffff !important;
   background-color: #0c8bfd !important;
   color: #ffffff !important;
+}
+
+
+/* Customer Review */
+.customer-review-section {
+  background-color: #ffffff;
+  padding-bottom: 120px;
+  container-type: inline-size;
+}
+
+.customer-review {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.customer-review-text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.review-heading {
+  font-size: 2.2rem;
+  padding: 0px 20px;
+  margin-top: 40px;
+}
+
+.review-description {
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 50%);
+}
+
+.review-cards {
+  display: grid;
+  overflow-x: scroll;
+  grid-auto-flow: column;
+  grid-auto-columns: 85%;
+  margin-top: 60px;
+  padding: 20px;
+  column-gap: 40px;
+  position: relative;
+  left: 40px;
+  margin-right: 40px;
+  scroll-margin: 100px;
+}
+
+.customer-review-card {
+  padding: 30px;
+  border: 2px solid hsl(0, 0%, 50%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+
+.reviewer-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.reviewer-post {
+  color: hsl(0, 0%, 40%);
+}
+
+.review {
+  font-size: 1.3rem;
+}
+
+/* First Review Card */
+.review-card-one {
+  background-color: #111010;
+  color: #ffffff;
+}
+
+.review-card-one .reviewer-post {
+  color: hsl(0, 0%, 70%);
+}
+
+/* Review Card Scrollbar */
+.review-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.review-cards::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 90%);
+  border: 100vw;
+  margin-block: 0.5em;
+}
+
+.review-cards::-webkit-scrollbar-track-piece:start {
+  margin-left: 0.1px;
+}
+
+.review-cards::-webkit-scrollbar-thumb {
+  background: #0c8bfd;
+  border-radius: 100vw;
+}
+
+
+/* Form Section */
+
+.form-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+  container-type: inline-size;
+}
+
+.form-heading {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #292828;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.form input {
+  background-color: #3e3d3d;
+  padding: 20px;
+  border-radius: 100vmax;
+  border-color: transparent;
+}
+
+.form input::placeholder {
+  font-size: 1.2rem;
+}
+
+.form-button {
+  font-size: 1.2rem;
+}
+
+/* Footer Section */
+.footer {
+  max-width: 1680px;
+  margin: 90px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-line {
+  background-color: hsl(0, 0%, 30%);
+  width: 80%;
+  height: 2px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: hsl(0, 0%, 80%);;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: hsl(0, 0%, 80%);
+  font-size: 1.1rem;
+}
+
+.footer-list a:hover {
+  color: #0c8bfd;
 }

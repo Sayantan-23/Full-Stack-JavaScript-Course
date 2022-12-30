@@ -160,4 +160,108 @@
     width: 100%;
     max-width: 100%;
   }
+
+  /* Review Section */
+  .customer-review-section {
+    padding-bottom: 130px;
+  }
+
+  .customer-review-text {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    padding: 120px 80px 0px 80px;
+  }
+
+  .review-heading {
+    width: 50%;
+    font-size: min(4.2vw, 75px);
+    line-height: min(5vw, 90px);
+    margin-top: 0;
+  }
+
+  .review-description {
+    width: 40%;
+    text-align: left;
+    font-size: min(1.5vw, 75px);
+    line-height: min(1.8vw, 90px);
+  }
+
+  /* Review Cards */
+  .review-cards {
+    grid-auto-columns: 60%;
+    left: 100px;
+  }
+
+  @container (min-width:1100px) {
+    .review-cards {
+      grid-auto-columns:50%
+    }
+  }
+
+  .customer-review-card {
+    gap: 35px;
+  }
+
+  .reviewer-name {
+    font-size: min(2.1vw, 60px);
+  }
+
+  .reviewer-post {
+    font-size: 1.3rem;
+  }
+
+  .review {
+    font-size: min(2.3vw, 60px);
+  }
+
+  /* Form Section */
+  .form-container {
+    gap: 80px;
+  }
+
+  .form-heading {
+    font-size: min(4.2vw, 75px);
+    line-height: min(5vw, 90px);
+  }
+
+  .form-heading span::after {
+    content: '\a';
+    display: block;
+  }
+
+  @container (min-width: 1100px) {
+    .form {
+      flex-direction: row;
+    }
+  }
+
+  .form input {
+    padding-right: 7vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  /* Footer Section */
+  .footer {
+    position: relative;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    gap: 10vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .footer-list {
+    margin: 30px 0;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    position: absolute;
+    left: 160px;
+  }
 }

@@ -51,7 +51,6 @@
   }
 
   /* Prices Section */
-
   .prices-text {
     justify-content: space-evenly;
   }
@@ -62,5 +61,10 @@
 
   .price-btn {
     width: 100%;
+  }
+
+  /* Review Section */
+  .review-cards {
+    grid-auto-columns: 70%;
   }
 }
