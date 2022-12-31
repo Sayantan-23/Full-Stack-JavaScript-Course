@@ -129,6 +129,7 @@
     padding: 50px 30px;
   }
 
+
   /* Prices Section */
   .prices-container {
     container-type: inline-size;
@@ -148,8 +149,8 @@
     margin-top: 60px;
   }
 
-  /* Price Cards */
 
+  /* Price Cards */
   @container (min-width:1183px) {
     .prices-cards {
       flex-direction: row;
@@ -179,6 +180,7 @@
     font-size: min(4.2vw, 75px);
     line-height: min(5vw, 90px);
     margin-top: 0;
+    text-align: left;
   }
 
   .review-description {

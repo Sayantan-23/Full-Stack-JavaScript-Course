@@ -152,7 +152,6 @@ body {
 }
 
 /* Logo Section */
-
 .logo-container {
   background-color: #1d1c1c;
   margin-top: 100px;
@@ -210,7 +209,8 @@ body {
   border: 2px solid hsl(0, 0%, 40%);
   border-radius: 30px;
   height: 370px;
-  width: 370px;
+  width: 90%;
+  max-width: 370px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -354,25 +354,25 @@ body {
 .price-card {
   background-color: #fff;
   border-radius: 30px;
-  padding: 30px;
-  width: 85%;
+  padding: 20px;
+  width: 98%;
   max-width: 400px;
-  height: 750px;
+  /* height: 750px; */
 }
 
 .price-card-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .price {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
 }
 
 .price span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: hsl(0, 0%, 71%);
 }
 
@@ -401,7 +401,7 @@ body {
 }
 
 .price-offer p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .price-btn {
@@ -454,6 +454,7 @@ body {
 .customer-review {
   margin: 0 auto;
   max-width: 1440px;
+  container-type: inline-size;
 }
 
 .customer-review-text {
@@ -469,6 +470,7 @@ body {
   font-size: 2.2rem;
   padding: 0px 20px;
   margin-top: 40px;
+  text-align: center;
 }
 
 .review-description {
@@ -490,6 +492,7 @@ body {
   left: 40px;
   margin-right: 40px;
   scroll-margin: 100px;
+  /* container-type: inline-size; */
 }
 
 .customer-review-card {
@@ -513,7 +516,23 @@ body {
 }
 
 .review {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+
+@container (max-width: 420px) {
+  .review-cards {
+    grid-auto-columns: 100%;
+  }
+
+  .customer-review-card {
+    padding: 20px;
+  }
+
+  .review {
+    font-size: 1.1rem;
+  }
+
 }
 
 /* First Review Card */

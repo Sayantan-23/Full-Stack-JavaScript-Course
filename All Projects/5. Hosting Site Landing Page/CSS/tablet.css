@@ -59,9 +59,41 @@
     font-size: 2rem;
   }
 
+  /* Price Cards */
+  .price-card {
+    padding: 30px;
+    width: 85%;
+    max-width: 400px;
+    height: 750px;
+  }
+
+  .price-card-heading {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .price {
+    font-size: 4.5rem;
+    font-weight: 500;
+  }
+
+  .price span {
+    font-size: 2rem;
+  }
+  
+  .price-card-description {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .price-offer p {
+    font-size: 1.4rem;
+  }
+
   .price-btn {
     width: 100%;
   }
+
 
   /* Review Section */
   .review-cards {
