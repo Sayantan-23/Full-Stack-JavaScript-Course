@@ -80,7 +80,7 @@
   .price span {
     font-size: 2rem;
   }
-  
+
   .price-card-description {
     font-size: 1.2rem;
     font-weight: 500;
@@ -93,7 +93,6 @@
   .price-btn {
     width: 100%;
   }
-
 
   /* Review Section */
   .review-cards {

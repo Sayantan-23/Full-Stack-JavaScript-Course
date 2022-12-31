@@ -222,7 +222,7 @@ body {
   font-size: 1.7rem;
   margin-top: 20px;
   margin-bottom: -10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-description {
@@ -443,7 +443,6 @@ body {
   color: #ffffff !important;
 }
 
-
 /* Customer Review */
 .customer-review-section {
   background-color: #ffffff;
@@ -505,7 +504,6 @@ body {
   margin-bottom: 60px;
 }
 
-
 .reviewer-name {
   font-size: 1.2rem;
   margin-bottom: 5px;
@@ -519,7 +517,6 @@ body {
   font-size: 1.2rem;
 }
 
-
 @container (max-width: 420px) {
   .review-cards {
     grid-auto-columns: 100%;
@@ -532,7 +529,6 @@ body {
   .review {
     font-size: 1.1rem;
   }
-
 }
 
 /* First Review Card */
@@ -564,7 +560,6 @@ body {
   background: #0c8bfd;
   border-radius: 100vw;
 }
-
 
 /* Form Section */
 
@@ -634,7 +629,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  color: hsl(0, 0%, 80%);;
+  color: hsl(0, 0%, 80%);
 }
 
 .footer-heading {
