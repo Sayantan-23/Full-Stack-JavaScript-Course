@@ -1,0 +1,197 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper-container {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variables */
+:root {
+  --orange: hsl(10, 88%, 63%);
+  --black-bg: hsl(218, 100%, 2%);
+  --primary-font-size: 3rem;
+  --primary-font-color: hsl(0, 0%, 100%);
+  --secondary-font-color: hsla(0, 0%, 100%, 0.7);
+}
+
+/* Common for All */
+.btn {
+  background-color: var(--orange);
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  border: 1.5px solid var(--orange);
+  font-weight: 600;
+  font-size: 1rem;
+  width: 10rem;
+  height: 3.5rem;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1.5px solid #ffffff;
+}
+
+.transparent-btn {
+  background: transparent;
+  border: 1.5px solid #ffffff;
+}
+
+.transparent-btn:hover {
+  background-color: var(--orange);
+  border: 1.5px solid var(--orange);
+}
+
+.transparent-bg {
+  background: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.899);
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+/* Navbar */
+.navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 35px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  border-radius: 100vmax;
+  background-color: var(--orange);
+}
+
+.nav-list-container,
+.nav-btn-container {
+  display: none;
+}
+
+/* Hero Section */
+
+.header-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(../Assets/Photos/futuristic-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-font-color);
+}
+
+.hero-container {
+  max-width: 1440px;
+  margin: 20px auto;
+  padding: 15px 15px 70px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  container-type: inline-size;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+
+.hero-heading {
+  font-size: 2.3rem;
+  color: var(--primary-font-color);
+  text-align: left;
+}
+
+.hero-heading span::after {
+  content: "\a";
+  display: block;
+}
+
+.hero-description {
+  font-size: 0.9rem;
+  color: var(--secondary-font-color);
+}
+
+@container (min-width:476px) {
+  .hero-description span::after {
+    content: "\a";
+    display: block;
+  }
+}
+
+.hero-btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.play-btn-img-container {
+  margin: 20px auto;
+}
+
+.play-btn-img {
+  width: 7rem;
+}
+
+.play-description {
+  font-size: 1.7rem;
+}
+
+.play-description-container {
+  position: relative;
+}
+
+.play-description span::after {
+  content: "\a";
+  display: block;
+}
+
+.hero-dash {
+  position: absolute;
+  top: 18px;
+  left: -55px;
+}
+
+.hero-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: -60px;
+}

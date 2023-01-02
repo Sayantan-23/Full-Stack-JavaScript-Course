@@ -1,0 +1,51 @@
+@media only screen and (min-width: 768px) {
+  /* Navbar */
+
+  /* Toggle button */
+  .toggle-button {
+    display: none;
+    position: absolute;
+    top: -100px;
+  }
+  .toggle-button .bar {
+    display: none;
+  }
+
+  /* Nav elements */
+  .navbar-container {
+    padding-top: 30px;
+  }
+  .nav-list-container,
+  .nav-btn-container {
+    display: flex;
+  }
+
+  .nav-list-container {
+    width: 54%;
+  }
+
+  .grow-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5vw;
+  }
+
+  .list-item a {
+    color: hsla(0, 0%, 100%, 0.899);
+  }
+
+  .nav-btn-container {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .list-item a:hover {
+    color: var(--orange);
+  }
+
+  .nav-btn {
+    width: 8rem;
+    height: 3rem;
+  }
+}
