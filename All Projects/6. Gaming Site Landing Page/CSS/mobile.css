@@ -12,12 +12,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Variables */
 :root {
   --orange: hsl(10, 88%, 63%);
   --black-bg: hsl(218, 100%, 2%);
   --primary-font-color: hsl(0, 0%, 100%);
-  --secondary-font-color: hsla(0, 0%, 100%, 0.7);
+  --secondary-font-color: hsla(0, 0%, 100%, 0.6);
   --heading-font-size: 2.3rem;
 }
 
@@ -63,7 +67,7 @@ li {
 }
 
 a:hover {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 /* Navbar */
@@ -508,7 +512,7 @@ a:hover {
 }
 
 .most-played-games-heading span::after {
-  content: '\a';
+  content: "\a";
   display: block;
 }
 
@@ -521,11 +525,160 @@ a:hover {
 .most-played-games-description {
   color: var(--secondary-font-color);
   text-align: center;
+  font-size: 0.9rem;
 }
 
-.games-of-the-world-image>img {
+.games-of-the-world-image > img {
   width: 100%;
   position: absolute;
   right: -3%;
   z-index: -1;
+}
+
+.most-played-games-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.most-played-game img {
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+
+.most-played-games-images > div:nth-child(1) {
+  width: 30%;
+  position: relative;
+  top: -40px;
+}
+
+.most-played-games-images > div:nth-child(2) {
+  width: 25%;
+}
+
+.most-played-games-images > div:nth-child(3) {
+  width: 25%;
+}
+
+/* Start Playing Section */
+.start-playing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Assets/Photos/Rectangle\ 606.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  container-type: inline-size;
+}
+
+.start-playing-heading {
+  color: var(--primary-font-color);
+  text-align: center;
+  font-size: var(--heading-font-size);
+}
+
+@container (max-width: 450px) {
+  .start-playing-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@container (min-width: 500px) {
+  .start-playing-heading span::after {
+    content: "\a";
+    display: block;
+  }
+}
+
+.get-started-description {
+  color: var(--secondary-font-color);
+  text-align: center;
+  max-width: 350px;
+  font-size: 0.9rem;
+}
+
+.get-started-btn {
+  margin-top: 15px;
+  width: 11rem;
+}
+
+.footer-section {
+  background-color: var(--black-bg);
+  border-bottom: 1px solid #656565be;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 15px 40px 15px;
+}
+
+.footer-container > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-description {
+  color: var(--secondary-font-color);
+  font-size: 0.9rem;
+  max-width: 200px;
+  line-height: 1.8rem;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media-container img {
+  cursor: pointer;
+}
+
+.footer-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-list-heading {
+  color: var(--primary-font-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-list .list-item a {
+  color: var(--secondary-font-color);
+}
+
+.footer-bottom {
+  height: 85px;
+  background-color: #000611;
 }

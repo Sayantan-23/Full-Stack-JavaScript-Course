@@ -1,33 +1,32 @@
 @media only screen and (min-width: 650px) {
+  .recommended-games-heading span::after {
+    content: "\a";
+    display: block;
+  }
 
-    .recommended-games-heading span::after {
-        content: '\a';
-        display: block;
-    }
+  .recommended-game {
+    flex-direction: row;
+    gap: 30px;
+  }
 
-    .recommended-game {
-        flex-direction: row;
-        gap: 30px;
-    }
+  .recommended-game-details {
+    align-items: flex-start;
+    gap: 22px;
+  }
 
-    .recommended-game-details {
-        align-items: flex-start;
-        gap: 22px;
-    }
+  .recommended-game-name {
+    text-align: left;
+  }
 
-    .recommended-game-name {
-        text-align: left;
-    }
+  .recommended-game-category {
+    margin-top: -5px;
+  }
 
-    .recommended-game-category {
-        margin-top: -5px;
-    }
+  .recommended-game-description {
+    text-align: left;
+  }
 
-    .recommended-game-description {
-        text-align: left;
-    }
-
-    .recommended-game-details .download-btn {
-        margin-top: 10px;
-    }
+  .recommended-game-details .download-btn {
+    margin-top: 10px;
+  }
 }

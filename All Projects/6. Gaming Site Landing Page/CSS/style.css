@@ -154,7 +154,7 @@
     .war-game-left {
       width: 50%;
       margin-left: 20px;
-    }  
+    }
     .war-game-right {
       width: 50%;
     }
@@ -166,7 +166,6 @@
       display: block;
     }
   }
-  
 
   @container (min-width: 990px) {
     .war-game-description span::after {
@@ -176,8 +175,7 @@
   }
 
   /* Recommended Game */
-
-  .recommended-games-heading-container{
+  .recommended-games-heading-container {
     flex-direction: row;
     justify-content: center;
     gap: min(max(20px, 31vw), 450px);
@@ -191,5 +189,96 @@
   .all-recommended-games {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  /* Lower Section */
+
+  .most-played-games-container {
+    position: relative;
+  }
+
+  .most-played-games-heading {
+    margin-bottom: 40px;
+  }
+
+  .most-played-games-description {
+    position: relative;
+    width: 480px;
+    text-align: left;
+    top: 0px;
+    right: -150px;
+  }
+
+  .games-of-the-world-image img {
+    width: 65%;
+  }
+
+  .most-played-games-images {
+    gap: 30px;
+    position: relative;
+    top: -20px;
+  }
+
+  .most-played-games-images > div:nth-child(1) {
+    top: -80px;
+  }
+
+  @container (min-width: 900px) {
+    .most-played-games-description {
+      width: 580px;
+      line-height: 1.9rem;
+      top: 40px;
+      right: -180px;
+    }
+
+    .most-played-games-description span::after {
+      content: "\a";
+      display: block;
+    }
+
+    .games-of-the-world-image img {
+      top: 430px;
+    }
+
+    .most-played-games-images {
+      top: 10px;
+    }
+
+    .most-played-games-images > div:nth-child(1) {
+      top: -160px;
+    }
+  }
+
+  .start-playing-container {
+    margin-top: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url(../Assets/Photos/Rectangle\ 606.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .start-playing-heading {
+    font-size: min(max(20px, 2.8vw), 50px);
+    margin-top: -10px;
+  }
+
+  .footer-container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: min(max(20px, 7vw), 140px);
+  }
+
+  .footer-container > div:nth-child(1) {
+    align-items: flex-start;
+  }
+
+  .footer-list-container {
+    gap: 30px;
+  }
+
+  .footer-list {
+    gap: 20px;
   }
 }
