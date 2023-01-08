@@ -1,0 +1,115 @@
+@media only screen and (min-width: 768px) {
+  /* Variables */
+  :root {
+    --heading-font-size: min(max(60px, 5vw), 70px);
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 120px;
+  }
+
+  .toggle-bar {
+    display: none;
+  }
+
+  .nav-list-container {
+    display: block;
+  }
+
+  .grow-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .list-item a {
+    color: var(--secondary-font-color);
+    font-size: 1.2rem;
+  }
+
+  /* .line {
+        height: 3px;
+    } */
+
+  /* Hero Section */
+  .header-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../Assets/Photos/mainBackground.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-container {
+    padding-top: 120px;
+    padding-bottom: 280px;
+    gap: 50px;
+  }
+
+  .hero-heading {
+    line-height: 90px;
+    font-weight: 600;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+
+  .hero-btn {
+    width: 200px;
+    height: 65px;
+  }
+
+  .logo-container {
+    gap: 80px;
+  }
+
+  /* Mid Cards */
+  .mid-cards {
+    margin-top: 150px;
+    padding-bottom: 220px;;
+  }
+
+  @container (min-width: 1200px) {
+    .mid-cards>div:nth-child(1) {
+        position: relative;
+        bottom: 80px;
+    }
+
+    .mid-cards>div:nth-child(2) {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .mid-cards>div:nth-child(4) {
+        position: relative;
+        top: 80px;
+    }
+
+    .mid-cards>div:nth-child(5) {
+        position: relative;
+        top: 40px;
+    }
+
+    .mid-cards>div:nth-child(7) {
+        position: relative;
+        top: 80px;
+    }
+
+    .mid-cards>div:nth-child(8) {
+        position: relative;
+        top: 120px;
+    }
+
+    .mid-cards>div:nth-child(9) {
+        position: relative;
+        top: 160px;
+    }
+  }
+
+  .modern-house-container {
+    flex-direction: row; /* not working */
+  }
+}
