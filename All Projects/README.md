@@ -1,4 +1,4 @@
-# Projects *(Order - Newest First)*
+# 💻 Projects *(Order - Newest First)*
 
 <!-- ### [Real Estate Landing Page](./7.%20Real%20Estate%20Landing%20Page/)
 ***Real Estate Landing Page Live Link -** [https://bright-croissant-78fd8e.netlify.app/](https://bright-croissant-78fd8e.netlify.app/)*
