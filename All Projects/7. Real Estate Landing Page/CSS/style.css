@@ -24,14 +24,14 @@
     gap: 40px;
   }
 
-  .list-item a {
+  .grow-list .list-item a {
     color: var(--secondary-font-color);
     font-size: 1.2rem;
   }
 
-  /* .line {
-        height: 3px;
-    } */
+  .grow-list .list-item a:hover {
+    color: #ffffff;
+  }
 
   /* Hero Section */
   .header-section {
@@ -69,47 +69,193 @@
   /* Mid Cards */
   .mid-cards {
     margin-top: 150px;
-    padding-bottom: 220px;;
+    padding-bottom: 220px;
   }
 
   @container (min-width: 1200px) {
-    .mid-cards>div:nth-child(1) {
-        position: relative;
-        bottom: 80px;
+    .mid-cards > div:nth-child(1) {
+      position: relative;
+      bottom: 80px;
     }
 
-    .mid-cards>div:nth-child(2) {
-        position: relative;
-        bottom: 40px;
+    .mid-cards > div:nth-child(2) {
+      position: relative;
+      bottom: 40px;
     }
 
-    .mid-cards>div:nth-child(4) {
-        position: relative;
-        top: 80px;
+    .mid-cards > div:nth-child(4) {
+      position: relative;
+      top: 80px;
     }
 
-    .mid-cards>div:nth-child(5) {
-        position: relative;
-        top: 40px;
+    .mid-cards > div:nth-child(5) {
+      position: relative;
+      top: 40px;
     }
 
-    .mid-cards>div:nth-child(7) {
-        position: relative;
-        top: 80px;
+    .mid-cards > div:nth-child(7) {
+      position: relative;
+      top: 80px;
     }
 
-    .mid-cards>div:nth-child(8) {
-        position: relative;
-        top: 120px;
+    .mid-cards > div:nth-child(8) {
+      position: relative;
+      top: 120px;
     }
 
-    .mid-cards>div:nth-child(9) {
-        position: relative;
-        top: 160px;
+    .mid-cards > div:nth-child(9) {
+      position: relative;
+      top: 160px;
     }
   }
 
+  /* Modern House */
   .modern-house-container {
-    flex-direction: row; /* not working */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .modern-house-image {
+    left: 80px;
+    top: -60px;
+  }
+
+  .modern-house-bg {
+    left: -9%;
+  }
+
+  .modern-house-right {
+    gap: 40px;
+    margin-right: 150px;
+    margin-bottom: 80px;
+  }
+
+  .house-description {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  .house-description span::after {
+    content: "\a";
+    display: block;
+  }
+
+  .booking-btn {
+    width: 14.5rem;
+    height: 4rem;
+  }
+
+  /* Unique House */
+  .unique-house-image {
+    right: 80px;
+    bottom: 135px;
+  }
+
+  .unique-house-bg {
+    right: -9%;
+  }
+
+  .unique-house-left {
+    margin-left: 150px;
+    margin-bottom: 80px;
+    gap: 40px;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 70px 40px;
+    gap: 60px;
+  }
+
+  .newsletter-heading {
+    max-width: 900px;
+  }
+
+  .newsletter-description {
+    font-size: 1.2rem;
+    color: hsla(0, 5%, 92%, 0.859);
+    min-width: 600px;
+    line-height: 1.9rem;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .email-container {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  .email-container input {
+    height: 60px;
+    width: 100%;
+    padding-left: 70px;
+  }
+
+  .sub-btn {
+    height: 60px;
+    width: 180px;
+  }
+
+  .email-img {
+    bottom: 18px;
+    left: 25px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 120px;
+  }
+
+  .footer-left {
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .social-media {
+    gap: 30px;
+  }
+
+  .footer-description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .footer-right {
+    gap: 60px;
+  }
+
+  @container (min-width: 850px) {
+    .footer-right {
+      gap: 110px;
+    }
+  }
+
+  .footer-list-container {
+    gap: 45px;
+  }
+
+  .footer-list {
+    gap: 30px;
+  }
+}
+
+/* Unique House */
+@media only screen and (min-width: 1360px) {
+  .unique-house-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding-top: 120px;
   }
 }

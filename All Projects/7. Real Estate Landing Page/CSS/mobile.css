@@ -123,7 +123,7 @@ a {
 }
 
 .hero-container span {
-  content: '\a';
+  content: "\a";
   display: block;
 }
 
@@ -142,10 +142,9 @@ a {
   }
 }
 
-
 /* Mid Section */
 
-.mid-section{
+.mid-section {
   background-color: var(--main-bg);
 }
 
@@ -185,7 +184,7 @@ a {
 }
 
 .mid-heading span {
-  content: '\a';
+  content: "\a";
   display: block;
 }
 
@@ -199,7 +198,7 @@ a {
   column-gap: 30px;
   margin-top: 80px;
   margin-bottom: 100px;
-  container-type:inline-size;
+  container-type: inline-size;
 }
 
 .card {
@@ -253,54 +252,53 @@ a {
   font-weight: 600;
 }
 
-.mid-cards>div:nth-child(2) {
+.mid-cards > div:nth-child(2) {
   background: url(../Assets/Photos/cardImage2.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(3) {
+.mid-cards > div:nth-child(3) {
   background: url(../Assets/Photos/cardImage3.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(4) {
+.mid-cards > div:nth-child(4) {
   background: url(../Assets/Photos/cardImage4.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(5) {
+.mid-cards > div:nth-child(5) {
   background: url(../Assets/Photos/cardImage5.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(6) {
+.mid-cards > div:nth-child(6) {
   background: url(../Assets/Photos/cardImage6.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(7) {
+.mid-cards > div:nth-child(7) {
   background: url(../Assets/Photos/cardImage7.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(8) {
+.mid-cards > div:nth-child(8) {
   background: url(../Assets/Photos/cardImage8.png);
   background-size: cover;
   background-position: center;
 }
 
-.mid-cards>div:nth-child(9) {
+.mid-cards > div:nth-child(9) {
   background: url(../Assets/Photos/cardImage9.png);
   background-size: cover;
   background-position: center;
 }
-
 
 /* Mid Center */
 .modern-house-container {
@@ -312,25 +310,10 @@ a {
   margin-bottom: 80px;
 }
 
-.modern-house-left {
-  container-type: inline-size;
-}
-
-/* .house-img {
-  width: 70vw;
-  height: 70vw;
-  max-width: 450px;
-  max-height: 450px;
-  border-radius: 50px;
-  position: absolute;
-  z-index: 1;
-} */
-
 .house-bg {
   width: 110%;
   max-width: 690px;
   position: relative;
-
 }
 
 .modern-house-bg {
@@ -338,7 +321,7 @@ a {
 }
 
 .house-img {
-  height: 80%;
+  height: 70vw;
   width: 80%;
   max-width: 490px;
   max-height: 490px;
@@ -367,13 +350,215 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  max-width: 510px;
 }
 
-.modern-house-heading {
+.house-heading {
   font-size: var(--heading-font-size);
 }
 
-.modern-house-heading span::after {
-  content: '\a';
+.house-heading span::after {
+  content: "\a";
   display: block;
+}
+
+.house-description {
+  color: #727272;
+}
+
+/* Unique House */
+.unique-house-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.unique-house-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  max-width: 510px;
+}
+
+.unique-house-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.unique-house-image {
+  background: url(../Assets/Photos/featuresImage2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  right: 70px;
+  bottom: 80px;
+  position: absolute;
+}
+
+.unique-house-bg {
+  right: -5%;
+  position: relative;
+}
+
+/* Newsletter */
+.newsletter {
+  background: var(--blue);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.newsletter-heading {
+  font-size: var(--heading-font-size);
+  text-align: center;
+  color: #ffffff;
+  max-width: 450px;
+}
+
+.newsletter-description {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: hsl(0, 5%, 92%);
+  max-width: 450px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.email-container {
+  position: relative;
+}
+
+.email-container input {
+  height: 40px;
+  min-width: 270px;
+  border-radius: 100vmax;
+  background-color: hsl(241, 58%, 57%);
+  border: none;
+  padding-left: 50px;
+}
+
+.email-container input::placeholder {
+  color: hsla(0, 0%, 100%, 0.674);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.email-img {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  bottom: 7px;
+}
+
+.sub-btn {
+  background-color: #ffffff;
+  color: var(--blue);
+}
+
+.sub-btn:hover {
+  background-color: var(--blue);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.footer-section {
+  background-color: var(--main-bg);
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  container-type: inline-size;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: auto;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-description {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 31%);
+}
+
+.footer-description span::after {
+  content: "\a";
+  display: block;
+}
+
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-list-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 400;
+  gap: 20px;
+}
+
+.footer-list a {
+  color: hsl(0, 0%, 46%);
+}
+
+.footer-list a:hover {
+  color: var(--blue);
+}
+
+@container (max-width: 345px) {
+  .footer-right {
+    gap: 20px;
+  }
 }
