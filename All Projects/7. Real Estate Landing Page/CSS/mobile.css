@@ -453,12 +453,19 @@ a {
   background-color: hsl(241, 58%, 57%);
   border: none;
   padding-left: 50px;
+  caret-color: hsla(0, 0%, 100%, 0.674);
+  color: hsla(0, 0%, 100%, 0.674);
+  font-size: 1.1rem;
 }
 
 .email-container input::placeholder {
   color: hsla(0, 0%, 100%, 0.674);
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+.email-container input:focus {
+  outline: hsl(241, 58%, 57%);
 }
 
 .email-img {
@@ -510,6 +517,10 @@ a {
 .social-media {
   display: flex;
   gap: 10px;
+}
+
+.social-media img {
+  cursor: pointer;
 }
 
 .footer-description {
