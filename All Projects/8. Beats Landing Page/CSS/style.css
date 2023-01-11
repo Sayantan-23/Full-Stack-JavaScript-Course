@@ -1,0 +1,96 @@
+@media only screen and (min-width: 768px) {
+  /* Navbar */
+  .navbar-container {
+    padding-top: 40px;
+  }
+
+  .toggle-bar {
+    display: none;
+  }
+
+  .nav-elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .grow-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .grow-list a {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .grow-list .list-item {
+    position: relative;
+  }
+
+  .grow-list .list-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    background-color: #ffffff;
+    transform-origin: bottom center;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  .grow-list .list-item:hover::after {
+    width: 70%;
+    left: 17%;
+  }
+
+  .grow-list .list-item:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-btn {
+    width: 150px;
+    height: 50px;
+  }
+
+  /* Hero Section */
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .main-img {
+    right: 75px;
+  }
+
+  @container (min-width: 800px) {
+    .main-img {
+      right: 100px;
+    }
+  }
+
+  .hero-right {
+    margin-top: 10px;
+  }
+
+  .on-ear {
+    left: 60px;
+  }
+
+  .hero-heading {
+    margin-top: -25px;
+  }
+
+
+  /* Logo Section */
+  .logo-container {
+    gap: 150px;
+    padding-top: 20px;
+  }
+
+
+}
