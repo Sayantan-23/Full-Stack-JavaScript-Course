@@ -85,12 +85,97 @@
     margin-top: -25px;
   }
 
-
   /* Logo Section */
   .logo-container {
-    gap: 150px;
+    gap: 135px;
     padding-top: 20px;
   }
 
+  /* Mid Section */
+  /* Specs */
+  .specs-container {
+    margin-top: 130px;
+  }
 
+  .specs-main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .specs-details {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .spec-features {
+    width: 150px;
+  }
+
+  .specs-details > div:nth-child(1) {
+    position: relative;
+    top: 0px;
+    left: 30px;
+  }
+
+  .specs-details > div:nth-child(2) {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .specs-details > div:nth-child(3) {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .specs-details > div:nth-child(4) {
+    position: relative;
+    top: 0px;
+    left: 30px;
+  }
+
+  /* Case */
+  .case-main{
+    gap: 80px;
+  }
+
+  /* Offer/Buy Now Section */
+  .offer-image-container-mobile {
+    display: none;
+  }
+
+  .offer-image-container {
+    display: flex;
+  }
+
+  .offer-container {
+    flex-direction: row;
+    padding: 40px 20px;
+  }
+
+  /* Footer */
+  .footer-container {
+    gap: 100px;
+  }
+
+  .footer-list-container {
+    gap: 100px;
+  }
+
+  .footer-form > input {
+    width: 320px;
+  }
+
+  .twitter-logo {
+    top: 60px;
+    left: 0px;
+  }
+
+  .up-arrow-img {
+    right: 40px;
+  }
 }
