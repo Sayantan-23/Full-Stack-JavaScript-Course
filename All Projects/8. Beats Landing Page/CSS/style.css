@@ -10,6 +10,7 @@
 
   .nav-elements-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 60px;
@@ -17,6 +18,7 @@
 
   .grow-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -46,6 +48,10 @@
   .grow-list .list-item:hover::after {
     width: 70%;
     left: 17%;
+  }
+
+  .grow-list .list-item {
+    transition: 0.2s ease-in-out;
   }
 
   .grow-list .list-item:hover {
