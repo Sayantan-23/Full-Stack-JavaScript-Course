@@ -10,6 +10,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+li, a, .btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -206,7 +210,7 @@ li a {
 }
 
 .hero-btn::after {
-  width: 250px;
+  width: 280px;
   transform: translate(40px, -70px) scale(0.1);
 }
 

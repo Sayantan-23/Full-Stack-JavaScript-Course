@@ -1,4 +1,4 @@
-# *Gaming Site Landing Page* Project
+# *Real Estate Landing Page* Project
 
 ### Project Link - [https://bright-croissant-78fd8e.netlify.app/](https://bright-croissant-78fd8e.netlify.app/)
 
