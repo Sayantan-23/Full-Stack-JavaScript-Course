@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper-container {
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+:root {
+  --bg-1: linear-gradient(
+    0deg,
+    rgba(226, 241, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --bg-2: linear-gradient(
+    0deg,
+    rgba(252, 248, 255, 1) 0%,
+    rgba(242, 248, 255, 1) 100%
+  );
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn::selection {
+    background: none;
+}
