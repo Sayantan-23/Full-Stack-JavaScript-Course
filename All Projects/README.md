@@ -24,12 +24,12 @@
 
 | No. 	| **Project Name** | **Project Live Link** | **Project Folder** | **Assignment Date**  	|
 |-----	|-----------------------------	|-------------------------------------------------------	|----------------------------------------------------------------------	|----------------------	|
-| 1   	| Gaming Site Landing Page    	| [Live](https://friendly-churros-11f90b.netlify.app/)   	| [Click Here](./All%20Projects/6.%20Gaming%20Site%20Landing%20Page/)  	| 10th & 11th December 	|
-| 2   	| Hosting Site Landing Page   	| [Live](https://golden-cassata-eb391c.netlify.app/)     	| [Click Here](./All%20Projects/5.%20Hosting%20Site%20Landing%20Page/) 	| 10th & 11th December 	|
-| 3   	| Credit Card Landing Page    	| [Live](https://harmonious-chimera-8e5272.netlify.app/) 	| [Click Here](./All%20Projects/4.%20Credit%20Card%20Landing%20Page/)  	| 10th & 11th December 	|
-| 4   	| Real Estate Landing Page    	| [Live](https://bright-croissant-78fd8e.netlify.app/)      | [Click Here](./All%20Projects/7.%20Real%20Estate%20Landing%20Page/)   | 10th & 11th December 	|
-| 5   	| Beats Landing Page          	| [Live](https://beatsaudiohq.netlify.app/)                 | [Click Here](./All%20Projects/8.%20Beats%20Landing%20Page/)   | 10th & 11th December 	|
-| 6   	| Data Analytics Landing Page 	| Working on it                                         	|                                                                      	| 10th & 11th December 	|
+| 1   	| Credit Card Landing Page    	| [Live](https://harmonious-chimera-8e5272.netlify.app/) 	| [Click Here](./4.%20Credit%20Card%20Landing%20Page/)  	| 10th & 11th December 	|
+| 2   	| Hosting Site Landing Page   	| [Live](https://golden-cassata-eb391c.netlify.app/)     	| [Click Here](./5.%20Hosting%20Site%20Landing%20Page/) 	| 10th & 11th December 	|
+| 3   	| Gaming Site Landing Page    	| [Live](https://friendly-churros-11f90b.netlify.app/)   	| [Click Here](./6.%20Gaming%20Site%20Landing%20Page/)  	| 10th & 11th December 	|
+| 4   	| Real Estate Landing Page    	| [Live](https://bright-croissant-78fd8e.netlify.app/)      | [Click Here](./7.%20Real%20Estate%20Landing%20Page/)   | 10th & 11th December 	|
+| 5   	| Beats Landing Page          	| [Live](https://beatsaudiohq.netlify.app/)                 | [Click Here](./8.%20Beats%20Landing%20Page/)           | 10th & 11th December 	|
+| 6   	| Data Analytics Landing Page   | [Live](https://data-lab.netlify.app/)                     | [Click Here](./9.%20Data%20Analytics%20Landing%20Page/)| 10th & 11th December 	|
 
 
 ## <img height="20px" src="https://user-images.githubusercontent.com/110087385/210603643-e581d4a4-9ecc-41a3-bf6a-e05bc6123496.png"> Tailwind CSS Project
