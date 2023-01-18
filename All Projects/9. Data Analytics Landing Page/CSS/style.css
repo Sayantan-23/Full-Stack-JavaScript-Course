@@ -1,0 +1,45 @@
+@media only screen and (min-width: 768px) {
+    
+    /* Navbar */
+    .toggle-bar {
+        display: none;
+    }
+
+    .navbar-container {
+        padding-top: 30px;
+    }
+
+    .nav-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .grow-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: 20px;
+    }
+
+    .hero-left {
+        gap: 35px;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+        max-width: 460px;
+        line-height: 3.3rem;
+    }
+
+
+
+}
