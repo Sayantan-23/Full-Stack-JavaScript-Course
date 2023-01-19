@@ -227,6 +227,25 @@ li, .btn, .trial-btn, .toggle-bar {
   transition: transform 0.2s ease;
 }
 
+.grow-list li:nth-child(1)::after {
+  position: relative;
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  top: -2px;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  margin-left: 7px; 
+  rotate: 45deg;
+}
+
+.grow-list li:nth-child(1):hover::after {
+  transform: scale(1.1);
+  border-color: var(--purple);
+  transition: all 0.2s ease-in-out;
+}
+
 .nav-btn:hover {
   border-color: transparent;
   transition: 0.2s;
