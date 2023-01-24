@@ -11,8 +11,8 @@
 
 ## <img height="18px" src="https://user-images.githubusercontent.com/110087385/214230548-73bce776-1fc4-4373-bca2-29b1213e0062.jpg"> JavaScript Assignments
 
-| No. 	| **Name**                            	| **Folder Link**                           	| **Date**     	|
-|-----	|-------------------------------------	|-------------------------------------------	|--------------	|
-| 1   	| 8th January JavaScript 30 Questions 	| [Click Here](./JavaScript%20Assignments/) 	| 8th January  	|
+| No. 	| **Name**                            	| **Folder Link**                                                                	| **Date**     	|
+|-----	|-------------------------------------	|--------------------------------------------------------------------------------	|--------------	|
+| 1   	| 8th January JavaScript 30 Questions 	| [Click Here](./JavaScript%20Assignments/8th%20Jan%20JavaScript%20Assignments/) 	| 8th January  	|
 | 2   	| 21st January Assignment on DOM      	| Working on it                                	| 21st January 	|
 | 3   	| 22nd January Assignment on DOM      	| Working on it                               	| 22nd January 	|

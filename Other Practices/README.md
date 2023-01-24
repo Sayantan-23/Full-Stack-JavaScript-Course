@@ -2,6 +2,8 @@
 
 ## HTML and CSS
 
-*[HTML and CSS Practice](./Learning%20HTML%20and%20CSS/README.md)*
+*[HTML and CSS Practice](./HTML%20%26%20CSS%20Practice/)*
 
-*[CSS Practice](./CSS%20Practice/README.md)*
+*[JavaScript Practice](./JavaScript%20Practice/)*
+
+
