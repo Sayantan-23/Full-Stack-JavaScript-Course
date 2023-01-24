@@ -2,10 +2,10 @@
 
 ## <img height="16px" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"><img height="16px" src="https://user-images.githubusercontent.com/110087385/210600757-c5cd4168-1913-4cb9-8c09-1d43f9a7565b.png"> HTML & CSS Assignments
 
-| No. 	| **Name**                    	| **Folder Link**                                   	|
-|-----	|-----------------------------	|---------------------------------------------------	|
-| 1   	| Homework 5th & 6th November 	| [Click here](./5th%20%26%206th%20Nov%20homework/) 	|
-| 2   	| Practice Files              	| [Click Here](./Other%20Practices/)                	|
+| No. 	| **Name**                    	| **Folder Link**                                   	          |
+|-----	|-----------------------------	|-------------------------------------------------------------    |
+| 1   	| Homework 5th & 6th November 	| [Click here](./5th%20%26%206th%20Nov%20homework/) 	          |
+| 2   	| Practice Files              	| [Click Here](../Other%20Practices/HTML%20%26%20CSS%20Practice/) |
 
 
 
