@@ -17,5 +17,5 @@
 |-----	|-------------------------------------	|--------------------------------------------------------------------------------------------	|-------------------------------------------	|--------------	|
 | 1   	| 8th January JavaScript 30 Questions 	| [Click Here](./JavaScript%20Assignments/8th%20Jan%20JavaScript%20Assignments/) 	|              | 8th January  	|
 | 2   	| 21st January Assignment on DOM      	| [Click Here](./JavaScript%20Assignments/21st%20Jan%20JavaScript%20Assignment/) 	| [live](https://createcircle.netlify.app/) 	                 | 21st January   |
-| 3   	| 22nd January Assignment on DOM      	| Working on it                                                                              	|                                           	| 22nd January 	|
+| 3   	| 22nd January Assignment on DOM      	| [Click Here](./JavaScript%20Assignments/22nd%20Jan%20JavaScript%20Assignment/)  	| [live](https://changebackgroundcolor23.netlify.app/)           | 22nd January   |
 | 4   	| JavaScript Practice Files           	| [Click Here](../Other%20Practices/JavaScript%20Practice/)                                   	|                                           	|              	|
