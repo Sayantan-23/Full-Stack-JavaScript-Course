@@ -9,6 +9,7 @@
 
 ```javascript
 // Solution Task 1
+
 const navLi = document.querySelector("nav ul");
 const element = document.createElement("li");
 element.innerHTML = "<a>Hire Me</a>";
@@ -23,6 +24,7 @@ navLi.appendChild(element);
 
 ```javascript
 // Solution Task 2
+
 const searchField = document.querySelector(".search-field input");
 searchField.placeholder = "Search My Project";
 ```
@@ -35,6 +37,7 @@ searchField.placeholder = "Search My Project";
 
 ```javascript
 // Solution Task 3
+
 const textField = document.querySelectorAll(".hero-left-section p span");
 textField[1].innerText = "an Employee";
 textField[2].innerText = "iNeuron Intelligence Pvt Ltd";
@@ -48,6 +51,7 @@ textField[2].innerText = "iNeuron Intelligence Pvt Ltd";
 
 ```javascript
 // Solution Task 4
+
 const imageField = document.querySelector(".hero-right-section img");
 imageField.src = "https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg";
 ```
@@ -60,6 +64,7 @@ imageField.src = "https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e60
 
 ```javascript
 // Solution Task 5
+
 const container = document.querySelector(".hero-right-section-btns");
 const button = document.createElement("button");
 button.innerText = "Support Me";
@@ -76,6 +81,7 @@ container.appendChild(button);
 
 ```javascript
 // Solution Task 1
+
 const accordianHeading = document.querySelectorAll(".accordian h3");
 const accordianDescription = document.querySelectorAll(".accordian p");
 
@@ -91,6 +97,7 @@ accordianDescription.forEach((val) => (val.style.backgroundColor = "#eeeeff"));
 
 ```javascript
 // Solution Task 2
+
 // Adding Skills Section in About
 const accordianContainer = document.querySelector(".accordian-wrapper");
 const accordianSkills = document.createElement("div");
@@ -130,7 +137,8 @@ accordianHeading.forEach((element) => {
 ![Task 1 Output](https://user-images.githubusercontent.com/110087385/216132890-6af89685-d975-4967-be4a-c6ff293674b0.png)
 
 ```javascript
-// Solution
+// Solution Assignment 3
+
 const name = document.querySelectorAll(".enterName, .userName");
 const email = document.querySelectorAll(".enterMail, .userEmail");
 const message = document.querySelectorAll(".enterMessage, .userMessage");
@@ -172,4 +180,51 @@ goblin.style.backgroundColor = "#82bb30";
 // wizard
 const wizard = document.querySelector(".clash-card__unit-stats--wizard");
 wizard.style.backgroundColor = "#4facff";
+```
+
+# 5. DOM Assignment 5
+>I have to change the font color of the Navbar links and the Recipe Gallery, add a new button beside "Contact", add new "Chinese" recipe in the recipe names and I have to add a new card in the "Recipe Gallery" with "add 6th card here" written in it.
+
+**After Update**
+![Assignment 5 Output](https://user-images.githubusercontent.com/110087385/216787474-706cebd8-6f46-409b-acef-d8b6b0e0df41.png)
+
+```javascript
+// Solution Assignment 5
+
+// Changing Colors Of Navbar Links
+const navElements = document.querySelectorAll(".nav-link");
+navElements.forEach((element) => (element.style.color = "#764a9f"));
+
+// Selecting Button Container
+const buttonContainer = document.querySelector(".nav-center div:nth-child(3)");
+// Creating New Button
+const subButton = document.createElement("div");
+const subButtonLink = document.createElement("a");
+subButtonLink.classList.add("btn");
+subButtonLink.innerText = "Pro Subscription";
+subButton.append(subButtonLink);
+buttonContainer.append(subButton);
+// Adding Style to the Button Container
+buttonContainer.style.display = "flex";
+buttonContainer.style.alignItems = "center";
+
+// Adding Chinese in Recipe Container
+const recipeNames = document.querySelector(".tags-container div");
+const newRecipe = document.createElement("a");
+newRecipe.href = "#";
+newRecipe.innerText = "Chinese (7)";
+recipeNames.append(newRecipe);
+
+// Changing Font Color in Recipe Gallery
+const recipeDetails = document.querySelectorAll(".recipe-name, .recipe-disp");
+recipeDetails.forEach((element) => (element.style.color = "#764a9f"));
+
+// Adding 6th Option in Recipe Gallery
+const recipeGallery = document.querySelector(".recipe-gallery");
+const newCard = document.createElement("div");
+newCard.classList.add("card");
+newCard.innerText = "add 6th card here";
+newCard.style.fontWeight = "600";
+newCard.style.fontSize = "1.2rem";
+recipeGallery.appendChild(newCard);
 ```
