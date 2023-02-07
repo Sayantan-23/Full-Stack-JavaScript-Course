@@ -257,3 +257,136 @@ const price = document.querySelector(".app_price span");
 price.innerText = "$10";
 ```
 
+# 7. DOM Assignment 7
+
+### Task 1
+> I have to remove the languages that have "2.0" in their name.
+
+**After Update**
+![Task 1 Output](https://user-images.githubusercontent.com/110087385/216918301-183a087e-1081-4517-ba81-99a6a03377f4.png)
+
+```javascript
+// Solution Assignment 7 Task 1 
+
+const languages = document.querySelectorAll(".main__languages a");
+languages.forEach((element) => {
+  if (element.innerText.includes("2.0")) {
+    element.style.display = "none";
+  }
+});
+```
+
+### Task 2
+> I have to use JavaScript to write something in the input box and submit the form. This should refresh the page and the languages in the left card should come back.
+
+**After Update**
+![Task 2 Output](https://user-images.githubusercontent.com/110087385/216929481-511736c0-31a7-4afb-bc40-86e6f32f3c1b.png)
+
+```javascript
+// Solution Assignment 7 Task 2
+
+const languages = document.querySelectorAll(".main__languages a");
+languages.forEach((element) => {
+  if (element.innerText.includes("2.0")) {
+    element.style.display = "none";
+  }
+});
+
+const inputField = document.querySelector(".main__form-input");
+const formButton = document.querySelector(".main__form-btn");
+inputField.disabled = false;
+formButton.disabled = false;
+inputField.value = "iNeuron";
+```
+
+# 8. DOM Assignment 8
+
+### Task 1
+> I have to add new text to the side bar and I have to add scroll to it.
+
+**After Update**
+![Task 1 Output](https://user-images.githubusercontent.com/110087385/216953047-a95d143b-bb0c-4634-b320-9daa3ae06afb.png)
+
+```javascript
+// Solution Assignment 8 Task 1
+
+// Creating A Custom Heading
+const customTextHeading = document.createElement("h2")
+customTextHeading.innerText = "This is my custom heading"
+customTextHeading.classList.add("new-head")
+// Creating A Custom Text
+const customText = document.createElement("p")
+customText.innerText = "This is my custom text"
+customText.classList.add("new-p")
+// Selecting The Container 
+const textContainer = document.querySelector(".col-lg-4")
+// Adding Text Heading and Text in the Container
+textContainer.append(customTextHeading)
+textContainer.append(customText)
+// Adding overflow-y: scroll to it
+textContainer.style.overflowY = "scroll"
+```
+
+### Task 2
+> I have to remove the background image from the body.
+
+**After Update**
+![Task 2 Output](https://user-images.githubusercontent.com/110087385/216961307-2c65c954-7ecd-45d7-bd22-60d451da02da.png)
+
+```javascript
+// Solution Assignment 8 Task 2
+
+const body = document.querySelector("body");
+body.style.backgroundImage = "none";
+```
+
+### Task 3
+> I have to add functionality to the Navbar toggle button.
+
+**After Update**
+![Task 3 Output](https://user-images.githubusercontent.com/110087385/216966844-47c3df20-41a9-4bfc-8ed7-decffe6f2001.png)
+
+
+```javascript
+// Solution  Assignment 8 Task 3
+
+const toggleButton = document.querySelector(".navbar-toggler");
+const navList = document.querySelector("#navbarTogglerDemo01");
+toggleButton.addEventListener("click", () => {
+  navList.classList.toggle("collapse");
+});
+```
+
+# 9. DOM Assignment 9
+
+### Task 1
+> I have to change the "font-family" and the font "color" of the card heading.
+
+**After Update**
+![Task 1 Output](https://user-images.githubusercontent.com/110087385/216970107-b4f3e8b3-69ab-4a0a-a405-51f927fa212d.png)
+
+```javascript
+// Solution Assignment 9 Task 1
+
+const title = document.querySelector(".caption .title");
+title.style.fontFamily = "serif";
+title.style.color = "#dc143c";
+```
+
+### Task 2
+> I have to change the hover color of the "Add to Cart" button.
+
+**After Update**
+![Task 2 Output](https://user-images.githubusercontent.com/110087385/217021279-8ad63d04-7b11-47bf-93c7-171b6b581d04.png)
+
+```javascript
+// Solution Assignment 9 Task 2
+
+const cartButton = document.querySelector(".add-to-cart");
+cartButton.addEventListener("mouseover", () => {
+  cartButton.style.backgroundColor = "#dc143c";
+});
+cartButton.addEventListener("mouseout", () => {
+  cartButton.style.backgroundColor = "#3c8067";
+});
+```
