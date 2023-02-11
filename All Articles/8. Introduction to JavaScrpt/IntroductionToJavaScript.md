@@ -1,0 +1,3 @@
+## Click on the link to read the below article...
+
+[Introduction to JavaScript](https://sayantan23.hashnode.dev/introduction-to-javascript)
