@@ -15,3 +15,5 @@
 7. *[Git & GitHub](https://sayantan23.hashnode.dev/git-and-github)*
 
 8. *[Introduction to JavaScript](https://sayantan23.hashnode.dev/introduction-to-javascript)*
+
+9. *[Array & Array Methods in JavaScript](https://sayantan23.hashnode.dev/array-and-array-methods-in-javascript)*

@@ -1,0 +1,3 @@
+## Click on the link to read the below article...
+
+[Array & Array Methods in JavaScript](https://sayantan23.hashnode.dev/array-and-array-methods-in-javascript)
