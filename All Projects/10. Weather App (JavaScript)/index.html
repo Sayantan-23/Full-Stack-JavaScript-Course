@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <section class="upper-section">
+        <div class="upper-containers">
+          <!-- Current Weather -->
+          <div class="weather-card">
+            <div class="search-container">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Enter City Name"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Enter City Name'"
+              />
+              <img src="./Assets/search.png" alt="search-icon" />
+            </div>
+            <img src="./Assets/rainy-day.png" alt="" class="weather-icon" />
+            <p class="weather-temp">30<span>&deg;</span><span>C</span></p>
+            <p class="weather-status">Rainy</p>
+            <p class="location">
+              <span><img src="./Assets/google-maps.png" alt="" /></span
+              >Kolkata<span>,&nbsp;</span><span>India</span>
+            </p>
+            <p class="date-time">17/02/2023 12:30pm</p>
+          </div>
+          <!-- Weather Highlights -->
+          <div>
+            <p class="highlight-heading">Today's highlight</p>
+            <div class="highlight-cards">
+              <div class="card card-uv">
+                <span>UV Index</span>
+                <img src="./Assets/uv.png" alt="" />
+                <span class="uv-data">4</span>
+              </div>
+              <div class="card card-wind">
+                <span>Wind Status</span>
+                <img src="./Assets/wind.png" alt="" />
+                <span class="wind-data">6.50<span>km/h</span></span>
+              </div>
+              <div class="card card-sun">
+                <span>Sunrise & Sunset</span>
+                <div class="sunrise">
+                  <img src="./Assets/sunrise.png" alt="" />
+                  <span>6:00 AM</span>
+                </div>
+                <div class="sunset">
+                  <img src="./Assets/sunset.png" alt="" />
+                  <span>6:00 PM</span>
+                </div>
+              </div>
+              <div class="card card-humidity">
+                <span>Humidity</span>
+                <img src="./Assets/humidity.png" alt="" />
+                <span class="humidity-data">50<span>%</span></span>
+              </div>
+              <div class="card card-visibility">
+                <span>Visibility</span>
+                <img src="./Assets/haze.png" alt="" />
+                <span class="visibility-data">4.2<span>km</span></span>
+              </div>
+              <div class="card card-feels-like">
+                <span>Feels Like</span>
+                <span class="feels-like-data">28 <span>&deg;</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lower-section">
+        <div class="forecast-container">
+          <!-- Card 1 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- Card 5 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- card 6 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+          <!-- card 7 -->
+          <div class="forecast-card">
+            <span class="days">Monday</span>
+            <img src="./Assets/rain.png" alt="" />
+            <p class="temp">
+              <span>Temp</span>
+              <span>32<span>&deg;C</span></span>
+            </p>
+            <p class="rain">
+              <span>Chances of Rain</span>
+              <span class="rain-data">0</span>
+            </p>
+            <p class="wind-speed">
+              <span>Wind Speed</span>
+              <span class="wind-data">4.5<span>km/h</span></span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
