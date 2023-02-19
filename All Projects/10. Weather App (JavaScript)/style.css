@@ -16,7 +16,7 @@ img {
 }
 
 .wrapper-container {
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto;
   background-color: hsl(260, 20%, 96%);
   border-radius: 20px;
@@ -61,14 +61,14 @@ img {
 }
 
 .weather-icon {
-  width: 128px;
+  width: 112px;
   object-fit: contain;
   margin: auto;
   margin-top: 20px;
 }
 
 .weather-temp {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 300;
   margin: auto;
 }
@@ -86,9 +86,11 @@ img {
 }
 
 .location {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: baseline; */
+  margin: auto;
+  margin-top: 5px;
   font-size: 1.1rem;
 }
 
@@ -98,4 +100,53 @@ img {
 
 .date-time {
   margin: auto;
+}
+
+.weather-highlight-container {
+  padding: 15px;
+  padding-top: 0;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-heading {
+  color: hsl(180, 0%, 44%);
+  font-size: 1.1rem;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 120px;
+}
+
+.sunrise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.sunset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
