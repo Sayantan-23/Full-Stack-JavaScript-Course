@@ -30,9 +30,13 @@ img {
 .weather-card {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: #fff;
   border-radius: 15px;
+  max-height: 430px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-container {
@@ -40,13 +44,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  gap: 5px;
 }
 
 .search-container img{
   position: absolute;
   width: 24px;
-  right: 15px;
+  left: 10px;
 }
 
 .search-container input {
@@ -54,14 +58,31 @@ img {
   border-radius: 100vmax;
   border: none;
   padding: 10px 15px;
-  width: 250px;
+  padding-left: 45px;
+  width: 190px;
   outline: none;
   color: hsl(180, 0%, 44%);
   font-size: 14px;
 }
 
+.search-btn {
+  padding: 10px 15px;
+  background-color: hsla(233, 14%, 89%, 0.829);
+  border: none;
+  outline: none;
+  border-radius: 100vmax;
+  font-size: 14px;
+  color: hsl(180, 0%, 44%);
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: hsla(232, 12%, 75%, 0.829);
+  color: #000;
+}
+
 .weather-icon {
-  width: 112px;
+  width: 96px;
   object-fit: contain;
   margin: auto;
   margin-top: 20px;
@@ -73,7 +94,7 @@ img {
   margin: auto;
 }
 
-.weather-temp span:nth-child(2) {
+.weather-temp span:nth-child(3) {
   font-size: 1.5rem;
   color: hsl(240, 1%, 55%);
 }
@@ -113,6 +134,7 @@ img {
 .highlight-heading {
   color: hsl(180, 0%, 44%);
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .highlight-cards {
@@ -149,4 +171,57 @@ img {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.forecast-heading {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color :hsl(180, 0%, 44%);
+  padding-left: 20px;
+  margin-bottom: -5px;
+}
+
+.forecast-card {
+  display: flex;
+  align-items: center;
+  row-gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.temp, .rain, .wind-speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #ececf2a9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.forecast-card img {
+  width: 40px;
+}
+
+.forecast-card>p>span:nth-child(1) {
+  font-weight: 500;
+}
+
+
+/* For Mobile */
+@media only screen and (max-width: 668px) {
+  
+  .upper-containers {
+    flex-direction: column;
+  }
 }

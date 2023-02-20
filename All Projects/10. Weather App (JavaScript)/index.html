@@ -19,7 +19,7 @@
         <div class="upper-containers">
           <!-- Current Weather -->
           <div class="weather-card">
-            <div class="search-container">
+            <form class="search-container" onsubmit="getData(event)">
               <input
                 type="search"
                 name="search"
@@ -29,19 +29,22 @@
                 onblur="this.placeholder = 'Enter City Name'"
               />
               <img src="./Assets/search.png" alt="search-icon" />
-            </div>
+              <button type="submit" class="search-btn">Search</button>
+            </form>
             <img src="./Assets/rainy-day.png" alt="" class="weather-icon" />
-            <p class="weather-temp">30<span>&deg;</span><span>C</span></p>
+            <p class="weather-temp">
+              <span class="curr-temp">30</span><span>&deg;</span><span>C</span></p>
             <p class="weather-status">Rainy</p>
-            <p class="location">
-              <span><img src="./Assets/google-maps.png" alt="" /></span
-              >Kolkata<span>,&nbsp;</span><span>India</span>
-            </p>
+            <div class="location">
+              <img src="./Assets/google-maps.png" alt="" />
+              <span class="city">Kolkata</span>
+              <span>,&nbsp;</span><span class="country">India</span>
+            </div>
             <!-- <p class="date-time">17/02/2023 12:30pm</p> -->
           </div>
           <!-- Weather Highlights -->
           <div class="weather-highlight-container">
-            <p class="highlight-heading">Today's highlights</p>
+            <h2 class="highlight-heading">Today's highlights</h2>
             <div class="highlight-cards">
               <div class="card card-uv">
                 <span>UV Index</span>
@@ -76,8 +79,10 @@
               </div>
               <div class="card card-feels-like">
                 <span>Feels Like</span>
-                <img src="./Assets/weather.png" alt="">
-                <span class="feels-like-data">28 <span>&deg;</span></span>
+                <img src="./Assets/weather.png" alt="" />
+                <span>
+                  <span class="feels-like-data">28</span><span>&deg;C</span>
+                </span>
               </div>
             </div>
           </div>
@@ -85,6 +90,7 @@
       </section>
       <section class="lower-section">
         <div class="forecast-container">
+          <h2 class="forecast-heading">7 Day Forecast</h2>
           <!-- Card 1 -->
           <div class="forecast-card">
             <span class="days">Monday</span>
@@ -94,7 +100,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -111,7 +117,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -128,7 +134,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -145,7 +151,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -162,7 +168,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -179,7 +185,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -196,7 +202,7 @@
               <span>32<span>&deg;C</span></span>
             </p>
             <p class="rain">
-              <span>Chances of Rain</span>
+              <span>Chances of Rain(%)</span>
               <span class="rain-data">0</span>
             </p>
             <p class="wind-speed">
@@ -207,5 +213,6 @@
         </div>
       </section>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
