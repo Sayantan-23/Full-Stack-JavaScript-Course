@@ -98,6 +98,7 @@ const getData = async (event) => {
 
   const weatherData = await fetchData.json();
   data = weatherData;
+  console.log(data);
 
   currTemp.innerText = data.current.temp_c;
   weatherImage.src = data.current.condition.icon;

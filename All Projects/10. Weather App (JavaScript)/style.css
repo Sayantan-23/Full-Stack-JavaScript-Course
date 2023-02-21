@@ -27,6 +27,13 @@ img {
   display: flex;
 }
 
+.current-weather-heading {
+  color: hsl(180, 0%, 44%);
+  font-size: 1.1rem;
+  margin-top: -1px;
+  margin-left: 15px;
+}
+
 .weather-card {
   display: flex;
   flex-direction: column;
@@ -212,18 +219,35 @@ img {
   background-color: #ececf2a9;
   padding: 10px;
   border-radius: 10px;
+  width: 120px;
+  height: 90px;
+  text-align: center;
 }
 
 .forecast-card img {
   width: 40px;
 }
 
-.forecast-card > p > span:nth-child(1) {
+.days,
+.forecast-weather-condition,
+.temp > span,
+.rain > span:nth-child(1),
+.humidity > span {
   font-weight: 500;
 }
 
 /* For Mobile */
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 674px) {
+
+  body {
+    padding: 0;
+  }
+
+  .wrapper-container {
+    border-radius: 0;
+    padding: 15px 5px;
+  }
+
   .upper-containers {
     flex-direction: column;
   }
