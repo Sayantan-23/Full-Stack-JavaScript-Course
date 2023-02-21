@@ -33,7 +33,8 @@
             </form>
             <img src="./Assets/rainy-day.png" alt="" class="weather-icon" />
             <p class="weather-temp">
-              <span class="curr-temp">30</span><span>&deg;</span><span>C</span></p>
+              <span class="curr-temp">30</span><span>&deg;</span><span>C</span>
+            </p>
             <p class="weather-status">Rainy</p>
             <div class="location">
               <img src="./Assets/google-maps.png" alt="" />
@@ -70,12 +71,16 @@
               <div class="card card-humidity">
                 <span>Humidity</span>
                 <img src="./Assets/humidity.png" alt="" />
-                <span class="humidity-data">50<span>%</span></span>
+                <span>
+                  <span class="humidity-data">50</span><span>%</span>
+                </span>
               </div>
               <div class="card card-visibility">
                 <span>Visibility</span>
                 <img src="./Assets/haze.png" alt="" />
-                <span class="visibility-data">4.2<span>km</span></span>
+                <span>
+                  <span class="visibility-data">4.2</span><span>km</span>
+                </span>
               </div>
               <div class="card card-feels-like">
                 <span>Feels Like</span>
@@ -93,122 +98,192 @@
           <h2 class="forecast-heading">7 Day Forecast</h2>
           <!-- Card 1 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Monday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- Card 2 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Tuesday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- card 3 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Wednesday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- Card 4 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Thursday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- Card 5 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Friday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- card 6 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Saturday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
           <!-- card 7 -->
           <div class="forecast-card">
-            <span class="days">Monday</span>
-            <img src="./Assets/rain.png" alt="" />
-            <p class="temp">
+            <div class="date">
+              <span class="days">Sunday</span>
+              <span class="forecast-date"></span>
+            </div>
+            <div class="weather">
+              <span class="forecast-weather-condition"></span>
+              <img class="forecast-image-data" src="./Assets/rain.png" alt="" />
+            </div>
+            <div class="temp">
               <span>Temp</span>
-              <span>32<span>&deg;C</span></span>
-            </p>
+              <div>
+                <span class="forecast-temp-data">32</span><span>&deg;C</span>
+              </div>
+            </div>
             <p class="rain">
               <span>Chances of Rain(%)</span>
-              <span class="rain-data">0</span>
+              <span class="forecast-rain-data">0</span>
             </p>
-            <p class="wind-speed">
-              <span>Wind Speed</span>
-              <span class="wind-data">4.5<span>km/h</span></span>
-            </p>
+            <div class="humidity">
+              <span>Humidity</span>
+              <div>
+                <span class="forecast-humidity-data">50</span><span>%</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

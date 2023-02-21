@@ -2,7 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -47,7 +47,7 @@ img {
   gap: 5px;
 }
 
-.search-container img{
+.search-container img {
   position: absolute;
   width: 24px;
   left: 10px;
@@ -145,7 +145,6 @@ img {
   gap: 20px;
 }
 
-
 .card {
   background-color: #fff;
   display: flex;
@@ -183,7 +182,7 @@ img {
 .forecast-heading {
   font-size: 1.1rem;
   font-weight: 400;
-  color :hsl(180, 0%, 44%);
+  color: hsl(180, 0%, 44%);
   padding-left: 20px;
   margin-bottom: -5px;
 }
@@ -192,18 +191,24 @@ img {
   display: flex;
   align-items: center;
   row-gap: 20px;
+  column-gap: 10px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #fff;
   border-radius: 15px;
+  padding: 10px;
 }
 
-.temp, .rain, .wind-speed {
+.temp,
+.rain,
+.humidity,
+.weather,
+.date {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   background-color: #ececf2a9;
   padding: 10px;
   border-radius: 10px;
@@ -213,14 +218,12 @@ img {
   width: 40px;
 }
 
-.forecast-card>p>span:nth-child(1) {
+.forecast-card > p > span:nth-child(1) {
   font-weight: 500;
 }
 
-
 /* For Mobile */
 @media only screen and (max-width: 668px) {
-  
   .upper-containers {
     flex-direction: column;
   }
