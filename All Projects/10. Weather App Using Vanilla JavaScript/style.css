@@ -162,7 +162,8 @@ img {
   gap: 10px;
   border-radius: 10px;
   width: 150px;
-  height: 120px;
+  height: 130px;
+  text-align: center;
 }
 
 .sunrise {
@@ -237,7 +238,7 @@ img {
 }
 
 /* For Mobile */
-@media only screen and (max-width: 674px) {
+@media only screen and (max-width: 692px) {
 
   body {
     padding: 0;
