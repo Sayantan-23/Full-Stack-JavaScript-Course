@@ -23,8 +23,6 @@ const forecastCondition = document.querySelectorAll(
   ".forecast-weather-condition"
 );
 
-
-
 const onPageLoad = async () => {
   const defaultApiCall = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=e9f03c0935864a1ba58105924231102&q=kolkata&days=7`
@@ -62,8 +60,10 @@ const onPageLoad = async () => {
       "Saturday",
     ];
 
-    forecastDate[i].innerText = defaultWeatherData.forecast.forecastday[i].date
+    forecastDate[i].innerText = defaultWeatherData.forecast.forecastday[i].date;
     forecastCardDays[i].innerText = daysOfWeek[date.getDay()];
+    forecastCardDays[0].innerText = "Today";
+    forecastCardDays[1].innerText = "Tomorrow";
     forecastCondition[i].innerText =
       defaultWeatherData.forecast.forecastday[i].day.condition.text;
     forecastCardTemp[i].innerText =
@@ -78,8 +78,6 @@ const onPageLoad = async () => {
 };
 
 onPageLoad();
-
-
 
 let data;
 const getData = async (event) => {
@@ -132,6 +130,8 @@ const getData = async (event) => {
       .split("-")
       .join("/");
     forecastCardDays[i].innerText = daysOfWeek[date.getDay()];
+    forecastCardDays[0].innerText = "Today";
+    forecastCardDays[1].innerText = "Tomorrow";
     forecastCondition[i].innerText =
       data.forecast.forecastday[i].day.condition.text;
     forecastCardTemp[i].innerText = data.forecast.forecastday[i].day.avgtemp_c;
