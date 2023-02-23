@@ -1,0 +1,73 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-container {
+  max-width: 500px;
+  background-color: #fff;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+}
+
+.add-item input {
+  width: 85%;
+  height: 50px;
+  background-color: hsla(233, 14%, 89%, 0.829);
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: hsl(0, 0%, 44%);
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.plus-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(217, 83%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+
+}
+
+.plus-icon {
+  color: #004694;
+  height: 18px;
+}
+
+.plus-icon-container:hover {
+  background-color: #004694;
+}
+
+.plus-icon:hover {
+  color: hsl(217, 83%, 89%);
+}
+
+.plus-icon-container:hover .plus-icon {
+  color: hsl(217, 83%, 89%);
+}
