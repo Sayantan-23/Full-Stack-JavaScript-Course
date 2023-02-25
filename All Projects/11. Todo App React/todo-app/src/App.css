@@ -12,7 +12,7 @@ body {
   max-width: 500px;
   background-color: #fff;
   margin: auto;
-  padding: 15px;
+  padding: 15px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,11 +27,10 @@ body {
   align-items: center;
   width: 100%;
   gap: 10px;
-  position: relative;
 }
 
 .add-item input {
-  width: 85%;
+  width: 100%;
   height: 50px;
   background-color: hsla(233, 14%, 89%, 0.829);
   border: none;
@@ -48,10 +47,6 @@ body {
   border: none;
   border-radius: 10px;
   background-color: hsl(217, 83%, 89%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
   cursor: pointer;
 }
 
@@ -64,10 +59,85 @@ body {
   background-color: #004694;
 }
 
-.plus-icon:hover {
-  color: hsl(217, 83%, 89%);
-}
-
 .plus-icon-container:hover .plus-icon {
   color: hsl(217, 83%, 89%);
 }
+
+.todo-list {
+  width: 100%;
+}
+
+.item {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.item p {
+  background-color: hsla(233, 14%, 89%, 0.829);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-pen {
+  color: hsl(166, 67%, 23%);
+  height: 18px;
+}
+
+.pen-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsla(164, 33%, 65%, 0.611);
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pen-icon-container:hover {
+  background-color: hsl(166, 67%, 23%);
+}
+
+.pen-icon-container:hover .icon-pen {
+  color: hsl(164, 33%, 68%);
+}
+
+.icon-trash {
+  color: #832b4c;
+  height: 18px;
+}
+
+.trash-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(349, 100%, 91%);
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash-icon-container:hover {
+  background-color: #832b4c;
+}
+
+.trash-icon-container:hover .icon-trash {
+  color: hsl(349, 100%, 91%);
+}
+
