@@ -3,4 +3,23 @@ All Projects/3.Project 27th Nov VS Code Clone/tailwind.config.js/
 All Projects/4. Credit Card Landing Page (Dec 10th-11th)/tailwind.config.js/
 Other Practices/JavaScript Practice/node_modules/
 Assignments/JavaScript Assignments/node_modules/
+
+# React Todo App
+# dependencies
 All Projects/11. Todo App React/todo-app/node_modules/
+All Projects/11. Todo App React/todo-app/.pnp/
+All Projects/11. Todo App React/todo-app.pnp.js
+# testing
+All Projects/11. Todo App React/todo-app/coverage/
+# production
+All Projects/11. Todo App React/todo-app/build/
+# misc
+All Projects/11. Todo App React/todo-app/.DS_Store
+All Projects/11. Todo App React/todo-app/.env.local
+All Projects/11. Todo App React/todo-app/.env.development.local
+All Projects/11. Todo App React/todo-app/.env.test.local
+All Projects/11. Todo App React/todo-app/.env.production.local
+
+All Projects/11. Todo App React/todo-app/npm-debug.log*
+All Projects/11. Todo App React/todo-app/yarn-debug.log*
+All Projects/11. Todo App React/todo-app/yarn-error.log*
