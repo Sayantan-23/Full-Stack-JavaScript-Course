@@ -216,3 +216,9 @@ body {
   transform-origin: 100px 100px;
   transform: scale(1) translate(-13px, -75px);
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper-container {
+    margin-top: 20px;
+  }
+}
