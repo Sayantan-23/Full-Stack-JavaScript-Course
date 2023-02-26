@@ -1,0 +1,224 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-container {
+  max-width: 500px;
+  background-color: #fff;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.todo-icon {
+  width: 64px;
+}
+
+.todo-heading {
+  font-size: 2.2rem;
+  margin-top: 2px;
+  color: hsl(240, 0%, 48%);
+  letter-spacing: 4px;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.add-item input {
+  width: 100%;
+  height: 50px;
+  background-color: hsla(233, 14%, 89%, 0.829);
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: hsl(0, 0%, 44%);
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.plus-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(207, 95%, 83%);
+  cursor: pointer;
+}
+
+.plus-icon {
+  color: #004694;
+  height: 18px;
+}
+
+.plus-icon-container:hover {
+  background-color: hsla(229, 98%, 58%, 0.961);
+}
+
+.plus-icon-container:hover .plus-icon {
+  color: hsl(217, 83%, 89%);
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.list-heading {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: -5px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: hsl(240, 0%, 48%);
+}
+
+.item {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.item p {
+  background-color: hsla(233, 14%, 89%, 0.829);
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+.list-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-pen {
+  color: hsl(166, 67%, 23%);
+  height: 18px;
+}
+
+.pen-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsla(164, 33%, 65%, 0.611);
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pen-icon-container:hover {
+  background-color: hsl(166, 67%, 23%);
+}
+
+.pen-icon-container:hover .icon-pen {
+  color: hsl(164, 33%, 68%);
+}
+
+.icon-trash {
+  color: #832b4c;
+  height: 18px;
+}
+
+.trash-icon-container {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(349, 100%, 91%);
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash-icon-container:hover {
+  background-color: #832b4c;
+}
+
+.trash-icon-container:hover .icon-trash {
+  color: hsl(349, 100%, 91%);
+}
+
+.empty {
+  font-size: 1.1rem;
+  color: hsl(240, 0%, 48%);
+}
+
+/* Button */
+.btn {
+  margin-top: 10px;
+  padding: 10px 28px;
+  border-radius: 100vmax;
+  border: 2px solid #B9345A;
+  color: #B9345A;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  overflow: hidden;
+  outline: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
+.btn:hover {
+  color: #ffffff;
+  z-index: 0;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 200px;
+  background-color: #B9345A;
+  border-radius: 100vmax;
+  transform: translate(-25px, -75px) scale(0.1);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
+}
+
+.btn:hover::after {
+  opacity: 1;
+  transform-origin: 100px 100px;
+  transform: scale(1) translate(-13px, -75px);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-container {
+    margin-top: 20px;
+  }
+}
