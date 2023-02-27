@@ -42,10 +42,10 @@
 | No. 	| **Name**           	| **Live Link**                                	| **Folder Link**                                    	| **Date**      	|
 |-----	|--------------------	|----------------------------------------------	|----------------------------------------------------	|---------------	|
 | 1   	| Todo App           	| [Live](https://todoappreact-js.netlify.app/) 	| [Click Here](./All%20Projects/11.%20Todo%20App%20React/todo-app/) 	| 19th February 	|
-| 2   	| Rock Paper Scissor 	| Working on it                                	|                                                    	| 19th February 	|
-| 3   	| The Meal DB        	| Working on it                                	|                                                    	| 19th February 	|
-| 4   	| Pokémon App        	| Working on it                                	|                                                    	| 19th February 	|
-| 5   	| Movie App          	| Working on it                                	|                                                    	| 19th February 	|
+| 2   	| Rock Paper Scissor 	| Working on it                                	|  -                                                	| 19th February 	|
+| 3   	| The Meal DB        	| Working on it                                	|  -                                                	| 19th February 	|
+| 4   	| Pokémon App        	| Working on it                                	|  -                                                	| 19th February 	|
+| 5   	| Movie App          	| Working on it                                	|  -                                                	| 19th February 	|
 
 ## <img height="18px" src="https://user-images.githubusercontent.com/110087385/214230548-73bce776-1fc4-4373-bca2-29b1213e0062.jpg"> Vanilla JavaScript Project
 | No. 	| **Project Name** | **Project Live Link** | **Project Folder** | **Assignment Date**  	|
