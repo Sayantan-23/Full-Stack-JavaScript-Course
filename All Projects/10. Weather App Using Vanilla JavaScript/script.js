@@ -23,12 +23,51 @@ const forecastCondition = document.querySelectorAll(
   ".forecast-weather-condition"
 );
 
-const onPageLoad = async () => {
-  const defaultApiCall = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=e9f03c0935864a1ba58105924231102&q=kolkata&days=7`
-  );
 
-  const defaultWeatherData = await defaultApiCall.json();
+const getCurrentLocation = () => {
+	return new Promise((resolve, reject) => {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(
+				(position) => {
+					resolve({
+						latitude: position.coords.latitude,
+						longitude: position.coords.longitude,
+					});
+				},
+				() => {
+					reject('Unable to retrieve location data');
+				}
+			);
+		} else {
+			reject('Geolocation is not supported by this browser');
+		}
+	});
+};
+
+
+
+
+const onPageLoad = async () => {
+
+ let locationData;
+ try {
+		locationData = await getCurrentLocation();
+ } catch (error) {
+		console.error(error);
+		locationData = { latitude: null, longitude: null };
+ }
+
+const apiCallWithLocation = `https://api.weatherapi.com/v1/forecast.json?key=e9f03c0935864a1ba58105924231102&q=${locationData.latitude},${locationData.longitude}&days=7`;
+
+const defaultApiCall = `https://api.weatherapi.com/v1/forecast.json?key=e9f03c0935864a1ba58105924231102&q=kolkata&days=7`;
+
+const data = await fetch(
+	locationData.latitude && locationData.longitude
+		? apiCallWithLocation
+		: defaultApiCall
+);
+
+  const defaultWeatherData = await data.json();
 
   currTemp.innerText = defaultWeatherData.current.temp_c;
   // weatherImage.src = defaultWeatherData.current.condition.icon;
