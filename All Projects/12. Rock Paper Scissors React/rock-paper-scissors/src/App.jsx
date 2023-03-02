@@ -74,6 +74,16 @@ function App() {
       >
         {result}
       </p>
+      {computerScore > 0 || userScore > 0 ? (
+        <button
+          className="bg-[#0F172A] py-1 px-4 rounded-[3px] text-white mx-auto mt-4 hover:bg-[#1a4f46] block"
+          onClick={reset}
+        >
+          Reset
+        </button>
+      ) : (
+        <></>
+      )}
       <div className="flex justify-center gap-12 text-white max-w-5xl mx-auto mt-10 sm:gap-28">
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
           <h3 className="text-center">Your Choice</h3>
