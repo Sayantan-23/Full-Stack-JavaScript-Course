@@ -1,62 +1,50 @@
-import { useState } from "react";
-import "./App.css";
+import { useEffect, useState } from "react";
 
 function App() {
   const choices = ["rock", "paper", "scissor"];
 
   const [userChoice, setUserChoice] = useState("rock");
-  const [computerChoice, setComputerChoice] = useState("paper");
+  const [computerChoice, setComputerChoice] = useState("rock");
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("Let's Play");
 
-  const rule = () => {
-    if (userChoice === computerChoice) {
-      setResult("It's a Draw!😐🥱");
-    } else if (userChoice === "rock") {
-      if (computerChoice === "scissor") {
-        setUserScore(userScore + 1);
-        setResult("You Won!!🥳🥳");
-      } else {
-        setComputerScore(computerScore + 1);
-        setResult("You Lost!!😖😓");
-      }
-    } else if (userChoice === "paper") {
-      if (computerChoice === "rock") {
-        setUserScore(userScore + 1);
-        setResult("You Won!!🥳🥳");
-      } else {
-        setComputerScore(computerScore + 1);
-        setResult("You Lost!!😖😓");
-      }
-    } else if (userChoice === "scissor") {
-      if (computerChoice === "paper") {
-        setUserScore(userScore + 1);
-        setResult("You Won!!🥳🥳");
-      } else {
-        setComputerScore(computerScore + 1);
-        setResult("You Lost!!😖😓");
-      }
-    }
+  const computerSelect = () => {
+    setComputerChoice(choices[Math.floor(Math.random() * 3)]);
   };
 
-  const rockOnClick = () => {
+  const rockOnClick = async () => {
     setUserChoice("rock");
-    setComputerChoice(choices[Math.floor(Math.random() * 3)])
-    rule()
+    computerSelect();
   };
 
   const paperOnClick = () => {
     setUserChoice("paper");
-    setComputerChoice(choices[Math.floor(Math.random() * 3)])
-    rule();
+    computerSelect();
   };
 
   const scissorOnClick = () => {
     setUserChoice("scissor");
-    setComputerChoice(choices[Math.floor(Math.random() * 3)])
-    rule();
+    computerSelect();
   };
+
+  const reset = () => window.location.reload();
+
+  useEffect(() => {
+    if (userChoice === computerChoice) {
+      setResult("It's a Draw!😐🥱");
+    } else if (
+      (userChoice === "rock" && computerChoice === "scissor") ||
+      (userChoice === "paper" && computerChoice === "rock") ||
+      (userChoice === "scissor" && computerChoice === "paper")
+    ) {
+      setUserScore(userScore + 1);
+      setResult("You Won!!🥳🥳");
+    } else {
+      setComputerScore(computerScore + 1);
+      setResult("You Lost!!😖😓");
+    }
+  }, [userChoice, computerChoice]);
 
   return (
     <div className='overflow-x-hidden p-4 font-["Poppins"] bg-gradient-radial from-[#70a9a1] to-[#14272d] min-h-screen'>
@@ -72,15 +60,20 @@ function App() {
         <p className="bg-[#1E3539] py-1 px-4 rounded-[3px]">
           My Score - {userScore}
         </p>
-        <p
-          className={result ? "bg-[#1E3539] py-1 px-4 rounded-[3px]" : "hidden"}
-        >
-          {result}
-        </p>
+
         <p className="bg-[#1E3539] py-1 px-4 rounded-[3px]">
           Computer Score - {computerScore}
         </p>
       </div>
+      <p
+        className={
+          result
+            ? "bg-[#1E3539] py-1 px-4 rounded-[3px] text-white mt-4 w-fit mx-auto"
+            : "hidden"
+        }
+      >
+        {result}
+      </p>
       <div className="flex justify-center gap-12 text-white max-w-5xl mx-auto mt-10 sm:gap-28">
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
           <h3 className="text-center">Your Choice</h3>
