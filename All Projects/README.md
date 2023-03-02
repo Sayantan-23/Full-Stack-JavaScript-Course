@@ -1,10 +1,10 @@
 # 💻 Projects *(Order - Newest First)*
 
 ## <img height="18px" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"> ReactJS Projects
-| No. 	| **Name**           	| **Live Link**                                	| **Folder Link**                                    	| **Date**      	|
-|-----	|--------------------	|----------------------------------------------	|----------------------------------------------------	|---------------	|
-| 1   	| Todo App           	| [Live](https://todoappreact-js.netlify.app/) 	| [Click Here](./11.%20Todo%20App%20React/todo-app/) 	| 19th February 	|
-| 2   	| Rock Paper Scissor 	| Working on it                                	|   -                                                 	| 19th February 	|
+| No. 	| **Name**           	| **Live Link**                                	     | **Folder Link**                                    	| **Date**      	|
+|-----	|--------------------	|-----------------------------------------------	 |----------------------------------------------------	|---------------	|
+| 1   	| Todo App           	| [Live](https://todoappreact-js.netlify.app/) 	     | [Click Here](./11.%20Todo%20App%20React/todo-app/) 	| 19th February 	|
+| 2   	| Rock Paper Scissor 	| [Live](https://rockpaperscissorreact.netlify.app/) | [Click Here](./12.%20Rock%20Paper%20Scissors%20React/rock-paper-scissors/)  |  19th February 	|
 | 3   	| The Meal DB        	| Working on it                                	|   -                                                	| 19th February 	|
 | 4   	| Pokémon App        	| Working on it                                	|   -                                                 	| 19th February 	|
 | 5   	| Movie App          	| Working on it                                	|   -                                                 	| 19th February 	|
