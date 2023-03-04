@@ -50,3 +50,28 @@ All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.ntvs*
 All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.njsproj
 All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.sln
 All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.sw?
+
+# Meal DB
+# Logs
+All Projects/13. Meal DB/meal-db/logs
+All Projects/13. Meal DB/meal-db/*.log
+All Projects/13. Meal DB/meal-db/npm-debug.log*
+All Projects/13. Meal DB/meal-db/yarn-debug.log*
+All Projects/13. Meal DB/meal-db/yarn-error.log*
+All Projects/13. Meal DB/meal-db/pnpm-debug.log*
+All Projects/13. Meal DB/meal-db/lerna-debug.log*
+
+All Projects/13. Meal DB/meal-db/node_modules
+All Projects/13. Meal DB/meal-db/dist
+All Projects/13. Meal DB/meal-db/dist-ssr
+All Projects/13. Meal DB/meal-db/*.local
+# Editor directories and files
+All Projects/13. Meal DB/meal-db/.vscode/*
+All Projects/13. Meal DB/meal-db/!.vscode/extensions.json
+All Projects/13. Meal DB/meal-db/.idea
+All Projects/13. Meal DB/meal-db/.DS_Store
+All Projects/13. Meal DB/meal-db/*.suo
+All Projects/13. Meal DB/meal-db/*.ntvs*
+All Projects/13. Meal DB/meal-db/*.njsproj
+All Projects/13. Meal DB/meal-db/*.sln
+All Projects/13. Meal DB/meal-db/*.sw?
