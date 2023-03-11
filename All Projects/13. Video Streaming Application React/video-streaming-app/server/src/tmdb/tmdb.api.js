@@ -14,26 +14,28 @@ const tmdbApi = {
   mediaGenres: async ({ mediaType }) =>
     await axiosClient.get(tmdbEndpoints.mediaGenres({ mediaType })),
 
-  mediaCredits: async ({ mediaType, mediaID }) =>
-    await axiosClient.get(tmdbEndpoints.mediaCredits({ mediaType, mediaID })),
+  mediaCredits: async ({ mediaType, mediaId }) =>
+    await axiosClient.get(tmdbEndpoints.mediaCredits({ mediaType, mediaId })),
 
-  mediaVideos: async ({ mediaType, mediaID }) =>
-    await axiosClient.get(tmdbEndpoints.mediaVideos({ mediaType, mediaID })),
+  mediaVideos: async ({ mediaType, mediaId }) =>
+    await axiosClient.get(tmdbEndpoints.mediaVideos({ mediaType, mediaId })),
 
-  mediaImages: async ({ mediaType, mediaID }) =>
-    await axiosClient.get(tmdbEndpoints.mediaImages({ mediaType, mediaID })),
+  mediaImages: async ({ mediaType, mediaId }) =>
+    await axiosClient.get(tmdbEndpoints.mediaImages({ mediaType, mediaId })),
 
-  mediaRecommend: async ({ mediaType, mediaID }) =>
-    await axiosClient.get(tmdbEndpoints.mediaRecommend({ mediaType, mediaID })),
+  mediaRecommend: async ({ mediaType, mediaId }) =>
+    await axiosClient.get(tmdbEndpoints.mediaRecommend({ mediaType, mediaId })),
 
   mediaSearch: async ({ mediaType, query, page }) =>
     await axiosClient.get(
       tmdbEndpoints.mediaSearch({ mediaType, query, page })
     ),
 
-  personDetail: async ({ personID }) =>
-    await axiosClient.get(tmdbEndpoints.personDetail({ personID })),
+  personDetail: async ({ personId }) =>
+    await axiosClient.get(tmdbEndpoints.personDetail({ personId })),
 
-  personMedias: async ({ personID }) =>
-    await axiosClient.get(tmdbEndpoints.personMedias({ personID })),
+  personMedias: async ({ personId }) =>
+    await axiosClient.get(tmdbEndpoints.personMedias({ personId })),
 };
+
+export default tmdbApi;

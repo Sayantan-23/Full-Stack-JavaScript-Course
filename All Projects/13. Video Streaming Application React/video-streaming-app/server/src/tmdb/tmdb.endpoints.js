@@ -1,32 +1,32 @@
-import tmdbConfig from "./tmdb.config";
+import tmdbConfig from "./tmdb.config.js";
 
 const tmdbEndpoints = {
   mediaList: ({ mediaType, mediaCategory, page }) =>
     tmdbConfig.getUrl(`${mediaType}/${mediaCategory}`, page),
 
-  mediaDetail: ({ mediaType, mediaID }) =>
-    tmdbConfig.getUrl(`${mediaType}/${mediaID}`),
+  mediaDetail: ({ mediaType, mediaId }) =>
+    tmdbConfig.getUrl(`${mediaType}/${mediaId}`),
   mediaGenres: ({ mediaType }) => tmdbConfig.getUrl(`genre/${mediaType}/list`),
 
-  mediaCredits: ({ mediaType, mediaID }) =>
-    tmdbConfig.getUrl(`${mediaType}/${mediaID}/credits`),
+  mediaCredits: ({ mediaType, mediaId }) =>
+    tmdbConfig.getUrl(`${mediaType}/${mediaId}/credits`),
 
-  mediaVideos: ({ mediaType, mediaID }) =>
-    tmdbConfig.getUrl(`${mediaType}/${mediaID}/videos`),
+  mediaVideos: ({ mediaType, mediaId }) =>
+    tmdbConfig.getUrl(`${mediaType}/${mediaId}/videos`),
 
-  mediaRecommend: ({ mediaType, mediaID }) =>
-    tmdbConfig.getUrl(`${mediaType}/${mediaID}/recommendations`),
+  mediaRecommend: ({ mediaType, mediaId }) =>
+    tmdbConfig.getUrl(`${mediaType}/${mediaId}/recommendations`),
 
-  mediaImages: ({ mediaType, mediaID }) =>
-    tmdbConfig.getUrl(`${mediaType}/${mediaID}/images`),
+  mediaImages: ({ mediaType, mediaId }) =>
+    tmdbConfig.getUrl(`${mediaType}/${mediaId}/images`),
 
   mediaSearch: ({ mediaType, query, page }) =>
     tmdbConfig.getUrl(`search/${mediaType}`, { query, page }),
 
-  personDetail: ({ personID }) => tmdbConfig.getUrl(`person/${personID}`),
+  personDetail: ({ personId }) => tmdbConfig.getUrl(`person/${personId}`),
 
-  personMedias: ({ personID }) =>
-    tmdbConfig.getUrl(`person/${personID}combined_credits`),
+  personMedias: ({ personId }) =>
+    tmdbConfig.getUrl(`person/${personId}combined_credits`),
 };
 
 export default tmdbEndpoints;
