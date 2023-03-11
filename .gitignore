@@ -51,31 +51,31 @@ All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.njsproj
 All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.sln
 All Projects/12. Rock Paper Scissors React/rock-paper-scissors/*.sw?
 
-# Meal DB
-# Logs
-All Projects/13. Meal DB/meal-db/logs
-All Projects/13. Meal DB/meal-db/*.log
-All Projects/13. Meal DB/meal-db/npm-debug.log*
-All Projects/13. Meal DB/meal-db/yarn-debug.log*
-All Projects/13. Meal DB/meal-db/yarn-error.log*
-All Projects/13. Meal DB/meal-db/pnpm-debug.log*
-All Projects/13. Meal DB/meal-db/lerna-debug.log*
-
-All Projects/13. Meal DB/meal-db/node_modules
-All Projects/13. Meal DB/meal-db/dist
-All Projects/13. Meal DB/meal-db/dist-ssr
-All Projects/13. Meal DB/meal-db/*.local
-# Editor directories and files
-All Projects/13. Meal DB/meal-db/.vscode/*
-All Projects/13. Meal DB/meal-db/!.vscode/extensions.json
-All Projects/13. Meal DB/meal-db/.idea
-All Projects/13. Meal DB/meal-db/.DS_Store
-All Projects/13. Meal DB/meal-db/*.suo
-All Projects/13. Meal DB/meal-db/*.ntvs*
-All Projects/13. Meal DB/meal-db/*.njsproj
-All Projects/13. Meal DB/meal-db/*.sln
-All Projects/13. Meal DB/meal-db/*.sw?
-
-
 # Video Streaming Application MERN
+# Backend
 All Projects/13. Video Streaming Application React/video-streaming-app/server/node_modules/
+# Frontend
+# Logs
+All Projects/13. Video Streaming Application React/video-streaming-app/client/logs
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.log
+All Projects/13. Video Streaming Application React/video-streaming-app/client/npm-debug.log*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/yarn-debug.log*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/yarn-error.log*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/pnpm-debug.log*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/lerna-debug.log*
+
+All Projects/13. Video Streaming Application React/video-streaming-app/client/node_modules/
+All Projects/13. Video Streaming Application React/video-streaming-app/client/dist
+All Projects/13. Video Streaming Application React/video-streaming-app/client/dist-ssr
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.local
+
+# Editor directories and files
+All Projects/13. Video Streaming Application React/video-streaming-app/client/.vscode/*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/!.vscode/extensions.json
+All Projects/13. Video Streaming Application React/video-streaming-app/client/.idea
+All Projects/13. Video Streaming Application React/video-streaming-app/client/.DS_Store
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.suo
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.ntvs*
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.njsproj
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.sln
+All Projects/13. Video Streaming Application React/video-streaming-app/client/*.sw?
