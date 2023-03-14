@@ -3,24 +3,23 @@ import queryString from "query-string";
 
 const baseURL = "http://127.0.0.1:5000/api/v1/";
 
-const privateClient = axios.create({
+const publicClient = axios.create({
   baseURL,
   paramsSerializer: {
     encode: (params) => queryString.stringify(params),
   },
 });
 
-privateClient.interceptors.request(async (config) => {
+publicClient.interceptors.request(async (config) => {
   return {
     ...config,
     headers: {
-      "Content-type": "application/json",
-      Authorization: `Bearer ${localStorage.getItem("actkn")}`,
+      "Content-type": "application/json"
     },
   };
 });
 
-privateClient.interceptors.response.use(
+publicClient.interceptors.response.use(
   (response) => {
     if (response && response.data) return response.data;
     return response;
@@ -30,4 +29,4 @@ privateClient.interceptors.response.use(
   }
 );
 
-export default privateClient;
+export default publicClient;
