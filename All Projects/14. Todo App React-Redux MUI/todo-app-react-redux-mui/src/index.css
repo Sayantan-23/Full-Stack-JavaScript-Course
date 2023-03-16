@@ -1,0 +1,7 @@
+*, *::after, *::before {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+  background: #49BEAA;
+}
