@@ -32,6 +32,14 @@ function App() {
     setInputData("");
   };
 
+  const updateItem = (id) => {
+    if (id === todo.id) {
+      setInputData(todo.text)
+      dispatch(updateTodo(id, inputData))
+      setInputData("")
+    }
+  }
+
   const deleteAll = () => {
     dispatch(deleteAllTodo());
   };
