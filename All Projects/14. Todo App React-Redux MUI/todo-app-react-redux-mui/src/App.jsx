@@ -5,11 +5,37 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import CreateTwoToneIcon from "@mui/icons-material/CreateTwoTone";
-import AddIcon from "@mui/icons-material/Add";
-import "./App.css";
 import { Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import Fab from "@mui/material/Fab";
+import "./App.css";
+import { useState } from "react";
+import {
+  addTodo,
+  updateTodo,
+  deleteTodo,
+  deleteAllTodo,
+} from "./features/todoSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
+  const [inputData, setInputData] = useState("");
+
+  const todo = useSelector((state) => state.todo.todoList); // Watch browser's redux dev tool's state tree to understand this.
+  const dispatch = useDispatch();
+
+  const addItem = () => {
+    if (!inputData) {
+    } else {
+      dispatch(addTodo(inputData));
+    }
+    setInputData("");
+  };
+
+  const deleteAll = () => {
+    dispatch(deleteAllTodo());
+  };
+
   return (
     <>
       <Typography
@@ -41,73 +67,91 @@ function App() {
       >
         <Stack spacing={1} direction={"row"} width="80%">
           <TextField
+            onChange={(e) => setInputData(e.target.value)}
             aria-label="Input Field"
             label="Add Todo"
             size="small"
             fullWidth
+            value={inputData}
           ></TextField>
-          <IconButton
-            size="medium"
-            aria-label="Add"
-            sx={{
-              bgcolor: "#a6d7cef4",
-              boxShadow: "0 4px 5px rgba(0, 0, 0, 0.2)",
-            }}
+          <Fab
+            color="primary"
+            aria-label="add"
+            size="small"
+            sx={{ width: "10%" }}
+            onClick={addItem}
           >
-            <AddIcon sx={{ color: "#315DAF" }} />
-          </IconButton>
+            <AddIcon />
+          </Fab>
         </Stack>
-        <Typography>Empty List</Typography>
-        <Stack
-          gap="20px"
-          width="100%"
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Stack direction="row" spacing={1} sx={{ width: "100%" }}>
-            <Typography
-              variant="body"
-              id="todo-list"
-              sx={{
-                width: "100%",
-                bgcolor: "#78CEC0",
-                borderRadius: "10px",
-                padding: "10px",
-                cursor: "pointer",
-                fontSize: "16px",
-                display: "flex",
-                alignItems: "center",
-                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
-              }}
+        {!todo[0] ? (
+          <Typography>Empty List</Typography>
+        ) : (
+          <Stack
+            gap="20px"
+            width="100%"
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            {todo.map((todoList) => {
+              return (
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  sx={{ width: "100%" }}
+                  key={todoList.id}
+                >
+                  <Typography
+                    variant="body"
+                    id="todo-list"
+                    sx={{
+                      width: "100%",
+                      bgcolor: "#78CEC0",
+                      borderRadius: "10px",
+                      padding: "10px",
+                      cursor: "pointer",
+                      fontSize: "16px",
+                      display: "flex",
+                      alignItems: "center",
+                      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+                    }}
+                  >
+                    {todoList.text}
+                  </Typography>
+                  <IconButton
+                    aria-label="Update"
+                    size="large"
+                    sx={{
+                      bgcolor: "#78CEC0",
+                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
+                    }}
+                  >
+                    <CreateTwoToneIcon sx={{ color: "#26695E" }} />
+                  </IconButton>
+                  <IconButton
+                    aria-label="Delete"
+                    size="large"
+                    sx={{
+                      bgcolor: "#78CEC0",
+                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
+                    }}
+                  >
+                    <DeleteIcon sx={{ color: "#EF767A" }} />
+                  </IconButton>
+                </Stack>
+              );
+            })}
+            <Button
+              color="error"
+              variant="outlined"
+              startIcon={<DeleteIcon />}
+              onClick={deleteAll}
             >
-              First Item
-            </Typography>
-            <IconButton
-              aria-label="Update"
-              size="large"
-              sx={{
-                bgcolor: "#78CEC0",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
-              }}
-            >
-              <CreateTwoToneIcon sx={{ color: "#26695E" }} />
-            </IconButton>
-            <IconButton
-              aria-label="Delete"
-              size="large"
-              sx={{
-                bgcolor: "#78CEC0",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
-              }}
-            >
-              <DeleteIcon sx={{ color: "#EF767A" }} />
-            </IconButton>
+              Delete All
+            </Button>
           </Stack>
-          <Button color="error" variant="outlined" startIcon={<DeleteIcon />}>
-            Delete All
-          </Button>
-        </Stack>
+        )}
       </Container>
     </>
   );
