@@ -17,10 +17,10 @@ export const todoSlice = createSlice({
 
       state.todoList.push(todo);
     },
-    // updateTodo: (state, id, action) => {
-    //   const todo = state.todoList.find((element) => element.id === id);
-    //   todo.text = action.payload;
-    // },
+    updateTodo: (state, id, action) => {
+      const todo = state.todoList.find((element) => element.id === id);
+      todo.text = action.payload;
+    },
     deleteTodo: (state, action) => {
       state.todoList = state.todoList.filter(
         (element) => element.id !== action.payload

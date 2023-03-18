@@ -7,6 +7,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import CreateTwoToneIcon from "@mui/icons-material/CreateTwoTone";
 import { Button } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import Fab from "@mui/material/Fab";
 import "./App.css";
 import { useState } from "react";
@@ -20,6 +21,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const [inputData, setInputData] = useState("");
+  const [isUpdating, setIsUpdating] = useState(false);
 
   const todo = useSelector((state) => state.todo.todoList); // Watch browser's redux dev tool's state tree to understand this.
   const dispatch = useDispatch();
@@ -30,6 +32,14 @@ function App() {
       dispatch(addTodo(inputData));
     }
     setInputData("");
+  };
+
+  const handleUpdate = (id) => {
+    const todoElement = todo.find((element) => element.id === id);
+    if (todoElement.id === id) {
+      setIsUpdating(true);
+      setInputData(todoElement.text);
+    }
   };
 
   const deleteAll = () => {
@@ -74,15 +84,27 @@ function App() {
             fullWidth
             value={inputData}
           ></TextField>
-          <Fab
-            color="primary"
-            aria-label="add"
-            size="small"
-            sx={{ width: "10%" }}
-            onClick={addItem}
-          >
-            <AddIcon />
-          </Fab>
+          {isUpdating ? (
+            <Fab
+              title="Update"
+              aria-label="edit"
+              size="small"
+              sx={{ bgcolor: "#84D1D7", width: "45px" }}
+            >
+              <CreateTwoToneIcon sx={{ color: "#26695E" }} />
+            </Fab>
+          ) : (
+            <Fab
+              title="Add Todo"
+              color="primary"
+              aria-label="add"
+              size="small"
+              sx={{ width: "45px", height: "40px" }}
+              onClick={addItem}
+            >
+              <AddIcon />
+            </Fab>
+          )}
         </Stack>
         {!todo[0] ? (
           <Typography>Empty List</Typography>
@@ -120,29 +142,34 @@ function App() {
                     {todoList.text}
                   </Typography>
                   <IconButton
+                    title="Update"
+                    onClick={() => handleUpdate(todoList.id)}
                     aria-label="Update"
                     size="large"
                     sx={{
-                      bgcolor: "#78CEC0",
+                      bgcolor: "#84D1D7",
                       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
                     }}
                   >
                     <CreateTwoToneIcon sx={{ color: "#26695E" }} />
                   </IconButton>
                   <IconButton
+                    title="Delete"
                     aria-label="Delete"
                     size="large"
                     sx={{
-                      bgcolor: "#78CEC0",
+                      bgcolor: "#EF767A",
                       boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
                     }}
                   >
-                    <DeleteIcon sx={{ color: "#EF767A" }} />
+                    <DeleteOutlinedIcon />
                   </IconButton>
                 </Stack>
               );
             })}
             <Button
+              title="Delete All Todo"
+              aria-label="Delete All"
               color="error"
               variant="outlined"
               startIcon={<DeleteIcon />}
