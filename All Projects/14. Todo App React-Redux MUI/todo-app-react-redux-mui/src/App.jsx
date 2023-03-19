@@ -7,25 +7,29 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import CreateTwoToneIcon from "@mui/icons-material/CreateTwoTone";
 import { Button } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
-import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
+import ClearIcon from "@mui/icons-material/Clear";
 import Fab from "@mui/material/Fab";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   addTodo,
   updateTodo,
   deleteTodo,
   deleteAllTodo,
+  addLocalStorageData,
 } from "./features/todoSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const [inputData, setInputData] = useState("");
   const [isUpdating, setIsUpdating] = useState(false);
+  const [updateTodoId, setUpdateTodoId] = useState("")
 
   const todo = useSelector((state) => state.todo.todoList); // Watch browser's redux dev tool's state tree to understand this.
   const dispatch = useDispatch();
 
+  // Add Todo
   const addItem = () => {
     if (!inputData) {
     } else {
@@ -34,17 +38,47 @@ function App() {
     setInputData("");
   };
 
+  // Handle Update
   const handleUpdate = (id) => {
     const todoElement = todo.find((element) => element.id === id);
     if (todoElement.id === id) {
       setIsUpdating(true);
       setInputData(todoElement.text);
+      setUpdateTodoId(todoElement.id)
     }
   };
 
-  const deleteAll = () => {
-    dispatch(deleteAllTodo());
+  // Cancel Update
+  const cancelUpdate = () => {
+    setIsUpdating(false);
+    setInputData("");
+    setUpdateTodoId("");
   };
+
+  // Update Item
+  const updateTodoList = () => {
+    const todoElement = todo.find((element) => element.id === updateTodoId)
+    const updatedObj = {
+      id: todoElement.id,
+      text: inputData
+    }
+    dispatch(updateTodo(updatedObj));
+    setInputData("")
+    setIsUpdating(false)
+    setUpdateTodoId("")
+  };
+
+  // Store in Local Storage
+  useEffect(() => {
+    localStorage.setItem("lists", JSON.stringify(todo))
+  },[todo])
+
+  useEffect(() => {
+    let list = JSON.parse(localStorage.getItem("lists"))
+    console.log(list);
+    console.log("executed");
+    dispatch(addLocalStorageData(list))
+  },[])
 
   return (
     <>
@@ -75,24 +109,41 @@ function App() {
           gap: "30px",
         }}
       >
-        <Stack spacing={1} direction={"row"} width="80%">
+        <Stack
+          spacing={1}
+          direction={"row"}
+          width="100%"
+          alignItems="flex-start"
+        >
           <TextField
             onChange={(e) => setInputData(e.target.value)}
             aria-label="Input Field"
             label="Add Todo"
             size="small"
-            fullWidth
             value={inputData}
+            sx={{ width: "100%" }}
           ></TextField>
           {isUpdating ? (
-            <Fab
-              title="Update"
-              aria-label="edit"
-              size="small"
-              sx={{ bgcolor: "#84D1D7", width: "45px" }}
-            >
-              <CreateTwoToneIcon sx={{ color: "#26695E" }} />
-            </Fab>
+            <Stack direction="row" gap="10px">
+              <Fab
+                onClick={updateTodoList}
+                title="Update"
+                aria-label="edit"
+                size="small"
+                sx={{ bgcolor: "#84D1D7"}}
+              >
+                <CreateTwoToneIcon sx={{ color: "#26695E" }} />
+              </Fab>
+              <Fab
+                onClick={cancelUpdate}
+                title="Cancel Update"
+                aria-label="edit"
+                size="small"
+                sx={{ bgcolor: "#FF6666", width:"45px" }}
+              >
+                <ClearIcon />
+              </Fab>
+            </Stack>
           ) : (
             <Fab
               title="Add Todo"
@@ -116,6 +167,9 @@ function App() {
             justifyContent="center"
             alignItems="center"
           >
+            <Typography variant="h4" color="#0b0b0b">
+              Todo List
+            </Typography>
             {todo.map((todoList) => {
               return (
                 <Stack
@@ -123,6 +177,7 @@ function App() {
                   spacing={1}
                   sx={{ width: "100%" }}
                   key={todoList.id}
+                  alignItems="flex-start"
                 >
                   <Typography
                     variant="body"
@@ -137,6 +192,7 @@ function App() {
                       display: "flex",
                       alignItems: "center",
                       boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+                      wordBreak: "break-word",
                     }}
                   >
                     {todoList.text}
@@ -148,18 +204,19 @@ function App() {
                     size="large"
                     sx={{
                       bgcolor: "#84D1D7",
-                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
+                      boxShadow: "0 4px 5px rgba(0, 0, 0, 0.3)",
                     }}
                   >
                     <CreateTwoToneIcon sx={{ color: "#26695E" }} />
                   </IconButton>
                   <IconButton
                     title="Delete"
+                    onClick={()=> dispatch(deleteTodo(todoList.id))}
                     aria-label="Delete"
                     size="large"
                     sx={{
                       bgcolor: "#EF767A",
-                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
+                      boxShadow: "0 4px 5px rgba(0, 0, 0, 0.3)",
                     }}
                   >
                     <DeleteOutlinedIcon />
@@ -173,7 +230,7 @@ function App() {
               color="error"
               variant="outlined"
               startIcon={<DeleteIcon />}
-              onClick={deleteAll}
+              onClick={()=> dispatch(deleteAllTodo())}
             >
               Delete All
             </Button>
