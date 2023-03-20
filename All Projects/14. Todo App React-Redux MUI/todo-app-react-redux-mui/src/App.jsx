@@ -23,7 +23,7 @@ import { useDispatch, useSelector } from "react-redux";
 function App() {
   const [inputData, setInputData] = useState("");
   const [isUpdating, setIsUpdating] = useState(false);
-  const [updateTodoId, setUpdateTodoId] = useState("")
+  const [updateTodoId, setUpdateTodoId] = useState("");
 
   const todo = useSelector((state) => state.todo.todoList); // Watch browser's redux dev tool's state tree to understand this.
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ function App() {
     if (todoElement.id === id) {
       setIsUpdating(true);
       setInputData(todoElement.text);
-      setUpdateTodoId(todoElement.id)
+      setUpdateTodoId(todoElement.id);
     }
   };
 
@@ -56,21 +56,21 @@ function App() {
 
   // Update Item
   const updateTodoList = () => {
-    const todoElement = todo.find((element) => element.id === updateTodoId)
+    const todoElement = todo.find((element) => element.id === updateTodoId);
     const updatedObj = {
       id: todoElement.id,
-      text: inputData
-    }
+      text: inputData,
+    };
     dispatch(updateTodo(updatedObj));
-    setInputData("")
-    setIsUpdating(false)
-    setUpdateTodoId("")
+    setInputData("");
+    setIsUpdating(false);
+    setUpdateTodoId("");
   };
 
   // Store in Local Storage
   useEffect(() => {
-    localStorage.setItem("lists", JSON.stringify(todo))
-  },[todo])
+    localStorage.setItem("lists", JSON.stringify(todo));
+  }, [todo]);
 
   return (
     <>
@@ -122,7 +122,7 @@ function App() {
                 title="Update"
                 aria-label="edit"
                 size="small"
-                sx={{ bgcolor: "#84D1D7"}}
+                sx={{ bgcolor: "#84D1D7" }}
               >
                 <CreateTwoToneIcon sx={{ color: "#26695E" }} />
               </Fab>
@@ -131,7 +131,7 @@ function App() {
                 title="Cancel Update"
                 aria-label="edit"
                 size="small"
-                sx={{ bgcolor: "#FF6666", width:"45px" }}
+                sx={{ bgcolor: "#FF6666", width: "40px" }}
               >
                 <ClearIcon />
               </Fab>
@@ -179,7 +179,6 @@ function App() {
                       bgcolor: "#78CEC0",
                       borderRadius: "10px",
                       padding: "10px",
-                      cursor: "pointer",
                       fontSize: "16px",
                       display: "flex",
                       alignItems: "center",
@@ -194,6 +193,7 @@ function App() {
                     onClick={() => handleUpdate(todoList.id)}
                     aria-label="Update"
                     size="large"
+                    disabled={isUpdating ? true : false}
                     sx={{
                       bgcolor: "#84D1D7",
                       boxShadow: "0 4px 5px rgba(0, 0, 0, 0.3)",
@@ -203,9 +203,10 @@ function App() {
                   </IconButton>
                   <IconButton
                     title="Delete"
-                    onClick={()=> dispatch(deleteTodo(todoList.id))}
+                    onClick={() => dispatch(deleteTodo(todoList.id))}
                     aria-label="Delete"
                     size="large"
+                    disabled={isUpdating ? true : false}
                     sx={{
                       bgcolor: "#EF767A",
                       boxShadow: "0 4px 5px rgba(0, 0, 0, 0.3)",
@@ -222,7 +223,8 @@ function App() {
               color="error"
               variant="outlined"
               startIcon={<DeleteIcon />}
-              onClick={()=> dispatch(deleteAllTodo())}
+              onClick={() => dispatch(deleteAllTodo())}
+              disabled={isUpdating ? true : false}
             >
               Delete All
             </Button>
