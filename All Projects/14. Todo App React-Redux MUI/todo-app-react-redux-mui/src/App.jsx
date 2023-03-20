@@ -17,7 +17,6 @@ import {
   updateTodo,
   deleteTodo,
   deleteAllTodo,
-  addLocalStorageData,
 } from "./features/todoSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -72,13 +71,6 @@ function App() {
   useEffect(() => {
     localStorage.setItem("lists", JSON.stringify(todo))
   },[todo])
-
-  useEffect(() => {
-    let list = JSON.parse(localStorage.getItem("lists"))
-    console.log(list);
-    console.log("executed");
-    dispatch(addLocalStorageData(list))
-  },[])
 
   return (
     <>
