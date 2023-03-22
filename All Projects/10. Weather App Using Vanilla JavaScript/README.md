@@ -3,6 +3,8 @@
 ## Project Details
 An weather app using vanilla JavaScript. By default the page is showing the data for Kolkata, West Bengal, India. To see weather of any location we just have to search that location.
 
+>**Update** - It only shows 3-days weather forecast now because my Weather API trial period has expired.
+
 **API link - [Click Here](https://www.weatherapi.com/)**
 
 

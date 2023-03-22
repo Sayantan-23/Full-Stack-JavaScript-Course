@@ -29,7 +29,6 @@ const onPageLoad = async () => {
   );
 
   const defaultWeatherData = await defaultApiCall.json();
-
   currTemp.innerText = defaultWeatherData.current.temp_c;
   // weatherImage.src = defaultWeatherData.current.condition.icon;
   weatherStatus.innerText = defaultWeatherData.current.condition.text;
@@ -45,7 +44,7 @@ const onPageLoad = async () => {
   visibility.innerText = defaultWeatherData.current.vis_km;
   feelsLike.innerText = defaultWeatherData.current.feelslike_c;
 
-  for (let i = 0; i <= 6; i++) {
+  for (let i = 0; i <= 2; i++) {
     const dateData = defaultWeatherData.forecast.forecastday[i].date;
     const dateString = dateData.split("-").join(",");
     const date = new Date(dateString);
@@ -96,7 +95,6 @@ const getData = async (event) => {
 
   const weatherData = await fetchData.json();
   data = weatherData;
-  console.log(data);
 
   currTemp.innerText = data.current.temp_c;
   weatherImage.src = data.current.condition.icon;
@@ -111,7 +109,7 @@ const getData = async (event) => {
   visibility.innerText = data.current.vis_km;
   feelsLike.innerText = data.current.feelslike_c;
 
-  for (let i = 0; i <= 6; i++) {
+  for (let i = 0; i <= 2; i++) {
     const dateData = data.forecast.forecastday[i].date;
     const dateString = dateData.split("-").join(",");
     const date = new Date(dateString);
