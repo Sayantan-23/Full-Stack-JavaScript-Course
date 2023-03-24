@@ -1,11 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
-import Home from './pages/home'
-import Categories from './pages/Categories'
-import Search from './pages/Search'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Home from "./pages/home";
+import Categories from "./pages/Categories";
+import Search from "./pages/Search";
+import { SearchContext } from "./components/Header";
 
 const appRouter = createBrowserRouter([
   {
@@ -18,15 +24,15 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/categories",
-        element:<Categories />
+        element: <Categories />,
       },
       {
         path: "/search",
-        element:<Search />
-      }
-    ]
-  }
-])
+        element: <Search />,
+      },
+    ],
+  },
+]);
 
 // const appRouter = createBrowserRouter(
 //   createRoutesFromElements(
@@ -36,8 +42,8 @@ const appRouter = createBrowserRouter([
 //   )
 // )
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={appRouter} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);

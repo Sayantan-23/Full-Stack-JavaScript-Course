@@ -1,30 +1,38 @@
 import { Link, useNavigate } from "react-router-dom";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import searchIcon from "../assets/search.png"
-import axios from "../axios/axios"
+import axios from "axios"
 
-export const searchContext = createContext();
+export const SearchContext = createContext();
 
 const Header = () => {
   const [inputData, setInputData] = useState("");
   const [searchData, setSearchData] = useState([]);
-  const navigate = useNavigate();
+  const [error, setError] = useState("");
+  const [url, setUrl] = useState("");
+  const navigate = useNavigate()
 
+  console.log(searchData);
   const handleSearch = async () => {
-    // const data = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`
     try {
       console.log(inputData);
-      const res = await axios.get(`/search.php?s=${inputData}`)
-      setSearchData(res.data.meals)
-      console.log(res.data);
-      console.log(searchData);
+      const res = await axios.get(url);
+      setSearchData(res.data.meals);
     } catch (error) {
-      
+      setError("Not Found");
     }
   };
 
+  const handleOnClick = () => {
+    setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`)
+  }
+
+  useEffect(() => {
+    handleSearch()
+  },[url])
+
   return (
-    <>
+    <SearchContext.Provider value={{searchData}}>
       <div className="navbar m-auto backdrop-blur-md justify-between fixed top-0 z-10">
         <div className="navbar m-auto justify-between max-w-7xl">
           <div className="navbar-start w-auto">
@@ -69,7 +77,10 @@ const Header = () => {
               Recipe<span className="text-amber-700">Realm</span>
             </Link>
           </div>
-          <div className="form-control flex-row items-center gap-3" onSubmit={e => e.preventDefault()}>
+          <div
+            className="form-control flex-row items-center gap-3"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <input
               type="text"
               placeholder="Search"
@@ -77,13 +88,16 @@ const Header = () => {
               onChange={(e) => setInputData(e.target.value)}
               value={inputData}
             />
-            <button className="btn bg-base-100 hover:bg-amber-700 rounded-[100vmax] p-2 w-12" onClick={handleSearch}>
+            <button
+              className="btn bg-base-100 hover:bg-amber-700 rounded-[100vmax] p-2 w-12"
+              onClick={handleOnClick}
+            >
               <img className="w-5" src={searchIcon} alt="Search Icon" />
             </button>
           </div>
         </div>
       </div>
-    </>
+    </SearchContext.Provider>
   );
 };
 

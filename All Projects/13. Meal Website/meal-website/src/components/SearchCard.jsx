@@ -1,11 +1,13 @@
-import { searchContext } from "./Header"
+import { SearchContext } from "./Header"
 import { useContext } from "react"
 
 const SearchCard = () => {
-  const data = useContext(searchContext)
-  console.log(data);
+  const {data} = useContext(SearchContext)
+  console.log(data.searchData);
   return (
-    <div>{ data }</div>
+    <SearchContext.Consumer>
+      <div>{data}</div>
+    </SearchContext.Consumer>
   )
 }
 
