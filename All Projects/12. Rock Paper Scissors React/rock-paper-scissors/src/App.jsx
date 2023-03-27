@@ -134,7 +134,7 @@ function App() {
             <img
               src={`../images/rock.png`}
               alt="Rock"
-              className="w-10 sm:w-16"
+              className="w-10 sm:w-16 rotate-45"
             />
           </button>
           <button
@@ -144,7 +144,7 @@ function App() {
             <img
               src={`../images/paper.png`}
               alt="Paper"
-              className="w-10 sm:w-16"
+              className="w-10 sm:w-16 scale-x-[-1] rotate-[-45deg]"
             />
           </button>
         </div>
@@ -155,7 +155,7 @@ function App() {
           <img
             src={`../images/scissor.png`}
             alt="Scissor"
-            className="w-10 sm:w-16"
+            className="w-10 sm:w-16 rotate-90"
           />
         </button>
       </div>
