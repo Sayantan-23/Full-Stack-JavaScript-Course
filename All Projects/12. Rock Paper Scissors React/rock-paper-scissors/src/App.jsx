@@ -4,33 +4,37 @@ function App() {
   const choices = ["rock", "paper", "scissor"];
 
   const [userChoice, setUserChoice] = useState("rock");
-  const [computerChoice, setComputerChoice] = useState("rock");
+  const [computerChoice, setComputerChoice] = useState("paper");
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
   const [result, setResult] = useState("Let's Play");
+  const [gameStart, setGameStart] = useState(false);
 
   const computerSelect = () => {
     setComputerChoice(choices[Math.floor(Math.random() * 3)]);
   };
 
-  const rockOnClick = async () => {
+  const rockOnClick = () => {
     setUserChoice("rock");
     computerSelect();
+    setGameStart(true);
   };
 
   const paperOnClick = () => {
     setUserChoice("paper");
     computerSelect();
+    setGameStart(true);
   };
 
   const scissorOnClick = () => {
     setUserChoice("scissor");
     computerSelect();
+    setGameStart(true);
   };
 
   const reset = () => window.location.reload();
 
-  useEffect(() => {
+  const rules = () => {
     if (userChoice === computerChoice) {
       setResult("It's a Draw!😐🥱");
     } else if (
@@ -44,6 +48,10 @@ function App() {
       setComputerScore(computerScore + 1);
       setResult("You Lost!!😖😓");
     }
+  };
+
+  useEffect(() => {
+    if (gameStart) rules();
   }, [userChoice, computerChoice]);
 
   return (
@@ -91,7 +99,11 @@ function App() {
             <img
               src={`../images/${userChoice}.png`}
               alt="rock-hand-image"
-              className="w-10 sm:w-16"
+              className={
+                userChoice === choices[2]
+                  ? "w-10 sm:w-16 rotate-90"
+                  : "w-10 sm:w-16 rotate-45"
+              }
             />
           </div>
         </div>
@@ -101,7 +113,11 @@ function App() {
             <img
               src={`../images/${computerChoice}.png`}
               alt="paper-hand-image"
-              className="w-10 sm:w-16"
+              className={
+                computerChoice === choices[2]
+                  ? "w-10 sm:w-16 scale-x-[-1] rotate-[-90deg]"
+                  : "w-10 sm:w-16 scale-x-[-1] rotate-[-45deg]"
+              }
             />
           </div>
         </div>
