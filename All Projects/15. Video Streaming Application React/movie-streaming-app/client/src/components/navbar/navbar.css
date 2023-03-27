@@ -1,28 +1,3 @@
-.navbar {
-  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 60%);
-  transform: background;
-  transition: all 0.5s ease-out;
-}
-
-.browse:hover .profile-arrow {
-  transform: rotate(180deg);
-  transition: all 0.3s ease-in-out;
-}
-
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: flex !important;
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    background-color: #0b0b0b;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 10;
-  }
-}
 .profile:hover .options {
   display: flex !important;
   flex-direction: column;
