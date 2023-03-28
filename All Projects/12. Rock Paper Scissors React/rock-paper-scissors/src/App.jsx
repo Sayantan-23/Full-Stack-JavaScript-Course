@@ -32,7 +32,14 @@ function App() {
     setGameStart(true);
   };
 
-  const reset = () => window.location.reload();
+  const reset = () => {
+    setUserChoice("rock")
+    setComputerChoice("scissor")
+    setUserScore(0)
+    setComputerScore(0)
+    setResult("Let's Play")
+    setGameStart(false)
+  };
 
   const rules = () => {
     if (userChoice === computerChoice) {
@@ -64,12 +71,12 @@ function App() {
         alt="Rock-Paper-Scissors-image"
         className="w-16 m-auto mx-auto mt-6"
       />
-      <div className="flex justify-between text-white max-w-5xl mx-auto mt-10 items-center flex-wrap sm:text-xl">
-        <p className="bg-[#1E3539] py-1 px-4 rounded-[3px]">
+      <div className="flex justify-between gap-1 text-white max-w-5xl mx-auto mt-10 items-center flex-wrap text-sm sm:text-xl">
+        <p className="bg-[#1E3539] py-1 px-2 sm:px-4 rounded-[3px]">
           My Score - {userScore}
         </p>
 
-        <p className="bg-[#1E3539] py-1 px-4 rounded-[3px]">
+        <p className="bg-[#1E3539] py-1 px-2 sm:px-4 rounded-[3px]">
           Computer Score - {computerScore}
         </p>
       </div>
@@ -84,7 +91,7 @@ function App() {
       </p>
       {computerScore > 0 || userScore > 0 ? (
         <button
-          className="bg-[#0F172A] py-1 px-4 rounded-[3px] text-white mx-auto mt-4 hover:bg-[#1a4f46] block"
+          className="bg-[#0F172A] py-1 px-4 rounded-[3px] text-white mx-auto mt-4 hover:bg-[#1a4f46] block outline-none"
           onClick={reset}
         >
           Reset
@@ -94,7 +101,7 @@ function App() {
       )}
       <div className="flex justify-center gap-12 text-white max-w-5xl mx-auto mt-10 sm:gap-28">
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
-          <h3 className="text-center">Your Choice</h3>
+          <h3 className="text-center text-sm sm:text-base">Your Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
               src={`../images/${userChoice}.png`}
@@ -108,7 +115,7 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4 border-2 border-transparent rounded-md bg-[#1E3539] p-4 w-44">
-          <h3 className="text-center">Com's Choice</h3>
+          <h3 className="text-center text-sm sm:text-base">Com's Choice</h3>
           <div className="rounded-[100vmax] bg-[#0F172A] p-5">
             <img
               src={`../images/${computerChoice}.png`}
@@ -128,7 +135,7 @@ function App() {
         </h2>
         <div className="flex justify-center gap-10 items-center">
           <button
-            className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46]"
+            className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46] outline-none"
             onClick={rockOnClick}
           >
             <img
@@ -138,7 +145,7 @@ function App() {
             />
           </button>
           <button
-            className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46]"
+            className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46] outline-none"
             onClick={paperOnClick}
           >
             <img
@@ -149,7 +156,7 @@ function App() {
           </button>
         </div>
         <button
-          className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46]"
+          className="rounded-[100vmax] bg-[#0F172A] p-5 hover:bg-[#1a4f46] outline-none"
           onClick={scissorOnClick}
         >
           <img
