@@ -83,7 +83,7 @@ function App() {
       <p
         className={
           result
-            ? "bg-[#1E3539] py-1 px-4 rounded-[3px] text-white mt-4 w-fit mx-auto"
+            ? "bg-[#1E3539] py-1 px-4 rounded-[3px] text-white mt-4 w-fit mx-auto sm:text-xl"
             : "hidden"
         }
       >
@@ -91,7 +91,7 @@ function App() {
       </p>
       {computerScore > 0 || userScore > 0 ? (
         <button
-          className="bg-[#0F172A] py-1 px-4 rounded-[3px] text-white mx-auto mt-4 hover:bg-[#1a4f46] block outline-none"
+          className="bg-[#0F172A] py-1 px-4 rounded-[3px] text-white mx-auto mt-4 hover:bg-[#1a4f46] sm:text-lg block outline-none"
           onClick={reset}
         >
           Reset
@@ -130,7 +130,7 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-14 gap-4">
-        <h2 className="text-white text-lg bg-[#1E3539] py-1 px-4 rounded-[3px]">
+        <h2 className="text-white sm:text-lg bg-[#1E3539] py-1 px-4 rounded-[3px]">
           Lock Your Choice
         </h2>
         <div className="flex justify-center gap-10 items-center">
