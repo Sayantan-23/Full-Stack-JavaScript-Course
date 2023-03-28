@@ -34,7 +34,7 @@ function App() {
 
   const reset = () => {
     setUserChoice("rock")
-    setComputerChoice("scissor")
+    setComputerChoice("paper")
     setUserScore(0)
     setComputerScore(0)
     setResult("Let's Play")
