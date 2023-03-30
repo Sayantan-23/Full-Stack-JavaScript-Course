@@ -18,6 +18,7 @@ import { themeModes } from "../../configs/theme.configs";
 import { setAuthModalOpen } from "../../redux/features/authModalSlice";
 import { setThemeMode } from "../../redux/features/themeModeSlice";
 import Logo from "./Logo";
+import UserMenu from "./UserMenu";
 
 const ScrollAppBar = ({ children, window }) => {
   const { themeMode } = useSelector((state) => state.themeMode);
@@ -52,8 +53,9 @@ const TopBar = () => {
 
   const dispatch = useDispatch();
 
-  const onSwithTheme = () => {
-    const theme = themeMode === themeModes.dark ? themeModes.light : themeModes.dark;
+  const onSwitchTheme = () => {
+    const theme =
+      themeMode === themeModes.dark ? themeModes.light : themeModes.dark;
     dispatch(setThemeMode(theme));
   };
 
@@ -63,7 +65,9 @@ const TopBar = () => {
     <>
       <ScrollAppBar>
         <AppBar elevation={0} sx={{ zIndex: 9999 }}>
-          <Toolbar sx={{ alignItems: "center", justifyContent: "space-between" }}>
+          <Toolbar
+            sx={{ alignItems: "center", justifyContent: "space-between" }}
+          >
             <Stack direction="row" spacing={1} alignItems="center">
               <IconButton
                 color="inherit"
@@ -79,7 +83,11 @@ const TopBar = () => {
             </Stack>
 
             {/* main menu */}
-            <Box flexGrow={1} alignItems="center" display={{ xs: "none", md: "flex" }}>
+            <Box
+              flexGrow={1}
+              alignItems="center"
+              display={{ xs: "none", md: "flex" }}
+            >
               <Box sx={{ marginRight: "30px" }}>
                 <Logo />
               </Box>
@@ -87,8 +95,15 @@ const TopBar = () => {
                 <Button
                   key={index}
                   sx={{
-                    color: appState.includes(item.state) ? "primary.contrastText" : "inherit",
-                    mr: 2
+                    color: appState.includes(item.state)
+                      ? "primary.contrastText"
+                      : "inherit",
+                    mr: 2,
+                    "&:hover": {
+                      bgcolor: "primary.main",
+                      color: themeMode === themeModes.light ? "#ffffff" : "",
+                    },
+                    ":active": { bgcolor: "#ef5350" },
                   }}
                   component={Link}
                   to={item.path}
@@ -97,18 +112,14 @@ const TopBar = () => {
                   {item.display}
                 </Button>
               ))}
-              <IconButton
-                sx={{ color: "inherit" }}
-                onClick={onSwithTheme}
-              >
+              <IconButton sx={{ color: "inherit" }} onClick={onSwitchTheme}>
                 {themeMode === themeModes.dark && <DarkModeOutlinedIcon />}
                 {themeMode === themeModes.light && <WbSunnyOutlinedIcon />}
               </IconButton>
             </Box>
-            {/* main menu */}
 
             {/* user menu */}
-            
+            <UserMenu />
             {/* user menu */}
           </Toolbar>
         </AppBar>
