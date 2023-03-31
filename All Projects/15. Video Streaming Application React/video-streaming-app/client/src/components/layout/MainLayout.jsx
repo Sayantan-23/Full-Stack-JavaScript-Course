@@ -2,7 +2,7 @@ import { Box } from "@mui/material"
 import { Outlet } from "react-router-dom"
 import Footer from "../common/Footer"
 import GlobalLoading from "../common/GlobalLoading"
-import TopBar from "../common/Topbar"
+import TopBar from "../common/TopBar"
 
 const MainLayout = () => {
   return (

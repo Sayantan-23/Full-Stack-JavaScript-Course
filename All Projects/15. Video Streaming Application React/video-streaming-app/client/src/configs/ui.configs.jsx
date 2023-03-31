@@ -24,8 +24,8 @@ const uiConfigs = {
       textAlign: textAlign || "justify",
       display: "-webkit-box",
       overflow: "hidden",
-      webkitBoxOrient: "vertical",
-      webkitLineClamp: lines,
+      WebkitBoxOrient: "vertical",
+      WebkitLineClamp: lines,
     }),
     mainContent: {
       maxWidth: "1366px",
@@ -41,7 +41,7 @@ const uiConfigs = {
     }),
   },
   size: {
-    sidebarWidth: "300px",
+    sidebarWith: "300px",
     contentMaxWidth: "1366px",
   },
 };

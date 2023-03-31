@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material";
-import { Box, maxWidth, Stack } from "@mui/system";
+import { Box, Stack, Typography } from '@mui/material';
 
 const Container = ({ header, children }) => {
   return (
