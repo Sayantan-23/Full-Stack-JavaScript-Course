@@ -7,6 +7,7 @@ import PageWrapper from "./components/common/pageWrapper";
 import MainLayout from "./components/layout/MainLayout";
 import themeConfigs from "./configs/theme.configs";
 import routes from "./routes/routes";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const { themeMode } = useSelector((state) => state.themeMode);

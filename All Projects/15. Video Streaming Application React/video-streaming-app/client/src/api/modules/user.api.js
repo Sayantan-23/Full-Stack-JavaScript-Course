@@ -11,14 +11,16 @@ const userEndpoints = {
 const userApi = {
   signin: async ({ username, password }) => {
     try {
+      console.log("send request");
       const response = await publicClient.post(userEndpoints.signin, {
         username,
         password,
       });
 
       return { response };
-    } catch (error) {
-      return { error };
+    } catch (err) {
+      console.log("err");
+      return { err };
     }
   },
   signup: async ({ username, password, confirmPassword, displayName }) => {
@@ -31,28 +33,30 @@ const userApi = {
       });
 
       return { response };
-    } catch (error) {
-      return { error };
+    } catch (err) {
+      return { err };
     }
   },
-  getInfo: async ({}) => {
+  getInfo: async () => {
     try {
       const response = await privateClient.get(userEndpoints.getInfo);
 
       return { response };
-    } catch (error) {
-      return { error };
+    } catch (err) {
+      return { err };
     }
   },
   passwordUpdate: async ({ password, newPassword, confirmNewPassword }) => {
     try {
-      const response = await privateClient.put(userEndpoints.signup, {
+      const response = await privateClient.put(userEndpoints.passwordUpdate, {
         password,
         newPassword,
         confirmNewPassword,
       });
-    } catch (error) {
-      return { error };
+
+      return { response };
+    } catch (err) {
+      return { err };
     }
   },
 };
