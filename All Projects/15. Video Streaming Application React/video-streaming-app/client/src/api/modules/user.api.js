@@ -11,7 +11,6 @@ const userEndpoints = {
 const userApi = {
   signin: async ({ username, password }) => {
     try {
-      console.log("send request");
       const response = await publicClient.post(userEndpoints.signin, {
         username,
         password,
@@ -19,7 +18,6 @@ const userApi = {
 
       return { response };
     } catch (err) {
-      console.log("err");
       return { err };
     }
   },
