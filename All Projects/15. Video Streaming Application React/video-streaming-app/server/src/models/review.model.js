@@ -7,7 +7,7 @@ export default mongoose.model(
     {
       user: {
         type: Schema.Types.ObjectId,
-        ref: "user",
+        ref: "User",
         required: true,
       },
       content: {

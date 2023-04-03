@@ -1,4 +1,4 @@
-import express, { request } from "express";
+import express from "express";
 import { body } from "express-validator";
 import favoriteController from "../controllers/favorite.controller.js";
 import userController from "../controllers/user.controller.js";
@@ -14,33 +14,31 @@ router.post(
     .exists()
     .withMessage("username is required")
     .isLength({ min: 8 })
-    .withMessage("Username must have minimum 8 characters")
+    .withMessage("username minimum 8 characters")
     .custom(async (value) => {
       const user = await userModel.findOne({ username: value });
-
-      if (user) return Promise.reject("Username already exists");
+      if (user) return Promise.reject("username already used");
     }),
   body("password")
     .exists()
     .withMessage("password is required")
     .isLength({ min: 8 })
-    .withMessage("Password must have minimum 8 characters"),
+    .withMessage("password minimum 8 characters"),
   body("confirmPassword")
     .exists()
-    .withMessage("Confirm password is required")
+    .withMessage("confirmPassword is required")
     .isLength({ min: 8 })
-    .withMessage("Password must have minimum 8 characters")
+    .withMessage("confirmPassword minimum 8 characters")
     .custom((value, { req }) => {
       if (value !== req.body.password)
-        throw new Error("Password does not match");
+        throw new Error("confirmPassword not match");
       return true;
     }),
   body("displayName")
     .exists()
-    .withMessage("Display name password is required")
+    .withMessage("displayName is required")
     .isLength({ min: 8 })
-    .withMessage("displayName must have minimum 8 characters"),
-
+    .withMessage("displayName minimum 8 characters"),
   requestHandler.validate,
   userController.signup
 );
@@ -51,13 +49,12 @@ router.post(
     .exists()
     .withMessage("username is required")
     .isLength({ min: 8 })
-    .withMessage("Username must have minimum 8 characters"),
+    .withMessage("username minimum 8 characters"),
   body("password")
     .exists()
     .withMessage("password is required")
     .isLength({ min: 8 })
-    .withMessage("Password must have minimum 8 characters"),
-
+    .withMessage("password minimum 8 characters"),
   requestHandler.validate,
   userController.signin
 );
@@ -69,25 +66,22 @@ router.put(
     .exists()
     .withMessage("password is required")
     .isLength({ min: 8 })
-    .withMessage("Password must have minimum 8 characters"),
-
+    .withMessage("password minimum 8 characters"),
   body("newPassword")
     .exists()
-    .withMessage("New password is required")
+    .withMessage("newPassword is required")
     .isLength({ min: 8 })
-    .withMessage("New password must have minimum 8 characters"),
-
-  body("confirmPassword")
+    .withMessage("newPassword minimum 8 characters"),
+  body("confirmNewPassword")
     .exists()
-    .withMessage("Confirm Password is required")
+    .withMessage("confirmNewPassword is required")
     .isLength({ min: 8 })
-    .withMessage("Confirm Password must have minimum 8 characters")
+    .withMessage("confirmNewPassword minimum 8 characters")
     .custom((value, { req }) => {
       if (value !== req.body.newPassword)
-        throw new Error("Password does not match");
+        throw new Error("confirmNewPassword not match");
       return true;
     }),
-
   requestHandler.validate,
   userController.updatePassword
 );
@@ -97,7 +91,7 @@ router.get("/info", tokenMiddleware.auth, userController.getInfo);
 router.get(
   "/favorites",
   tokenMiddleware.auth,
-  favoriteController.getFavoriteOfUser
+  favoriteController.getFavoritesOfUser
 );
 
 router.post(
@@ -105,23 +99,23 @@ router.post(
   tokenMiddleware.auth,
   body("mediaType")
     .exists()
-    .withMessage("media Type is required")
+    .withMessage("mediaType is required")
     .custom((type) => ["movie", "tv"].includes(type))
-    .withMessage("media type invalid"),
+    .withMessage("mediaType invalid"),
   body("mediaId")
     .exists()
-    .withMessage("mediaId Password is required")
+    .withMessage("mediaId is required")
     .isLength({ min: 1 })
     .withMessage("mediaId can not be empty"),
-  body("mediaTitle").exists().withMessage("media title is required"),
-  body("mediaPoster").exists().withMessage("media poster is required"),
-  body("mediaRate").exists().withMessage("media rate is required"),
+  body("mediaTitle").exists().withMessage("mediaTitle is required"),
+  body("mediaPoster").exists().withMessage("mediaPoster is required"),
+  body("mediaRate").exists().withMessage("mediaRate is required"),
   requestHandler.validate,
   favoriteController.addFavorite
 );
 
 router.delete(
-  "/favorites/favoritesId",
+  "/favorites/:favoriteId",
   tokenMiddleware.auth,
   favoriteController.removeFavorite
 );

@@ -1,11 +1,11 @@
 import responseHandler from "../handlers/response.handler.js";
-import tmdpApi from "../tmdb/tmdb.api.js";
+import tmdbApi from "../tmdb/tmdb.api.js";
 
 const personDetail = async (req, res) => {
   try {
     const { personId } = req.params;
 
-    const person = await tmdpApi.personDetail({ personId });
+    const person = await tmdbApi.personDetail({ personId });
 
     responseHandler.ok(res, person);
   } catch {
@@ -17,7 +17,7 @@ const personMedias = async (req, res) => {
   try {
     const { personId } = req.params;
 
-    const medias = await tmdpApi.personMedias({ personId });
+    const medias = await tmdbApi.personMedias({ personId });
 
     responseHandler.ok(res, medias);
   } catch {

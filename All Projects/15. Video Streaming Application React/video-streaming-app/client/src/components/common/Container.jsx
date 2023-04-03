@@ -22,7 +22,7 @@ const Container = ({ header, children }) => {
                 content: '""',
                 position: "absolute",
                 left: { xs: "20px", md: 0 },
-                top: "10-0%",
+                top: "100%",
                 height: "5px",
                 width: "100px",
                 backgroundColor: "primary.main",

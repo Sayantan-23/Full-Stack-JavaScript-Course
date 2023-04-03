@@ -6,7 +6,7 @@ import requestHandler from "../handlers/request.handler.js";
 
 const router = express.Router({ mergeParams: true });
 
-router.get("/", tokenMiddleware.auth, reviewController.getReviewOfUser);
+router.get("/", tokenMiddleware.auth, reviewController.getReviewsOfUser);
 
 router.post(
   "/",
@@ -14,22 +14,20 @@ router.post(
   body("mediaId")
     .exists()
     .withMessage("mediaId is required")
-    .isLength({ min: 8 })
+    .isLength({ min: 1 })
     .withMessage("mediaId can not be empty"),
   body("content")
     .exists()
     .withMessage("content is required")
-    .isLength({ min: 8 })
+    .isLength({ min: 1 })
     .withMessage("content can not be empty"),
   body("mediaType")
     .exists()
-    .withMessage("media Type is required")
+    .withMessage("mediaType is required")
     .custom((type) => ["movie", "tv"].includes(type))
-    .withMessage("media type invalid"),
-  body("mediaTitle").exists().withMessage("media title is required"),
-  body("mediaPoster").exists().withMessage("media poster is required"),
-  body("mediaRate").exists().withMessage("media rate is required"),
-
+    .withMessage("mediaType invalid"),
+  body("mediaTitle").exists().withMessage("mediaTitle is required"),
+  body("mediaPoster").exists().withMessage("mediaPoster is required"),
   requestHandler.validate,
   reviewController.create
 );

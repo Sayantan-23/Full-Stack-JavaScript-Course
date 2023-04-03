@@ -2,14 +2,14 @@ import userModel from "../models/user.model.js";
 import jsonwebtoken from "jsonwebtoken";
 import responseHandler from "../handlers/response.handler.js";
 
-const signup = async (res, req) => {
+const signup = async (req, res) => {
   try {
     const { username, password, displayName } = req.body;
 
     const checkUser = await userModel.findOne({ username });
 
     if (checkUser)
-      return responseHandler.badRequest(res, "Username already exists");
+      return responseHandler.badrequest(res, "username already used");
 
     const user = new userModel();
 
@@ -43,10 +43,10 @@ const signin = async (req, res) => {
       .findOne({ username })
       .select("username password salt id displayName");
 
-    if (!user) return responseHandler.badRequest(res, "User does not exist");
+    if (!user) return responseHandler.badrequest(res, "User not exist");
 
     if (!user.validPassword(password))
-      return responseHandler.badRequest(res, "Wrong password");
+      return responseHandler.badrequest(res, "Wrong password");
 
     const token = jsonwebtoken.sign(
       { data: user.id },
@@ -78,7 +78,7 @@ const updatePassword = async (req, res) => {
     if (!user) return responseHandler.unauthorize(res);
 
     if (!user.validPassword(password))
-      return responseHandler.badRequest(res, "Wrong password");
+      return responseHandler.badrequest(res, "Wrong password");
 
     user.setPassword(newPassword);
 
