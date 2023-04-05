@@ -11,20 +11,18 @@ import {
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { Autoplay } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { toast } from "react-toastify";
-
 import { setGlobalLoading } from "../../redux/features/globalLoadingSlice";
 import { routesGen } from "../../routes/routes";
-
 import uiConfigs from "../../configs/ui.configs";
-
 import CircularRate from "./CircularRate";
-
 import tmdbConfigs from "../../api/configs/tmdb.configs";
 import genreApi from "../../api/modules/genre.api";
 import mediaApi from "../../api/modules/media.api";
+import "swiper/css/navigation";
+import "./Style.css";
 
 const HeroSlide = ({ mediaType, mediaCategory }) => {
   const theme = useTheme();
@@ -40,6 +38,8 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
         mediaCategory,
         page: 1,
       });
+
+      console.log(response);
 
       if (response) setMovies(response.results);
       if (err) toast.error(err.message);
@@ -83,13 +83,14 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
     >
       <Swiper
         grabCursor={true}
+        cssMode={true}
+        navigation={true}
+        pagination={{ clickable: true }}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         loop={true}
-        // modules={[Autoplay]}
         style={{ width: "100%", height: "max-content" }}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false
-        // }}
       >
         {movies.map((movie, index) => (
           <SwiperSlide key={index}>
@@ -148,6 +149,7 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
                     fontWeight="700"
                     sx={{
                       ...uiConfigs.style.typoLines(2, "left"),
+                      color: "white",
                     }}
                   >
                     {movie.title || movie.name}
@@ -180,6 +182,7 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
                     variant="body1"
                     sx={{
                       ...uiConfigs.style.typoLines(3),
+                      color: "white",
                     }}
                   >
                     {movie.overview}

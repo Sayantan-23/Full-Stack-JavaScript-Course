@@ -31,7 +31,7 @@ const CircularRate = ({ value }) => {
           variant="caption"
           component="div"
           fontWeight="700"
-          sx={{ marginTop: "-5px" }}
+          sx={{ marginTop: "-5px", color:"white" }}
         >
           {Math.floor(value * 10) / 10}
         </Typography>
