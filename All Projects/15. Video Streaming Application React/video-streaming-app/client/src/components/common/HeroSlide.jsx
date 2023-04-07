@@ -86,7 +86,7 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
         cssMode={true}
         navigation={true}
         pagination={{ clickable: true }}
-        // mousewheel={true}
+        mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         loop={true}
