@@ -2,7 +2,8 @@
   background-color: #ff0000 !important;
 }
 
-.swiper-button-prev,.swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: #ff0000;
 }
 
@@ -11,7 +12,8 @@
     opacity: 0;
   }
 
-  .swiper-button-prev,.swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     opacity: 0;
   }
 }
