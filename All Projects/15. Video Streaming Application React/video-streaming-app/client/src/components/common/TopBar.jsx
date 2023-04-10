@@ -64,7 +64,7 @@ const TopBar = () => {
 
   return (
     <>
-      <Sidebar open={sidebarOpen} toggleSidebar={toggleSidebar} /> 
+      <Sidebar open={sidebarOpen} toggleSidebar={toggleSidebar} />
       <ScrollAppBar>
         <AppBar elevation={0} sx={{ zIndex: 9999 }}>
           <Toolbar
@@ -122,12 +122,14 @@ const TopBar = () => {
 
             {/* user menu */}
             <Stack spacing={3} direction="row" alignItems="center">
-              {!user && <Button
-                variant="contained"
-                onClick={()=> dispatch(setAuthModalOpen(true))}
-              >
-                sign in
-              </Button>}
+              {!user && (
+                <Button
+                  variant="contained"
+                  onClick={() => dispatch(setAuthModalOpen(true))}
+                >
+                  sign in
+                </Button>
+              )}
             </Stack>
             {user && <UserMenu />}
             {/* user menu */}
