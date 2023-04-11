@@ -82,8 +82,8 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
       }}
     >
       <Swiper
-        // grabCursor={true}
-        // cssMode={true}
+        grabCursor={true}
+        cssMode={true}
         navigation={true}
         pagination={{ clickable: true }}
         mousewheel={true}
