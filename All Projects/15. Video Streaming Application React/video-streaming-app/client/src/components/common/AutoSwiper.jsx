@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import { Navigation } from "swiper";
 import { Swiper } from "swiper/react";
 
 const AutoSwiper = ({ children }) => {
@@ -18,6 +19,9 @@ const AutoSwiper = ({ children }) => {
       <Swiper
         slidesPerView="auto"
         grabCursor={true}
+        navigation={true}
+        modules={[Navigation]}
+        cssMode={true}
         style={{ width: "100%", height: "max-content" }}
       >
         {children}
