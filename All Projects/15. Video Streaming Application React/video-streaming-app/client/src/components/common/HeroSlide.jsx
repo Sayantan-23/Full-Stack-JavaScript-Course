@@ -39,8 +39,6 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
         page: 1,
       });
 
-      console.log(response);
-
       if (response) setMovies(response.results);
       if (err) toast.error(err.message);
       dispatch(setGlobalLoading(false));
