@@ -21,7 +21,6 @@ const AutoSwiper = ({ children }) => {
         grabCursor={true}
         navigation={true}
         modules={[Navigation]}
-        cssMode={true}
         style={{ width: "100%", height: "max-content" }}
       >
         {children}
