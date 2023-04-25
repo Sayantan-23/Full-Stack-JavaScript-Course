@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-import { createContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import searchIcon from "../assets/search.png"
 import axios from "axios"
 
-export const SearchContext = createContext();
+// export const SearchContext = createContext();
 
 const Header = () => {
   const [inputData, setInputData] = useState("");
@@ -12,27 +12,26 @@ const Header = () => {
   const [url, setUrl] = useState("");
   const navigate = useNavigate()
 
-  console.log(searchData);
-  const handleSearch = async () => {
-    try {
-      console.log(inputData);
-      const res = await axios.get(url);
-      setSearchData(res.data.meals);
-    } catch (error) {
-      setError("Not Found");
-    }
-  };
+  // console.log(searchData);
+  // const handleSearch = async () => {
+  //   try {
+  //     console.log(inputData);
+  //     const res = await axios.get(url);
+  //     setSearchData(res.data.meals);
+  //   } catch (error) {
+  //     setError("Not Found");
+  //   }
+  // };
 
-  const handleOnClick = () => {
-    setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`)
-  }
+  // const handleOnClick = () => {
+  //   setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`)
+  // }
 
-  useEffect(() => {
-    handleSearch()
-  },[url])
+  // useEffect(() => {
+  // },[url])
 
   return (
-    <SearchContext.Provider value={{searchData}}>
+    <>
       <div className="navbar m-auto backdrop-blur-md justify-between fixed top-0 z-10">
         <div className="navbar m-auto justify-between max-w-7xl">
           <div className="navbar-start w-auto">
@@ -97,7 +96,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </SearchContext.Provider>
+    </>
   );
 };
 

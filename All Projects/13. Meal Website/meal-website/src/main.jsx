@@ -8,10 +8,10 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Search from "./pages/Search";
-import { SearchContext } from "./components/Header";
+// import { SearchContext } from "./components/Header";
 
 const appRouter = createBrowserRouter([
   {
