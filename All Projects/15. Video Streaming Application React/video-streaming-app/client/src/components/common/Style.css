@@ -1,11 +1,11 @@
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
   background-color: #ff0000 !important;
-}
+} */
 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   color: #ff0000;
-}
+} */
 
 @media only screen and (max-width: 500px) {
   .swiper-pagination-bullet {

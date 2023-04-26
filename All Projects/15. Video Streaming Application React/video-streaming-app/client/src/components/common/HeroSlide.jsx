@@ -24,6 +24,7 @@ import mediaApi from "../../api/modules/media.api";
 import "swiper/css/navigation";
 import "./Style.css";
 
+
 const HeroSlide = ({ mediaType, mediaCategory }) => {
   const theme = useTheme();
   const dispatch = useDispatch();
@@ -75,7 +76,22 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
           left: 0,
           zIndex: 2,
           pointerEvents: "none",
-          ...uiConfigs.style.gradientBgImage[theme.palette.mode],
+          // ...uiConfigs.style.gradientBgImage[theme.palette.mode],
+        },
+        "& .swiper-slide": {
+          width: "100%",
+          opacity: "0.6",
+          paddingBottom: "3rem",
+        },
+        "& .swiper-slide-active": { opacity: 1 },
+        "& .swiper-pagination-bullet": {
+          backgroundColor: "text.primary",
+        },
+        "& .swiper-button-next, & .swiper-button-prev": {
+          color: "text.primary",
+          "&::after": {
+            fontSize: { xs: "1rem", md: "2rem" },
+          },
         },
       }}
     >
@@ -84,10 +100,10 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
         cssMode={true}
         navigation={true}
         pagination={{ clickable: true }}
-        mousewheel={true}
+        // mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        loop={true}
+        // loop={true}
         style={{ width: "100%", height: "max-content" }}
       >
         {movies.map((movie, index) => (

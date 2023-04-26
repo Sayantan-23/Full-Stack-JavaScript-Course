@@ -1,33 +1,37 @@
 import { Box } from "@mui/material";
-import { Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper } from "swiper/react";
 
-const AutoSwiper = ({ children }) => {
+const NavigationSwiper = ({ children }) => {
   return (
     <Box
       sx={{
         "& .swiper-slide": {
-          width: {
-            xs: "50%",
-            sm: "35%",
-            md: "25%",
-            lg: "20.5%",
-          },
+          width: "100%",
+          opacity: "0.6",
+          paddingBottom: "3rem",
         },
         "& .swiper-slide-active": { opacity: 1 },
+        "& .swiper-pagination-bullet": {
+          backgroundColor: "text.primary",
+        },
         "& .swiper-button-next, & .swiper-button-prev": {
           color: "text.primary",
           "&::after": {
             fontSize: { xs: "1rem", md: "2rem" },
           },
         },
+        "& .swiper": {
+          paddingX: { xs: "1rem", md: "4rem" },
+        },
       }}
     >
       <Swiper
-        slidesPerView="auto"
+        spaceBetween={10}
         grabCursor={true}
+        pagination={{ clickable: true }}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Pagination]}
         style={{ width: "100%", height: "max-content" }}
       >
         {children}
@@ -36,4 +40,4 @@ const AutoSwiper = ({ children }) => {
   );
 };
 
-export default AutoSwiper;
+export default NavigationSwiper;
