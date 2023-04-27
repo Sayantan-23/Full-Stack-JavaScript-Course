@@ -106,6 +106,8 @@ const TopBar = () => {
                       color: themeMode === themeModes.light ? "#ffffff" : "",
                     },
                     ":active": { bgcolor: "#ef5350" },
+                    textTransform: "capitalize",
+                    fontSize:"1.05rem"
                   }}
                   component={Link}
                   to={item.path}
@@ -127,7 +129,7 @@ const TopBar = () => {
                   variant="contained"
                   onClick={() => dispatch(setAuthModalOpen(true))}
                 >
-                  sign in
+                  Sign In
                 </Button>
               )}
             </Stack>

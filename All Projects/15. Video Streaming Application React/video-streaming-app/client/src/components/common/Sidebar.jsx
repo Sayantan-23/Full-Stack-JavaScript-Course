@@ -43,7 +43,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
       </Toolbar>
       <List sx={{ paddingX: "30px" }}>
         <Typography variant="h6" marginBottom="20px">
-          MENU
+          Menu
         </Typography>
         {menuConfigs.main.map((item, index) => (
           <ListItemButton
@@ -63,7 +63,9 @@ const Sidebar = ({ open, toggleSidebar }) => {
             <ListItemText
               disableTypography
               primary={
-                <Typography textTransform="uppercase">
+                <Typography
+                // textTransform="uppercase"
+                >
                   {item.display}
                 </Typography>
               }
@@ -74,7 +76,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
         {user && (
           <>
             <Typography variant="h6" marginBottom="20px">
-              PERSONAL
+              Personal
             </Typography>
             {menuConfigs.user.map((item, index) => (
               <ListItemButton
@@ -94,7 +96,9 @@ const Sidebar = ({ open, toggleSidebar }) => {
                 <ListItemText
                   disableTypography
                   primary={
-                    <Typography textTransform="uppercase">
+                    <Typography
+                    // textTransform="uppercase"
+                    >
                       {item.display}
                     </Typography>
                   }
@@ -105,7 +109,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
         )}
 
         <Typography variant="h6" marginBottom="20px">
-          THEME
+          Theme
         </Typography>
         <ListItemButton onClick={onSwitchTheme}>
           <ListItemIcon>
@@ -115,8 +119,8 @@ const Sidebar = ({ open, toggleSidebar }) => {
           <ListItemText
             disableTypography
             primary={
-              <Typography textTransform="uppercase">
-                {themeMode === themeModes.dark ? "dark mode" : "light mode"}
+              <Typography>
+                {themeMode === themeModes.dark ? "Dark" : "Light"}
               </Typography>
             }
           />

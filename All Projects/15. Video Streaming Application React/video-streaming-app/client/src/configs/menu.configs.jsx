@@ -8,25 +8,25 @@ import LockResetOutlinedIcon from "@mui/icons-material/LockResetOutlined";
 
 const main = [
   {
-    display: "home",
+    display: "Home",
     path: "/",
     icon: <HomeOutLinedIcon />,
     state: "home",
   },
   {
-    display: "movies",
+    display: "Movies",
     path: "/movies",
     icon: <SlideshowOutlinedIcon />,
     state: "movie",
   },
   {
-    display: "tv series",
+    display: "Series",
     path: "/tv",
     icon: <LiveTvOutlinedIcon />,
     state: "tv",
   },
   {
-    display: "search",
+    display: <SearchOutlinedIcon />,
     path: "/search",
     icon: <SearchOutlinedIcon />,
     state: "search",
@@ -35,19 +35,19 @@ const main = [
 
 const user = [
   {
-    display: "favorites",
+    display: "Favorites",
     path: "/favorites",
     icon: <FavoriteBorderOutlinedIcon />,
     state: "favorite",
   },
   {
-    display: "reviews",
+    display: "Reviews",
     path: "/reviews",
     icon: <RateReviewOutlinedIcon />,
     state: "reviews",
   },
   {
-    display: "password update",
+    display: "Password Update",
     path: "/password-update",
     icon: <LockResetOutlinedIcon />,
     state: "password.update",

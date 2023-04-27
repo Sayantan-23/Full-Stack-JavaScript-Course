@@ -179,7 +179,10 @@ const MediaDetail = () => {
                   variant="h4"
                   fontSize={{ xs: "2rem", md: "2rem", lg: "4rem" }}
                   fontWeight="700"
-                  sx={{ ...uiConfigs.style.typoLines(2, "left"), color: "white" }}
+                  sx={{
+                    ...uiConfigs.style.typoLines(2, "left"),
+                    color: "white",
+                  }}
                 >
                   {`${media.title || media.name} ${
                     mediaType === tmdbConfigs.mediaType.movie
@@ -250,7 +253,7 @@ const MediaDetail = () => {
                 {/* buttons */}
 
                 {/* cast */}
-                <Container header="Cast">
+                <Container header="Casts">
                   <CastSlide casts={media.credits.cast} />
                 </Container>
                 {/* cast */}
@@ -271,7 +274,7 @@ const MediaDetail = () => {
 
         {/* media backdrop */}
         {media.images.backdrops.length > 0 && (
-          <Container header="backdrops">
+          <Container header="Backdrops">
             <BackdropSlide backdrops={media.images.backdrops} />
           </Container>
         )}
@@ -279,7 +282,7 @@ const MediaDetail = () => {
 
         {/* media posters */}
         {media.images.posters.length > 0 && (
-          <Container header="posters">
+          <Container header="Posters">
             <PosterSlide posters={media.images.posters} />
           </Container>
         )}
@@ -294,7 +297,7 @@ const MediaDetail = () => {
         {/* media reviews */}
 
         {/* media recommendation */}
-        <Container header="you may also like">
+        <Container header="More Like This">
           {media.recommend.length > 0 && (
             <RecommendSlide medias={media.recommend} mediaType={mediaType} />
           )}
