@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import searchIcon from "../assets/search.png";
-import axios from "axios";
 
 const Header = () => {
   // const [inputData, setInputData] = useState("");
