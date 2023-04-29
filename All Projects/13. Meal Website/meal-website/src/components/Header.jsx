@@ -2,18 +2,10 @@ import { Link } from "react-router-dom";
 import searchIcon from "../assets/search.png";
 
 const Header = () => {
-  // const [inputData, setInputData] = useState("");
-
-  // const dispatch = useDispatch()
-
-  // const handleOnClick = () => {
-  //   // setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`);
-  //   // dispatch(setSearchUrl(inputData))
-  // };
 
   return (
     <>
-      <div className="navbar m-auto backdrop-blur-md justify-between fixed top-0 z-10">
+      <div className="navbar m-auto backdrop-blur-md justify-between fixed top-0 z-50">
         <div className="navbar m-auto justify-between max-w-7xl">
           <div className="navbar-start w-auto">
             <div className="dropdown">
