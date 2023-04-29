@@ -1,34 +1,16 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import searchIcon from "../assets/search.png"
-import axios from "axios"
-
-// export const SearchContext = createContext();
+import { Link } from "react-router-dom";
+import searchIcon from "../assets/search.png";
+import axios from "axios";
 
 const Header = () => {
-  const [inputData, setInputData] = useState("");
-  const [searchData, setSearchData] = useState([]);
-  const [error, setError] = useState("");
-  const [url, setUrl] = useState("");
-  const navigate = useNavigate()
+  // const [inputData, setInputData] = useState("");
 
-  // console.log(searchData);
-  // const handleSearch = async () => {
-  //   try {
-  //     console.log(inputData);
-  //     const res = await axios.get(url);
-  //     setSearchData(res.data.meals);
-  //   } catch (error) {
-  //     setError("Not Found");
-  //   }
-  // };
+  // const dispatch = useDispatch()
 
   // const handleOnClick = () => {
-  //   setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`)
-  // }
-
-  // useEffect(() => {
-  // },[url])
+  //   // setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputData}`);
+  //   // dispatch(setSearchUrl(inputData))
+  // };
 
   return (
     <>
@@ -62,9 +44,6 @@ const Header = () => {
                 <li>
                   <Link to="/categories">Categories</Link>
                 </li>
-                {/* <li>
-                <a>About</a>
-              </li> */}
               </ul>
             </div>
           </div>
@@ -80,19 +59,18 @@ const Header = () => {
             className="form-control flex-row items-center gap-3"
             onSubmit={(e) => e.preventDefault()}
           >
-            <input
+            {/* <input
               type="text"
-              placeholder="Search"
+              placeholder="Search by name"
               className="input input-bordered rounded-[100vmax] h-10 w-24 sm:w-40 md:w-48"
               onChange={(e) => setInputData(e.target.value)}
               value={inputData}
-            />
-            <button
-              className="btn bg-base-100 hover:bg-amber-700 rounded-[100vmax] p-2 w-12"
-              onClick={handleOnClick}
-            >
-              <img className="w-5" src={searchIcon} alt="Search Icon" />
-            </button>
+            /> */}
+            <Link to="/search">
+              <button className="btn bg-base-100 hover:bg-amber-700 rounded-[100vmax] p-2 w-12">
+                <img className="w-5" src={searchIcon} alt="Search Icon" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

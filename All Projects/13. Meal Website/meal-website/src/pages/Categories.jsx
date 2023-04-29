@@ -35,7 +35,7 @@ const Categories = () => {
                     <figure className="px-10 pt-10">
                       <img
                         src={element.strCategoryThumb}
-                        alt="Shoes"
+                        alt="Category Image"
                         className="rounded-xl"
                       />
                     </figure>

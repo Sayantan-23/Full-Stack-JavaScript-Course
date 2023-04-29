@@ -8,10 +8,9 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Categories from "./pages/Categories";
 import Search from "./pages/Search";
-// import { SearchContext } from "./components/Header";
 
 const appRouter = createBrowserRouter([
   {
@@ -44,6 +43,6 @@ const appRouter = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={appRouter} />
+      <RouterProvider router={appRouter} />
   </React.StrictMode>
 );
