@@ -6,12 +6,10 @@ const Home = () => {
         <span className="after:content-['\a'] before:content-['\a'] whitespace-pre after:block before:block leading-3">
           of{" "}
           <span className="text-amber-700 font-semibold">Deliciousness </span>
-          <span>with</span>{" "}
         </span>
-        <span className="m-auto flex flex-col justify-center relative">
-          <span className="text-amber-700 font-semibold left-1/2 relative md:text-8xl -translate-x-1/2 -top-2">Recipe</span>
-          <span className="z-10 absolute left-1/2 -translate-x-1/2 top-6 md:text-9xl">🍔</span>
-          <span className="font-semibold md:text-[110px] z-20 absolute left-1/2 -translate-x-1/2 top-[70px]">Realm</span>
+        <span className="">
+          <span>with</span> <span className="">Recipe</span>
+          <span className="font-semibold text-amber-700">Realm</span>
         </span>
       </h3>
       <p className="max-w-[300px] sm:max-w-[500px] md:max-w-[700px] text-[#fafafac3] text-[16px] pt-10">
