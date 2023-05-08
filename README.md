@@ -43,7 +43,7 @@
 |-----	|--------------------	|------------------------------------------------    |----------------------------------------------------	|---------------	|
 | 1   	| Todo App           	| [Live](https://todoappreact-js.netlify.app/) 	     | [Click Here](./All%20Projects/11.%20Todo%20App%20React/todo-app/) 	| 19th February 	|
 | 2   	| Rock Paper Scissor 	| [Live](https://rockpaperscissorreact.netlify.app/) | [Click Here](./All%20Projects/12.%20Rock%20Paper%20Scissors%20React/rock-paper-scissors/)|  19th February 	|
-| 3   	| The Meal DB        	| Working on it                                	|  -                                                	| 19th February 	|
+| 3   	| The Meal DB        	| [Live](https://recipe-realm-olive.vercel.app/)     |  [Click Here](./All%20Projects/13.%20Recipe%20App%20React/meal-website/)  	| 19th February 	|
 | 4   	| Pokémon App        	| Working on it                                	|  -                                                	| 19th February 	|
 | 5   	| Movie App          	| Working on it                                	|  -                                                	| 19th February 	|
 
