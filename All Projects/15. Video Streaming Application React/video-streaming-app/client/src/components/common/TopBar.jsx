@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import {
   AppBar,
   Box,
@@ -9,6 +10,7 @@ import {
   IconButton,
   Stack,
   Toolbar,
+  Typography,
   useScrollTrigger,
 } from "@mui/material";
 import { cloneElement, useState } from "react";
@@ -90,22 +92,19 @@ const TopBar = () => {
               alignItems="center"
               display={{ xs: "none", md: "flex" }}
             >
-              <Box sx={{ marginRight: "30px" }}>
+              <Box sx={{ marginRight: "35px" }}>
                 <Logo />
               </Box>
               {menuConfigs.main.map((item, index) => (
-                <Button
+                <Typography
                   key={index}
                   sx={{
-                    color: appState.includes(item.state)
-                      ? "primary.contrastText"
-                      : "inherit",
-                    mr: 2,
+                    color: themeMode === themeModes.light ? "#000" : "#fff",
+                    mr: 4,
                     "&:hover": {
-                      bgcolor: "primary.main",
-                      color: themeMode === themeModes.light ? "#ffffff" : "",
+                      color: themeMode === themeModes.light ? "#010101" : "#e0e1dd",
                     },
-                    ":active": { bgcolor: "#ef5350" },
+                    // ":active": { color: "#ef5350" },
                     textTransform: "capitalize",
                     fontSize:"1.05rem"
                   }}
@@ -114,8 +113,11 @@ const TopBar = () => {
                   variant={appState.includes(item.state) ? "contained" : "text"}
                 >
                   {item.display}
-                </Button>
+                </Typography>
               ))}
+              <IconButton sx={{ color: "inherit", mr: 2 }} component={Link} to={"/search"}>
+                  <SearchOutlinedIcon />
+              </IconButton>
               <IconButton sx={{ color: "inherit" }} onClick={onSwitchTheme}>
                 {themeMode === themeModes.dark && <DarkModeOutlinedIcon />}
                 {themeMode === themeModes.light && <WbSunnyOutlinedIcon />}

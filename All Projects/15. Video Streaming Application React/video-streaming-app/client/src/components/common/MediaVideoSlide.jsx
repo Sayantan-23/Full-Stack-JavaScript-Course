@@ -8,7 +8,6 @@ const MediaVideo = ({ video }) => {
   const iframeRef = useRef();
 
   useEffect(() => {
-    // console.log("iframe");
     const height = (iframeRef.current.offsetWidth * 9) / 16 + "px";
     iframeRef.current.setAttribute("height", height);
   }, [video]);
@@ -28,7 +27,6 @@ const MediaVideo = ({ video }) => {
 };
 
 const MediaVideosSlide = ({ videos }) => {
-  // console.log({ videos });
   return (
     <NavigationSwiper>
       {videos.map((video, index) => (

@@ -15,7 +15,7 @@ const main = [
   },
   {
     display: "Movies",
-    path: "/movies",
+    path: "/movie",
     icon: <SlideshowOutlinedIcon />,
     state: "movie",
   },
@@ -25,12 +25,12 @@ const main = [
     icon: <LiveTvOutlinedIcon />,
     state: "tv",
   },
-  {
-    display: <SearchOutlinedIcon />,
-    path: "/search",
-    icon: <SearchOutlinedIcon />,
-    state: "search",
-  },
+  // {
+  //   display: <SearchOutlinedIcon />,
+  //   path: "/search",
+  //   icon: <SearchOutlinedIcon />,
+  //   state: "search",
+  // },
 ];
 
 const user = [

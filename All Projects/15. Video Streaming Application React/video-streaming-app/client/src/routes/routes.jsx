@@ -10,7 +10,7 @@ import ProtectedPage from "../components/common/ProtectedPage";
 
 export const routesGen = {
   home: "/",
-  MediaList: (type) => `/${type}`,
+  mediaList: (type) => `/${type}`,
   mediaDetail: (type, id) => `/${type}/${id}`,
   mediaSearch: "/search",
   person: (id) => `/person/${id}`,
@@ -36,7 +36,7 @@ const routes = [
     state: "search",
   },
   {
-    path: "password-update",
+    path: "/password-update",
     element: (
       <ProtectedPage>
         <PasswordUpdate />

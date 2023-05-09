@@ -12,13 +12,12 @@ import { toast } from "react-toastify";
 import CircularRate from "../components/common/CircularRate";
 import Container from "../components/common/Container";
 import ImageHeader from "../components/common/ImageHeader";
-// ui
+
 import uiConfigs from "../configs/ui.configs";
-// api
 import tmdbConfigs from "../api/configs/tmdb.configs";
 import mediaApi from "../api/modules/media.api";
 import favoriteApi from "../api/modules/favorite.api";
-// redux
+
 import { setGlobalLoading } from "../redux/features/globalLoadingSlice";
 import { setAuthModalOpen } from "../redux/features/authModalSlice";
 import { addFavorite, removeFavorite } from "../redux/features/userSlice";
@@ -179,10 +178,7 @@ const MediaDetail = () => {
                   variant="h4"
                   fontSize={{ xs: "2rem", md: "2rem", lg: "4rem" }}
                   fontWeight="700"
-                  sx={{
-                    ...uiConfigs.style.typoLines(2, "left"),
-                    color: "white",
-                  }}
+                  sx={{ ...uiConfigs.style.typoLines(2, "left") }}
                 >
                   {`${media.title || media.name} ${
                     mediaType === tmdbConfigs.mediaType.movie
@@ -253,7 +249,7 @@ const MediaDetail = () => {
                 {/* buttons */}
 
                 {/* cast */}
-                <Container header="Casts">
+                <Container header="Cast">
                   <CastSlide casts={media.credits.cast} />
                 </Container>
                 {/* cast */}
@@ -274,7 +270,7 @@ const MediaDetail = () => {
 
         {/* media backdrop */}
         {media.images.backdrops.length > 0 && (
-          <Container header="Backdrops">
+          <Container header="backdrops">
             <BackdropSlide backdrops={media.images.backdrops} />
           </Container>
         )}
@@ -282,7 +278,7 @@ const MediaDetail = () => {
 
         {/* media posters */}
         {media.images.posters.length > 0 && (
-          <Container header="Posters">
+          <Container header="posters">
             <PosterSlide posters={media.images.posters} />
           </Container>
         )}
@@ -297,7 +293,7 @@ const MediaDetail = () => {
         {/* media reviews */}
 
         {/* media recommendation */}
-        <Container header="More Like This">
+        <Container header="you may also like">
           {media.recommend.length > 0 && (
             <RecommendSlide medias={media.recommend} mediaType={mediaType} />
           )}

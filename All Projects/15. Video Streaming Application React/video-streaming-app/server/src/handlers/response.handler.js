@@ -4,10 +4,10 @@ const responseWithData = (res, statusCode, data) =>
 const error = (res) =>
   responseWithData(res, 500, {
     status: 500,
-    message: "Oops! Something went wrong!",
+    message: "Oops! Something wrong!",
   });
 
-const badRequest = (res, message) =>
+const badrequest = (res, message) =>
   responseWithData(res, 400, {
     status: 400,
     message,
@@ -31,7 +31,7 @@ const notfound = (res) =>
 
 export default {
   error,
-  badRequest,
+  badrequest,
   ok,
   created,
   unauthorize,
