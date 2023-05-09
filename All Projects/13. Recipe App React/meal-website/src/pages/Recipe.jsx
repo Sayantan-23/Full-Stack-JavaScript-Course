@@ -85,7 +85,7 @@ const Recipe = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col justify-start items-start text-white pt-10 gap-4 px-4">
+                    <div className="flex flex-col justify-start items-start text-white pt-10 gap-4 px-2 sm:px-4">
                       <h4 className="text-3xl sm:text-4xl pt-4 text-amber-600 sm:font-semibold">
                         🍴 How to Make it
                       </h4>
@@ -97,7 +97,8 @@ const Recipe = () => {
                       </h4>
                       <p className="text-xl text-amber-200">
                         {element.strIngredient1 ||
-                        element.strIngredient1 !== "" ? (
+                        element.strIngredient1 !== "" ||
+                        element.strIngredient1 !== null ? (
                           <span>
                             1. {element.strIngredient1} - {element.strMeasure1}
                             <br />
@@ -106,7 +107,8 @@ const Recipe = () => {
                           ""
                         )}
                         {element.strIngredient2 ||
-                        element.strIngredient2 !== "" ? (
+                        element.strIngredient2 !== "" ||
+                        element.strIngredient2 !== null ? (
                           <span>
                             2. {element.strIngredient2} - {element.strMeasure2}
                             <br />
@@ -116,7 +118,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient3 ||
-                        element.strIngredient3 !== "" ? (
+                        element.strIngredient3 !== "" ||
+                        element.strIngredient3 !== null ? (
                           <span>
                             3. {element.strIngredient3} - {element.strMeasure3}
                             <br />
@@ -126,7 +129,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient4 ||
-                        element.strIngredient4 !== "" ? (
+                        element.strIngredient4 !== "" ||
+                        element.strIngredient4 !== null ? (
                           <span>
                             4. {element.strIngredient4} - {element.strMeasure4}
                             <br />
@@ -136,7 +140,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient5 ||
-                        element.strIngredient5 !== "" ? (
+                        element.strIngredient5 !== "" ||
+                        element.strIngredient5 !== null ? (
                           <span>
                             5. {element.strIngredient5} - {element.strMeasure5}
                             <br />
@@ -146,7 +151,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient6 ||
-                        element.strIngredient6 !== "" ? (
+                        element.strIngredient6 !== "" ||
+                        element.strIngredient6 !== null ? (
                           <span>
                             6. {element.strIngredient6} - {element.strMeasure6}
                             <br />
@@ -156,7 +162,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient7 ||
-                        element.strIngredient7 !== "" ? (
+                        element.strIngredient7 !== "" ||
+                        element.strIngredient7 !== null ? (
                           <span>
                             7. {element.strIngredient7} - {element.strMeasure7}
                             <br />
@@ -166,7 +173,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient8 ||
-                        element.strIngredient8 !== "" ? (
+                        element.strIngredient8 !== "" ||
+                        element.strIngredient8 !== null ? (
                           <span>
                             8. {element.strIngredient8} - {element.strMeasure8}
                             <br />
@@ -176,7 +184,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient9 ||
-                        element.strIngredient9 !== "" ? (
+                        element.strIngredient9 !== "" ||
+                        element.strIngredient9 !== null ? (
                           <span>
                             9. {element.strIngredient9} - {element.strMeasure9}
                             <br />
@@ -186,7 +195,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient10 ||
-                        element.strIngredient10 !== "" ? (
+                        element.strIngredient10 !== "" ||
+                        element.strIngredient10 !== null ? (
                           <span>
                             10. {element.strIngredient10} -{" "}
                             {element.strMeasure10}
@@ -197,7 +207,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient11 ||
-                        element.strIngredient11 !== "" ? (
+                        element.strIngredient11 !== "" ||
+                        element.strIngredient11 !== null ? (
                           <span>
                             11. {element.strIngredient11} -{" "}
                             {element.strMeasure11}
@@ -208,7 +219,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient12 ||
-                        element.strIngredient12 !== "" ? (
+                        element.strIngredient12 !== "" ||
+                        element.strIngredient12 !== null ? (
                           <span>
                             12. {element.strIngredient12} -{" "}
                             {element.strMeasure12}
@@ -219,7 +231,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient13 ||
-                        element.strIngredient13 !== "" ? (
+                        element.strIngredient13 !== "" ||
+                        element.strIngredient13 !== null ? (
                           <span>
                             13. {element.strIngredient13} -{" "}
                             {element.strMeasure13}
@@ -230,7 +243,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient14 ||
-                        element.strIngredient14 !== "" ? (
+                        element.strIngredient14 !== "" ||
+                        element.strIngredient14 !== null ? (
                           <span>
                             14. {element.strIngredient14} -{" "}
                             {element.strMeasure14}
@@ -241,7 +255,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient15 ||
-                        element.strIngredient15 !== "" ? (
+                        element.strIngredient15 !== "" ||
+                        element.strIngredient15 !== null ? (
                           <span>
                             15. {element.strIngredient15} -{" "}
                             {element.strMeasure15}
@@ -252,7 +267,8 @@ const Recipe = () => {
                         )}
 
                         {element.strIngredient16 ||
-                        element.strIngredient16 !== "" ? (
+                        element.strIngredient16 !== "" ||
+                        element.strIngredient16 !== null ? (
                           <span>
                             16. {element.strIngredient16} -{" "}
                             {element.strMeasure16}
@@ -262,7 +278,8 @@ const Recipe = () => {
                           ""
                         )}
                         {element.strIngredient17 ||
-                        element.strIngredient17 !== "" ? (
+                        element.strIngredient17 !== "" ||
+                        element.strIngredient17 !== null ? (
                           <span>
                             17. {element.strIngredient17} -{" "}
                             {element.strMeasure17}
@@ -272,7 +289,8 @@ const Recipe = () => {
                           ""
                         )}
                         {element.strIngredient18 ||
-                        element.strIngredient18 !== "" ? (
+                        element.strIngredient18 !== "" ||
+                        element.strIngredient18 !== null ? (
                           <span>
                             18. {element.strIngredient18} -{" "}
                             {element.strMeasure18}
@@ -282,7 +300,8 @@ const Recipe = () => {
                           ""
                         )}
                         {element.strIngredient19 ||
-                        element.strIngredient19 !== "" ? (
+                        element.strIngredient19 !== "" ||
+                        element.strIngredient19 !== null ? (
                           <span>
                             19. {element.strIngredient19} -{" "}
                             {element.strMeasure19}
@@ -292,7 +311,8 @@ const Recipe = () => {
                           ""
                         )}
                         {element.strIngredient20 ||
-                        element.strIngredient20 !== "" ? (
+                        element.strIngredient20 !== "" ||
+                        element.strIngredient20 !== null ? (
                           <span>
                             20. {element.strIngredient20} -{" "}
                             {element.strMeasure20}
@@ -307,9 +327,7 @@ const Recipe = () => {
                       </h4>
                       {youtubeId ? (
                         <iframe
-                          className=""
-                          width="560"
-                          height="315"
+                          className="sm:w-[560px] sm:h-[315px]"
                           src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
